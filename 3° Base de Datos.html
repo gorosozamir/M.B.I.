@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Base de Datos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="3° Base de Datos.css">
+</head>
+<body>
+  <!-- CABECERA -->
+  <header>
+    <div class="header-content">
+      <div class="logo">Base de Datos</div>
+      <a href="pagina3.html" class="back-button">← Volver</a>
+    </div>
+  </header>
+  
+  <!-- CONTENEDOR PRINCIPAL -->
+  <div class="container">
+    <!-- BARRA LATERAL -->
+    <aside class="sidebar">
+      <h3>Unidades</h3>
+      <ul>
+        <li><a href="#" class="sidebar-link active" data-section="unidad1">1. Análisis y diseño</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad2">2. Requerimientos de software</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad3">3. Fundamentos</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad4">4. Lenguajes y gestión</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad5">5. Modelado y consulta</a></li>
+      </ul>
+      
+      <h3>Recursos</h3>
+      <ul>
+        <li><a href="#" class="sidebar-link" data-section="documentacion">Documentación oficial</a></li>
+        <li><a href="#" class="sidebar-link" data-section="casos">Casos prácticos</a></li>
+        <li><a href="#" class="sidebar-link" data-section="herramientas">Herramientas</a></li>
+        <li><a href="#" class="sidebar-link" data-section="bibliografia">Bibliografía</a></li>
+      </ul>
+    </aside>
+    
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="main-content">
+      <!-- UNIDAD 1 -->
+      <section id="unidad1" class="content-section active">
+        <h1>1. Análisis y diseño de bases de datos</h1>
+        
+        <h2>Competencias en análisis y diseño</h2>
+        <p>Habilidades esenciales para el modelado de datos:</p>
+        
+        <div class="highlight-box">
+          <p><strong>📋 Dato clave:</strong> El 90% de las organizaciones modernas consideran las competencias en bases de datos como una habilidad crítica para la toma de decisiones basada en datos.</p>
+        </div>
+        
+        <ul class="custom-list">
+          <li><strong>Modelado conceptual:</strong> Dominio del modelo entidad-relación (ER) para representar entidades, atributos y relaciones.</li>
+          <li><strong>Evaluación de necesidades:</strong> Capacidad para discernir cuándo implementar servicios de bases de datos según requisitos de seguridad, concurrencia y volumen.</li>
+          <li><strong>Comparación de sistemas:</strong> Criterios para evaluar SGBD considerando rendimiento, seguridad, facilidad de administración y soporte a modelos de datos.</li>
+          <li><strong>Configuración técnica:</strong> Adaptación de parámetros del SGBD como almacenamiento, índices, permisos y políticas de respaldo.</li>
+        </ul>
+        
+        <h2>Metodologías de diseño</h2>
+        <p>Enfoques sistemáticos para crear estructuras de datos eficientes:</p>
+        
+        <ul class="custom-list">
+          <li><strong>Diseño conceptual:</strong> Creación del modelo entidad-relación</li>
+          <li><strong>Diseño lógico:</strong> Transformación a modelo relacional</li>
+          <li><strong>Diseño físico:</strong> Implementación en SGBD específico</li>
+          <li><strong>Normalización:</strong> Eliminación de redundancias y anomalías</li>
+        </ul>
+      </section>
+      
+      <!-- Reemplazar el contenido de la UNIDAD 2 -->
+<section id="unidad2" class="content-section">
+  <h1>2. Análisis y especificación de requerimientos de software</h1>
+  
+  <h2>Proceso crítico para el desarrollo de sistemas</h2>
+  <p>Identifica, define y documenta necesidades y restricciones de usuarios para software:</p>
+  
+  <div class="highlight-box">
+    <p><strong>🔍 Importancia:</strong> Un acuerdo sólido con el usuario evita malentendidos y asegura que el producto final cumpla expectativas.</p>
+  </div>
+  
+  <ul class="custom-list">
+    <li><strong>Entrevistas y cuestionarios:</strong> Técnicas para recolectar información directa de usuarios y captar requisitos explícitos y latentes.</li>
+    <li><strong>Modelado visual (UML/BPMN):</strong> Diagramas que ayudan a analizar y visualizar características del problema y flujos de trabajo.</li>
+    <li><strong>Documentación clara:</strong> Especificaciones detalladas que sirven como contrato entre usuarios y desarrolladores.</li>
+    <li><strong>Gestión de expectativas:</strong> Acuerdo sólido sobre resultados para evitar malentendidos durante el desarrollo.</li>
+  </ul>
+  
+  <h2>Tipos de requisitos</h2>
+  <ul class="custom-list">
+    <li><strong>Funcionales:</strong> Qué debe hacer el sistema</li>
+    <li><strong>No funcionales:</strong> Cómo debe funcionar el sistema (rendimiento, seguridad)</li>
+    <li><strong>Restricciones:</strong> Limitaciones técnicas o de negocio</li>
+    <li><strong>De dominio:</strong> Específicos del ámbito de aplicación</li>
+  </ul>
+</section>
+
+<!-- Reemplazar el contenido de la UNIDAD 3 -->
+<section id="unidad3" class="content-section">
+  <h1>3. Fundamentos de bases de datos</h1>
+  
+  <h2>Bases conceptuales y teóricas</h2>
+  <p>Conceptos fundamentales que sustentan la tecnología de bases de datos:</p>
+  
+  <div class="highlight-box">
+    <p><strong>💡 Definición:</strong> Conjunto estructurado de datos almacenados sistemáticamente para gestión eficiente.</p>
+  </div>
+  
+  <ul class="custom-list">
+    <li><strong>Limitaciones de archivos tradicionales:</strong> Falta de eficiencia, seguridad, integridad y control de concurrencia.</li>
+    <li><strong>Modelos de datos:</strong> Entidad-Relación (diseño conceptual); jerárquico, en red y relacional (implementación).</li>
+    <li><strong>Predominio relacional:</strong> Tablas, claves primarias/foráneas para representar relaciones entre datos.</li>
+    <li><strong>Diferencias entre modelos:</strong> Se comparan por acceso, seguridad, concurrencia, administración e independencia de datos.</li>
+  </ul>
+  
+  <h2>Ventajas sobre sistemas de archivos</h2>
+  <ul class="custom-list">
+    <li>Reducción de redundancia e inconsistencia</li>
+    <li>Mejor seguridad e integridad</li>
+    <li>Acceso concurrente controlado</li>
+    <li>Independencia entre datos y aplicaciones</li>
+  </ul>
+</section>
+
+<!-- Reemplazar el contenido de la UNIDAD 4 -->
+<section id="unidad4" class="content-section">
+  <h1>4. Lenguajes y gestión de bases de datos</h1>
+  
+  <h2>Lenguajes especializados</h2>
+  <p>Herramientas para definir, manipular y controlar datos:</p>
+  
+  <ul class="custom-list">
+    <li><strong>LDD (Lenguaje de Definición de Datos):</strong> Crear y modificar estructuras como tablas, índices y vistas.</li>
+    <li><strong>LMD (Lenguaje de Manipulación de Datos):</strong> Insertar, actualizar, eliminar y consultar datos; SQL es el estándar.</li>
+    <li><strong>LCD (Lenguaje de Control de Datos):</strong> Gestionar permisos, controles de acceso y seguridad.</li>
+  </ul>
+  
+  <h2>Funciones de los SGBD</h2>
+  <div class="highlight-box">
+    <p><strong>Gestión integral:</strong> Almacenamiento, seguridad, integridad, recuperación, control de concurrencia y soporte transaccional.</p>
+  </div>
+  
+  <ul class="custom-list">
+    <li><strong>Estrategias de diseño:</strong> Normalización para evitar redundancia y modelo ER para definición lógica.</li>
+    <li><strong>Elementos relacionales clave:</strong> Tablas, campos, claves primarias/foráneas con integridad referencial.</li>
+    <li><strong>Propiedades ACID:</strong> Atomicidad, Consistencia, Aislamiento y Durabilidad en transacciones.</li>
+  </ul>
+</section>
+
+<!-- Reemplazar el contenido de la UNIDAD 5 -->
+<section id="unidad5" class="content-section">
+  <h1>5. Modelado y consulta de datos</h1>
+  
+  <h2>Análisis del modelo entidad-relación</h2>
+  <p>Identificación de entidades, atributos y relaciones para crear la arquitectura lógica:</p>
+  
+  <ul class="custom-list">
+    <li><strong>Diagramas ER:</strong> Herramientas gráficas esenciales para visualizar cómo se estructuran y vinculan los datos.</li>
+    <li><strong>Elementos fundamentales:</strong> Entidades, atributos (clave, simples, compuestos), relaciones (grado, cardinalidad).</li>
+    <li><strong>SQL estándar:</strong> Lenguaje principal para interactuar con bases relacionales como MySQL y PostgreSQL.</li>
+  </ul>
+  
+  <h2>Aplicación práctica</h2>
+  <div class="highlight-box">
+    <p><strong>Casos reales:</strong> Diseñar, implementar y consultar bases de datos para resolver problemas específicos.</p>
+  </div>
+  
+  <ul class="custom-list">
+    <li><strong>Resolución de casos:</strong> Aplicar modelo relacional y SQL en escenarios empresariales reales.</li>
+    <li><strong>Práctica con SGBD:</strong> Afianzar competencias técnicas con sistemas gestores populares.</li>
+    <li><strong>Gestión eficiente:</strong> Combinar seguridad y eficiencia en el manejo de datos estructurados.</li>
+  </ul>
+</section>
+      
+      <!-- DOCUMENTACIÓN -->
+      <section id="documentacion" class="content-section">
+        <h1>Documentación oficial</h1>
+        
+        <h2>Recursos de referencia</h2>
+        <div class="highlight-box">
+          <p><strong>Estándares importantes:</strong></p>
+          <p>• SQL Standard (ISO/IEC 9075)</p>
+          <p>• Documentación oficial de MySQL, PostgreSQL, Oracle</p>
+          <p>• Especificaciones UML para modelado</p>
+        </div>
+      </section>
+      
+      <!-- CASOS PRÁCTICOS -->
+      <section id="casos" class="content-section">
+        <h1>Casos prácticos</h1>
+        
+        <h2>Ejemplos reales de aplicación</h2>
+        <div class="highlight-box">
+          <p><strong>Estudio de casos:</strong> Implementación de sistemas de bases de datos en diferentes contextos empresariales.</p>
+        </div>
+        
+        <ul class="custom-list">
+          <li>Sistema de ventas para retail</li>
+          <li>Gestión de pacientes en hospital</li>
+          <li>Control académico en universidad</li>
+          <li>Inventario para cadena de suministro</li>
+        </ul>
+      </section>
+      
+      <!-- HERRAMIENTAS -->
+      <section id="herramientas" class="content-section">
+        <h1>Herramientas</h1>
+        
+        <h2>Software para bases de datos</h2>
+        <ul class="custom-list">
+          <li><strong>MySQL Workbench:</strong> Diseño y administración de MySQL</li>
+          <li><strong>pgAdmin:</strong> Interfaz para PostgreSQL</li>
+          <li><strong>Oracle SQL Developer:</strong> Herramienta completa para Oracle</li>
+          <li><strong>DBeaver:</strong> Cliente universal para múltiples SGBD</li>
+        </ul>
+      </section>
+      
+      <!-- BIBLIOGRAFÍA -->
+      <section id="bibliografia" class="content-section">
+        <h1>Bibliografía</h1>
+        
+        <h2>Fuentes recomendadas</h2>
+        <div class="highlight-box">
+          <p><strong>Libros fundamentales:</strong></p>
+          <p>• "Fundamentos de Bases de Datos" - Elmasri & Navathe</p>
+          <p>• "SQL para Mere Mortales" - John L. Viescas</p>
+          <p>• "Database System Concepts" - Silberschatz, Korth, Sudarshan</p>
+        </div>
+      </section>
+    </main>
+  </div>
+  
+  <!-- PIE DE PÁGINA -->
+  <footer>
+    <p>© 2025 Base de Datos</p>
+    <p class="footer-credits">Portal educativo de <strong>M.B.I.</strong></p>
+    <p class="footer-credits">Contenido diseñado según plan de estudios oficial. No nos hacemos responsables por variaciones en los programas de cada institución.</p>
+  </footer>
+  <script src="3° Base de Datos.js"></script>
+</body>
+</html>

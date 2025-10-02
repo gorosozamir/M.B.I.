@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arquitectura de Computadoras</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="2° Arquitectura de computadoras.css">
+</head>
+<body>
+  <!-- CABECERA -->
+  <header>
+    <div class="header-content">
+      <div class="logo">Arquitectura de Computadoras</div>
+      <a href="pagina2.html" class="back-button">← Volver</a>
+    </div>
+  </header>
+  
+  <!-- CONTENEDOR PRINCIPAL -->
+  <div class="container">
+    <!-- BARRA LATERAL -->
+    <aside class="sidebar">
+      <h3>Unidades</h3>
+      <ul>
+        <li><a href="#" class="sidebar-link active" data-section="unidad1">Unidad 1: Introducción</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad2">Unidad 2: Componentes de Hardware</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad3">Unidad 3: Dispositivos E/S</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad4">Unidad 4: Buses y Comunicaciones</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad5">Unidad 5: Estructura de Memoria</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad6">Unidad 6: Arquitecturas de Procesadores</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad7">Unidad 7: Sistemas Operativos</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad8">Unidad 8: Procesos y Multiprocesamiento</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad9">Unidad 9: Lenguajes de Alto Nivel</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad10">Unidad 10: Seguridad Informática</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad11">Unidad 11: Tendencias Tecnológicas</a></li>
+      </ul>
+      
+      <h3>Recursos</h3>
+      <ul>
+        <li><a href="#" class="sidebar-link" data-section="diagramas">Diagramas</a></li>
+        <li><a href="#" class="sidebar-link" data-section="simuladores">Simuladores</a></li>
+        <li><a href="#" class="sidebar-link" data-section="casos-estudio">Casos de Estudio</a></li>
+      </ul>
+    </aside>
+    
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="main-content">
+      <!-- UNIDAD 1 -->
+      <section id="unidad1" class="content-section active">
+        <h1>Unidad 1: Introducción a la Arquitectura de Computadoras</h1>
+        
+        <h2>Principios organizativos de los sistemas computacionales</h2>
+        <p>La arquitectura de computadoras describe el diseño conceptual y funcional del sistema computacional. Sus principios organizativos se basan en la modularidad, separación de funciones en componentes (CPU, memoria, dispositivos de entrada/salida), y la interacción mediante buses y protocolos definidos. La organización informática se refiere a los detalles internos que permiten implementar esas funciones en hardware. Se enfatiza la coordinación entre hardware y software para mejorar la eficiencia y escalabilidad del sistema.</p>
+        
+        <div class="highlight-box">
+          <p><strong>🔧 Fuentes:</strong> Universidad Estatal de Milagro - UNEMI, Studysmarter</p>
+        </div>
+        
+        <h2>Relación funcional entre componentes de hardware y software</h2>
+        <p>El hardware y el software son dos caras de un mismo sistema. El hardware provee la infraestructura física, mientras que el software controla y dirige su función a través de instrucciones y programas. Por ejemplo, la CPU ejecuta instrucciones almacenadas en memoria, mientras el sistema operativo gestiona recursos y facilita la interacción. Ambos deben estar organizados para un funcionamiento sinérgico y eficiente.</p>
+        <p><strong>Fuente:</strong> Studysmarter</p>
+        
+        <h2>Evaluación del funcionamiento y rendimiento de los sistemas computacionales</h2>
+        <p>El rendimiento depende de múltiples factores: velocidad del procesador, tamaño y rapidez de la memoria, eficiencia del bus, dispositivos de entrada/salida, y optimización del software. Métricas típicas incluyen tiempo de ejecución, throughput, latencia y uso de recursos. Técnicas como pipeline, caché, y arquitectura superescalar se implementan para mejorar el rendimiento.</p>
+        <p><strong>Fuentes:</strong> Studysmarter, UTN FRBA</p>
+        
+        <h2>Tecnologías utilizadas en sistemas computacionales actuales</h2>
+        <p>Los sistemas modernos emplean microprocesadores multicore, memorias RAM DDR4/DDR5, almacenamiento SSD basado en memoria flash, buses de alta velocidad (PCIe), y protocolos avanzados de comunicación. Se aplican arquitecturas RISC, CISC y VLIW, además de técnicas como hyper-threading y virtualización.</p>
+        <p><strong>Fuente:</strong> UTN FRBA</p>
+      </section>
+      
+      <!-- UNIDAD 2 -->
+      <section id="unidad2" class="content-section">
+        <h1>Unidad 2: Componentes de Hardware de una PC</h1>
+        
+        <h2>a. Identificación y Caracterización</h2>
+        <p>Componentes internos clave: CPU, motherboard, memoria principal, dispositivos de almacenamiento, fuentes de alimentación y tarjetas periféricas. Componentes físicos incluyen chips, circuitos impresos, puertos y conectores.</p>
+        <p><strong>Fuente:</strong> UNAJ</p>
+        
+        <h2>b. Motherboard</h2>
+        <p><strong>Concepto:</strong> es la tarjeta principal que conecta y comunica todos los componentes internos.</p>
+        <p><strong>Características:</strong> formatos ATX, Micro-ATX, Mini-ITX; estándares de conexión e incompatibilidades dependen del socket del procesador y chipset. Incluye tecnologías como PCIe para expansión, soporte para distintos tipos de memoria RAM y puertos integrados.</p>
+        <p><strong>Fuente:</strong> Studysmarter</p>
+        
+        <h2>c. Microprocesadores</h2>
+        <p>Son el corazón de la PC, ejecutando instrucciones y gestionando datos. Presentan características como frecuencia de reloj, núcleos, memoria caché y arquitectura interna. Emplean tecnologías como hyper-threading, multihilo y escala multicore.</p>
+        <p><strong>Fuentes:</strong> UTN FRBA, Studysmarter</p>
+        
+        <h2>d. Memorias</h2>
+        <p><strong>Concepto:</strong> espacio donde se almacenan datos e instrucciones. Unidades de medida: bit, byte, kilobyte, megabyte, etc.</p>
+        <p><strong>Clasificación:</strong></p>
+        <ul class="custom-list">
+          <li><strong>RAM (memoria de acceso aleatorio):</strong> volátil, rápida.</li>
+          <li><strong>ROM (memoria de solo lectura):</strong> no volátil, almacena firmware.</li>
+          <li><strong>Caché:</strong> memoria pequeña y rápida cercana a la CPU para acelerar acceso a datos frecuentes.</li>
+        </ul>
+        <p><strong>Fuente:</strong> UNAJ</p>
+        
+        <h2>e. Otros Componentes</h2>
+        <ul class="custom-list">
+          <li><strong>Chipset:</strong> controla comunicaciones entre CPU, memoria y periféricos.</li>
+          <li><strong>Bus de expansión:</strong> canal para conectar tarjetas adicionales.</li>
+          <li><strong>Tarjetas gráficas, sonido y controladoras específicas:</strong> amplían funcionalidades.</li>
+          <li><strong>Sistemas Plug & Play:</strong> permiten la instalación automática de dispositivos.</li>
+          <li><strong>BIOS:</strong> firmware que inicializa hardware y arranca el sistema operativo.</li>
+        </ul>
+        <p><strong>Fuentes:</strong> UNAJ, Studysmarter</p>
+      </section>
+      
+      <!-- UNIDAD 3 -->
+      <section id="unidad3" class="content-section">
+        <h1>Unidad 3: Dispositivos de Entrada/Salida y Almacenamiento</h1>
+        
+        <h2>a. Puertos y Dispositivos de E/S</h2>
+        <p>Puertos USB, HDMI, Ethernet, y otros conectan dispositivos externos con diferentes velocidades y protocolos para entrada/salida de datos.</p>
+        <p><strong>Fuentes:</strong> UNAJ</p>
+        
+        <h2>b. Unidades de Almacenamiento Externo</h2>
+        <p>Tipos: discos duros magnéticos (HDD), unidades de estado sólido (SSD), discos ópticos (CD-ROM, DVD). Clasificación según vida útil, velocidad y naturaleza física.</p>
+        <p><strong>Fuente:</strong> UTN FRBA</p>
+        
+        <h2>c. Dispositivos de Almacenamiento Masivo</h2>
+        <p>Incluyen discos magnéticos, ópticos, y de estado sólido. Técnicas como RAID se usan para mejorar rendimiento y tolerancia a fallos.</p>
+        <p><strong>Fuente:</strong> UTN FRBA</p>
+      </section>
+      
+      <!-- UNIDAD 4 -->
+      <section id="unidad4" class="content-section">
+        <h1>Unidad 4: Buses y Comunicaciones Internas</h1>
+        <p>Funcionan para transportar datos y señales de control entre CPU, memoria y periféricos. Se distinguen buses síncronos y asíncronos, se usan protocolos para arbitraje y acceso múltiple. Estándares actuales incluyen PCIe, USB, SATA.</p>
+        <p><strong>Fuente:</strong> Studysmarter</p>
+      </section>
+      
+      <!-- UNIDAD 5 -->
+      <section id="unidad5" class="content-section">
+        <h1>Unidad 5: Estructura y Organización de la Memoria</h1>
+        <p>La memoria se organiza jerárquicamente: registros, caché L1-L3, memoria principal (RAM) y memoria secundaria (disco). Factores que afectan eficiencia son velocidad, tamaño y tecnología. Control de acceso y seguridad son vitales para privacidad y confiabilidad.</p>
+        <p><strong>Fuente:</strong> UTN FRBA</p>
+      </section>
+      
+      <!-- UNIDAD 6 -->
+      <section id="unidad6" class="content-section">
+        <h1>Unidad 6: Arquitecturas de Procesadores</h1>
+        <p><strong>Estilos arquitectónicos:</strong></p>
+        <ul class="custom-list">
+          <li><strong>Pipeline</strong> para ejecución paralela de instrucciones.</li>
+          <li><strong>RISC (Reduced Instruction Set Computing)</strong> con instrucciones simples y rápidas.</li>
+          <li><strong>CISC (Complex Instruction Set Computing)</strong> con instrucciones complejas.</li>
+          <li><strong>VLIW (Very Long Instruction Word), multi-core y multi-threading</strong> para paralelismo.</li>
+        </ul>
+        <p>El rendimiento depende de frecuencia, instrucciones por ciclo, latencia y paralelismo.</p>
+        <p><strong>Fuente:</strong> Studysmarter</p>
+      </section>
+      
+      <!-- UNIDAD 7 -->
+      <section id="unidad7" class="content-section">
+        <h1>Unidad 7: Sistemas Operativos</h1>
+        <p>Software que administra hardware y recursos, facilita interfaces gráficas y manejo de archivos. Funciona en múltiples niveles: kernel, sistema de archivos, GUI. Permite multitarea, multiproceso, paginación, y gestión de memoria virtual. Evolución desde sistemas monousuario a distribuidos y multiprocesamiento.</p>
+        <p><strong>Fuente:</strong> UTN FRBA</p>
+      </section>
+      
+      <!-- UNIDAD 8 -->
+      <section id="unidad8" class="content-section">
+        <h1>Unidad 8: Procesos, Memoria y Multiprocesamiento</h1>
+        <p>Define procesos como programas en ejecución, soporta multithreading y multiproceso. Utiliza técnicas de scheduling para la asignación de CPU. Memoria virtual y tablas de traducción (TLB) optimizan acceso y aislamiento.</p>
+        <p><strong>Fuente:</strong> UTN FRBA</p>
+      </section>
+      
+      <!-- UNIDAD 9 -->
+      <section id="unidad9" class="content-section">
+        <h1>Unidad 9: Lenguajes de Alto Nivel</h1>
+        <p>Características generales, estructura de programas, tipos de datos y uso de punteros para acceso eficiente a memoria en lenguajes como C, Java, etc.</p>
+        <p><strong>Fuente:</strong> UNAJ</p>
+      </section>
+      
+      <!-- UNIDAD 10 -->
+      <section id="unidad10" class="content-section">
+        <h1>Unidad 10: Seguridad Informática y Malware</h1>
+        <p>Conceptos e impacto de malware (virus, troyanos, spyware). Estrategias de prevención con antivirus, encriptación y control de acceso. Análisis de riesgos y protocolos para segura protección de datos.</p>
+        <p><strong>Fuente:</strong> UTN FRBA</p>
+      </section>
+      
+      <!-- UNIDAD 11 -->
+      <section id="unidad11" class="content-section">
+        <h1>Unidad 11: Tendencias y Análisis Tecnológico</h1>
+        <p>Ley de Moore y su impacto en la evolución tecnológica. Tendencias actuales en hardware y software, compatibilidad y costos. Evolución de sistemas operativos y bases de datos.</p>
+        <p><strong>Fuente:</strong> UTN FRBA</p>
+      </section>
+      
+      <!-- SECCIONES DE RECURSOS -->
+      <section id="diagramas" class="resource-section">
+        <h1>Diagramas</h1>
+        
+        <h2>Recursos Visuales</h2>
+        <div class="highlight-box">
+          <p><strong>Diagrama de Von Neumann:</strong> Estructura básica de computadoras</p>
+          <p><strong>Pipeline de instrucciones:</strong> Procesamiento paralelo</p>
+          <p><strong>Jerarquía de memoria:</strong> Niveles de almacenamiento</p>
+        </div>
+      </section>
+      
+      <section id="simuladores" class="resource-section">
+        <h1>Simuladores</h1>
+        
+        <h2>Herramientas Interactivas</h2>
+        <div class="highlight-box">
+          <p><strong>CPU Simulator:</strong> Simulación de ejecución de instrucciones</p>
+          <p><strong>Cache Simulator:</strong> Comportamiento de memorias caché</p>
+          <p><strong>Pipeline Simulator:</strong> Visualización de pipelines</p>
+        </div>
+      </section>
+      
+      <section id="casos-estudio" class="resource-section">
+        <h1>Casos de Estudio</h1>
+        
+        <h2>Ejemplos Reales</h2>
+        <div class="highlight-box">
+          <p><strong>Arquitectura x86:</strong> Evolución de Intel</p>
+          <p><strong>ARM:</strong> Diseño para baja potencia</p>
+          <p><strong>GPUs Modernas:</strong> Procesamiento paralelo</p>
+        </div>
+      </section>
+    </main>
+  </div>
+  
+  <!-- PIE DE PÁGINA -->
+  <footer>
+    <p>© 2025 Arquitectura de Computadoras</p>
+    <p class="footer-credits">Portal educativo de <strong>M.B.I.</strong></p>
+    <p class="footer-credits">Contenido diseñado según plan de estudios oficial. No nos hacemos responsables por variaciones en los temas dados por los Docentes.</p>
+  </footer>
+
+<script src="2° Arquitectura de computadoras.js"></script>
+</body>
+</html>

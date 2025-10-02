@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laboratorio de Sistemas Operativos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="3° Laboratorio de Sistemas Operativos.css">
+</head>
+<body>
+  <!-- CABECERA -->
+  <header>
+    <div class="header-content">
+      <div class="logo">Laboratorio de Sistemas Operativos</div>
+      <a href="Taller3.html" class="back-button">← Volver</a>
+    </div>
+  </header>
+  
+  <!-- CONTENEDOR PRINCIPAL -->
+  <div class="container">
+    <!-- BARRA LATERAL -->
+    <aside class="sidebar">
+      <h3>Unidades</h3>
+      <ul>
+        <li><a href="#" class="sidebar-link active" data-section="unidad1">1. Fundamentos de los SO</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad2">2. Instalación y Configuración</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad3">3. Manejo de Archivos y Recursos</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad4">4. Administración de Memoria</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad5">5. Planificación de Procesos</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad6">6. Redes y Seguridad</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad7">7. Mantenimiento y Diagnóstico</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad8">8. Soporte Técnico</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad9">9. Actividades Formativas</a></li>
+      </ul>
+      
+      <h3>Recursos</h3>
+      <ul>
+        <li><a href="#" class="sidebar-link" data-section="material">Material de Estudio</a></li>
+        <li><a href="#" class="sidebar-link" data-section="guias">Guías Prácticas</a></li>
+        <li><a href="#" class="sidebar-link" data-section="laboratorios">Laboratorios Virtuales</a></li>
+        <li><a href="#" class="sidebar-link" data-section="referencias">Referencias Bibliográficas</a></li>
+      </ul>
+    </aside>
+    
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="main-content">
+      <!-- UNIDAD 1 -->
+      <section id="unidad1" class="content-section active">
+        <h1>Fundamentos de los Sistemas Operativos</h1>
+        <p>Esta unidad introduce los conceptos básicos y la estructura fundamental de los sistemas operativos, explorando sus funciones principales y componentes esenciales.</p>
+        
+        <div class="highlight-box">
+          <p><strong>🖥️ Dato clave:</strong> El sistema operativo gestiona todos los recursos del computador y actúa como intermediario entre el hardware y el usuario.</p>
+        </div>
+        
+        <h2>Concepto de sistema operativo</h2>
+        <p>El sistema operativo (SO) es un software fundamental que actúa como intermediario entre el usuario y el hardware del computador, gestionando los recursos y facilitando la ejecución de aplicaciones. Proporciona una interfaz para que el usuario pueda interactuar con la máquina eficazmente.</p>
+        
+        <h2>Cualidades y principales funciones</h2>
+        <ul class="custom-list">
+          <li>Gestiona la memoria RAM y asigna recursos para ejecutar aplicaciones.</li>
+          <li>Administra el CPU, mediante algoritmos de planificación y prioridades.</li>
+          <li>Controla las entradas y salidas de datos a través de dispositivos periféricos mediante drivers.</li>
+          <li>Administra sistemas de archivos y directorios, gestionando la creación, acceso y seguridad de datos.</li>
+          <li>Proporciona mecanismos de protección, seguridad, y autorización de usuarios.</li>
+          <li>Monitorea y optimiza el rendimiento y uso de recursos.</li>
+          <li>Facilita la comunicación entre procesos y la administración de procesos concurrentes.</li>
+        </ul>
+        
+        <h2>Estructura de los sistemas operativos</h2>
+        <p>Puede estar estructurado en módulos o capas como:</p>
+        <ul class="custom-list">
+          <li><strong>Núcleo (kernel):</strong> controla directamente el hardware y gestiona recursos.</li>
+          <li><strong>Shell o intérprete de comandos:</strong> interfaz para el usuario.</li>
+          <li><strong>Servicios o demonios:</strong> procesos que ejecutan tareas de fondo.</li>
+          <li><strong>Controladores de dispositivos:</strong> software que facilita la comunicación con hardware.</li>
+        </ul>
+        
+        <h2>Administración de procesos y comunicación entre procesos</h2>
+        <p>El SO gestiona la creación, ejecución, suspensión y terminación de procesos, asignando recursos y manejando la comunicación entre ellos mediante mecanismos como señales, colas de mensajes y memoria compartida para sincronización y cooperación.</p>
+        
+        <h2>Administración de memoria y memoria virtual</h2>
+        <p>El sistema operativo asigna y protege la memoria física (RAM) para cada proceso. Usa técnicas de memoria virtual para simular memoria adicional mediante almacenamiento en disco, permitiendo cargar y ejecutar programas más grandes que la memoria física disponible.</p>
+        
+        <h2>Segmentación y paginación: modelación de algoritmos</h2>
+        <p>La paginación divide la memoria en bloques fijos llamados páginas, mientras que la segmentación la divide en bloques lógicos de distinta longitud. Estos mecanismos permiten una mejor administración y protección de la memoria, minimizando fragmentación y facilitando el intercambio (swapping).</p>
+        
+        <h2>Sistemas de gestión de archivos y directorios</h2>
+        <p>El SO organiza archivos en estructuras de directorios jerárquicos, controla permisos, acceso concurrente, y mantiene la integridad y seguridad de los datos almacenados en dispositivos físicos.</p>
+        
+        <h2>Administración de recursos del sistema</h2>
+        <p>Incluye la gestión de CPU, memoria, dispositivos de entrada/salida, conexiones de red y almacenamiento, asignando recursos según prioridades y requisitos de procesos para optimizar el desempeño general.</p>
+        
+        <h2>Criterios de selección de recursos según requerimientos</h2>
+        <p>El SO evalúa la demanda de los procesos, prioridad, estado del sistema y políticas de administración para distribuir recursos de forma eficiente y justa.</p>
+        
+        <h2>Protección y seguridad de datos del usuario</h2>
+        <p>Implementa mecanismos de autenticación, control de accesos, cifrado y políticas para garantizar la confidencialidad, integridad y disponibilidad de la información.</p>
+      </section>
+      
+      <!-- UNIDAD 2 -->
+      <section id="unidad2" class="content-section">
+        <h1>Instalación y Configuración del Sistema Operativo</h1>
+        
+        <h2>Parámetros de instalación</h2>
+        <p>Elección de tipo de instalación, asignación de particiones de disco, configuración de usuarios, selección de componentes y drivers, idioma y región.</p>
+        
+        <h2>Posibilidades de configuración según hardware y entorno</h2>
+        <p>Adaptación a CPUs, memoria, almacenamiento y dispositivos periféricos específicos, además de configuración de red y seguridad.</p>
+        
+        <h2>Manejo del sistema operativo</h2>
+        <p>Uso de interfaces gráficas o línea de comandos para ejecutar tareas administrativas, actualizar software, instalar controladores y personalizar configuraciones.</p>
+        
+        <h2>Panel de control y sus configuraciones</h2>
+        <p>Herramientas para gestionar hardware, software, usuarios, seguridad, redes y dispositivos dentro del SO.</p>
+        
+        <h2>Arranque y carga del sistema operativo</h2>
+        <p>Secuencia de inicialización desde el encendido, cargando el kernel y servicios esenciales, permitiendo acceso al usuario.</p>
+        
+        <h2>Diagnóstico y resolución de fallas en la instalación</h2>
+        <p>Verificación de hardware, revisión de logs, reinstalaciones y recuperación ante errores o incompatibilidades.</p>
+        
+        <h2>Instalación de un segundo sistema operativo en dual boot</h2>
+        <p>Configuración de particiones, gestor de arranque (bootloader) para seleccionar sistema operativo al iniciar, pruebas de compatibilidad y ajustes post-instalación.</p>
+      </section>
+      
+      <!-- UNIDAD 3 -->
+      <section id="unidad3" class="content-section">
+        <h1>Manejo de Archivos, Dispositivos y Recursos</h1>
+        
+        <h2>Gestión de Entrada/Salida</h2>
+        <p>Control de archivos mediante sistemas y controladores especializados.</p>
+        
+        <h2>Administración de impresión</h2>
+        <p>Soporte para impresión diferida, gestión de múltiples impresoras y drivers.</p>
+        
+        <h2>Instalación y uso de tipografías</h2>
+        <p>Para personalización del sistema y aplicaciones.</p>
+        
+        <h2>Principios de interfaz con usuario</h2>
+        <p>Centrados en claridad, usabilidad y organización visual para minimizar errores.</p>
+      </section>
+      
+      <!-- UNIDAD 4 -->
+      <section id="unidad4" class="content-section">
+        <h1>Administración de Memoria</h1>
+        
+        <h2>Gestión de Memoria Real</h2>
+        <p>Organización y protección de la memoria física (RAM) para garantizar el funcionamiento estable del sistema.</p>
+        
+        <h2>Asignación dinámica y gestión eficiente</h2>
+        <p>Mecanismos para optimizar el uso de memoria según las necesidades de los procesos.</p>
+        
+        <h2>Uso de memoria virtual y swapping</h2>
+        <p>Técnicas para optimizar ejecución cuando la memoria física es insuficiente.</p>
+        
+        <h2>Herramientas para diagnóstico y reasignación de memoria</h2>
+        <p>Utilidades para monitorear y optimizar el uso de recursos de memoria.</p>
+      </section>
+      
+      <!-- UNIDAD 5 -->
+      <section id="unidad5" class="content-section">
+        <h1>Planificación y Ejecución de Procesos</h1>
+        
+        <h2>Algoritmos de Planificación</h2>
+        <p>El sistema operativo utiliza diferentes algoritmos para decidir qué proceso ejecutar en cada momento.</p>
+        
+        <h2>Definición de prioridades y esquemas de ejecución</h2>
+        <p>Establecimiento de criterios para determinar el orden de ejecución de procesos.</p>
+        
+        <h2>Gestión de procesos paralelos y multiprocesamiento</h2>
+        <p>Coordinación de múltiples procesos que se ejecutan simultáneamente.</p>
+        
+        <h2>Diagnóstico del comportamiento y alteración de prioridades en ejecución</h2>
+        <p>Monitoreo y ajuste dinámico de los procesos durante su ejecución.</p>
+      </section>
+      
+      <!-- UNIDAD 6 -->
+      <section id="unidad6" class="content-section">
+        <h1>Redes, Internet y Seguridad</h1>
+        
+        <h2>Extensión del SO para Redes</h2>
+        <p>El sistema operativo gestiona la conectividad de red y el acceso a recursos compartidos mediante protocolos y servicios específicos.</p>
+        
+        <h2>Acceso a redes y recursos compartidos</h2>
+        <p>Configuración y gestión de conexiones de red y recursos en red.</p>
+        
+        <h2>Interacción con navegadores y aplicaciones de seguridad</h2>
+        <p>Integración con software de seguridad y herramientas de navegación web.</p>
+        
+        <h2>Solución de problemas de compatibilidad y configuración en red</h2>
+        <p>Diagnóstico y resolución de incidencias relacionadas con conectividad de red.</p>
+      </section>
+      
+      <!-- UNIDAD 7 -->
+      <section id="unidad7" class="content-section">
+        <h1>Mantenimiento y Diagnóstico de Software</h1>
+        
+        <h2>Instalación y Actualización</h2>
+        <p>Procesos de mantenimiento con poco soporte documental, requiriendo habilidades de investigación y resolución de problemas.</p>
+        
+        <h2>Diagnóstico de fallas mediante ensayo y localización de errores</h2>
+        <p>Técnicas para identificar y resolver problemas en el software.</p>
+        
+        <h2>Reemplazo, reinstalación y protección de datos en mantenimiento</h2>
+        <p>Procedimientos para mantener la integridad de los datos durante operaciones de mantenimiento.</p>
+      </section>
+      
+      <!-- UNIDAD 8 -->
+      <section id="unidad8" class="content-section">
+        <h1>Fuentes de Información y Soporte Técnico</h1>
+        
+        <h2>Uso de Manuales Técnicos</h2>
+        <p>Consulta de documentación especializada y fuentes actualizadas para resolver problemas técnicos.</p>
+        
+        <h2>Uso de manuales técnicos y fuentes actualizadas</h2>
+        <p>Identificación y utilización de documentación relevante para la resolución de problemas.</p>
+        
+        <h2>Formulación e interpretación efectiva de consultas al soporte</h2>
+        <p>Técnicas para comunicar problemas técnicos de manera clara y precisa.</p>
+      </section>
+      
+      <!-- UNIDAD 9 -->
+      <section id="unidad9" class="content-section">
+        <h1>Actividades Formativas Sugeridas</h1>
+        
+        <h2>Proyectos Prácticos</h2>
+        <p>Ejercicios de instalación, configuración y diagnóstico de sistemas operativos en entornos controlados.</p>
+        
+        <h2>Proyectos prácticos de instalación, configuración y diagnóstico</h2>
+        <p>Ejercicios hands-on para aplicar los conocimientos teóricos.</p>
+        
+        <h2>Comparación y análisis crítico entre sistemas</h2>
+        <p>Evaluación de diferentes sistemas operativos y sus características.</p>
+        
+        <h2>Verificación y pruebas de múltiples sistemas bajo condiciones definidas</h2>
+        <p>Metodologías para testear sistemas operativos en diversos escenarios.</p>
+      </section>
+      
+      <!-- MATERIAL DE ESTUDIO -->
+      <section id="material" class="content-section">
+        <h1>Material de Estudio</h1>
+        
+        <h2>Recursos de aprendizaje</h2>
+        <div class="highlight-box">
+          <p><strong>Documentación recomendada:</strong></p>
+          <p>• Manuales oficiales de sistemas operativos</p>
+          <p>• Guías de instalación y configuración</p>
+          <p>• Tutoriales paso a paso</p>
+        </div>
+      </section>
+      
+      <!-- GUÍAS PRÁCTICAS -->
+      <section id="guias" class="content-section">
+        <h1>Guías Prácticas</h1>
+        
+        <h2>Ejercicios y prácticas</h2>
+        <ul class="custom-list">
+          <li><strong>Instalación de SO:</strong> Guía paso a paso para diferentes sistemas</li>
+          <li><strong>Configuración de red:</strong> Establecimiento de conexiones</li>
+          <li><strong>Gestión de usuarios:</strong> Creación y administración de cuentas</li>
+        </ul>
+      </section>
+      
+      <!-- LABORATORIOS VIRTUALES -->
+      <section id="laboratorios" class="content-section">
+        <h1>Laboratorios Virtuales</h1>
+        
+        <h2>Entornos de práctica</h2>
+        <div class="highlight-box">
+          <p><strong>Plataformas disponibles:</strong> Máquinas virtuales para experimentar con diferentes sistemas operativos sin riesgo de afectar el sistema principal.</p>
+        </div>
+      </section>
+      
+      <!-- REFERENCIAS BIBLIOGRÁFICAS -->
+      <section id="referencias" class="content-section">
+        <h1>Referencias Bibliográficas</h1>
+        
+        <h2>Fuentes de consulta</h2>
+        <div class="highlight-box">
+          <p><strong>Libros fundamentales:</strong></p>
+          <p>• "Sistemas Operativos Modernos" - Andrew S. Tanenbaum</p>
+          <p>• "Operating System Concepts" - Silberschatz, Galvin, Gagne</p>
+          <p>• "Sistemas Operativos: Una Visión Aplicada" - Jesús Carretero</p>
+        </div>
+        
+        <h2>Recursos Online</h2>
+        <ul class="custom-list">
+          <li>Wikipedia - Sistema operativo</li>
+          <li>Concepto.de - Sistema operativo</li>
+          <li>Malwaresa - Fundamentos de sistemas operativos</li>
+          <li>FPSuperiorUFV - Funciones de un sistema operativo</li>
+          <li>GoDaddy - Digitalización y sistemas operativos</li>
+        </ul>
+        
+        <h2>Enlaces de referencia</h2>
+        <div class="highlight-box">
+          <p><strong>Fuentes utilizadas en este material:</strong></p>
+          <p>• https://es.wikipedia.org/wiki/Sistema_operativo</p>
+          <p>• https://concepto.de/sistema-operativo/</p>
+          <p>• https://www.malwaresa.com/docs/exploit/sistemas-operativos/4-4-2-sistemas-operativos-definicion-y-fundamentos-de-funcionamiento/</p>
+          <p>• https://fpsuperiorufv.es/blog/funciones-de-un-sistema-operativo/</p>
+          <p>• https://www.godaddy.com/resources/es/digitalizacion/sistema-operativo-que-es</p>
+          <p>• https://oposicionespolicianacional.com/wp-content/uploads/2025/04/Tema-38-Fundamentos-de-los-sistemas-operativos.pdf</p>
+          <p>• https://www.studocu.com/es-ar/document/universidad-siglo-21/sistemas-operativos/resumen-m-1-so/105546405</p>
+        </div>
+      </section>
+    </main>
+  </div>
+  
+  <!-- PIE DE PÁGINA -->
+  <footer>
+    <p>© 2025 Laboratorio de Sistemas Operativos</p>
+    <p class="footer-credits">Portal educativo de <strong>M.B.I.</strong></p>
+    <p class="footer-credits">Contenido diseñado según plan de estudios oficial. No nos hacemos responsables por variaciones en los programas de cada institución.</p>
+  </footer>
+  <script src="3° Laboratorio de Sistemas Operativos.js"></script>
+</body>
+</html>

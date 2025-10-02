@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laboratorio de Hardware</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="1° Lab. de Hardware I.css">
+</head>
+<body>
+  <!-- CABECERA -->
+  <header>
+    <div class="header-content">
+      <div class="logo">Laboratorio de Hardware</div>
+      <a href="Taller1.html" class="back-button">← Volver</a>
+    </div>
+  </header>
+  
+  <!-- CONTENEDOR PRINCIPAL -->
+  <div class="container">
+    <!-- BARRA LATERAL -->
+    <aside class="sidebar">
+      <h3>Unidades</h3>
+      <ul>
+        <li><a href="#" class="menu-link active" data-section="unidad1">Unidad 1: Instalación Hardware</a></li>
+        <li><a href="#" class="menu-link" data-section="unidad2">Unidad 2: Organización Funcional</a></li>
+        <li><a href="#" class="menu-link" data-section="unidad3">Unidad 3: Electricidad y Electrónica</a></li>
+        <li><a href="#" class="menu-link" data-section="unidad4">Unidad 4: Monitores y Video</a></li>
+        <li><a href="#" class="menu-link" data-section="unidad5">Unidad 5: Fuentes de Alimentación</a></li>
+        <li><a href="#" class="menu-link" data-section="unidad6">Unidad 6: Impresoras</a></li>
+        <li><a href="#" class="menu-link" data-section="unidad7">Unidad 7: Lectoras de Discos</a></li>
+        <li><a href="#" class="menu-link" data-section="unidad8">Unidad 8: Otros Dispositivos</a></li>
+        <li><a href="#" class="menu-link" data-section="unidad9">Unidad 9: Actividades Formativas</a></li>
+      </ul>
+      
+      <h3>Recursos</h3>
+      <ul>
+        <li><a href="#" class="menu-link" data-section="recursos">Video Tutoriales</a></li>
+        <li><a href="#" class="menu-link" data-section="manuales">Manuales y PDFs</a></li>
+      </ul>
+    </aside>
+    
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="main-content">
+      <!-- UNIDAD 1 -->
+      <section id="unidad1" class="content-section active">
+        <h1>Unidad 1: Instalación y Mantenimiento de Hardware</h1>
+        
+        <h2>A. Instalación de hardware monousuario</h2>
+        <h3>Desarme y armado de la PC</h3>
+        <p>Para instalar o mantener hardware monousuario, es fundamental desmontar y montar correctamente el equipo, respetando la secuencia y protegiendo los componentes contra daños estáticos o físicos. Se debe proceder cuidadosamente para evitar daños en la placa madre, procesador, memoria, discos y demás periféricos internos.</p>
+        
+        <h3>Disposición interna de los componentes</h3>
+        <div class="component">
+          <span class="comment">// Estructura interna de una PC</span><br>
+          <span class="part">Gabinete</span>: Aloja todos los componentes internos<br>
+          <span class="part">Motherboard</span>: Base central donde se conectan todos los componentes<br>
+          <span class="part">Fuente de alimentación</span>: Proporciona energía estable<br>
+          <span class="part">CPU y disipadores</span>: Instalados en socket específico<br>
+          <span class="part">Módulos de RAM</span>: En ranuras designadas<br>
+          <span class="part">Tarjeta gráfica</span>: En ranuras PCIe<br>
+          <span class="part">Discos duros</span>: En bahías con conexiones SATA/NVMe<br>
+          <span class="part">Cables</span>: Organizados para evitar obstrucción de flujo de aire
+        </div>
+        
+        <h3>Uso de herramientas e insumos</h3>
+        <ul class="custom-list">
+          <li><strong>Destornilladores:</strong> Planos o de estrella (Philips)</li>
+          <li><strong>Pinzas y alicates:</strong> Para componentes pequeños</li>
+          <li><strong>Sopladores de aire:</strong> Limpieza sin estática</li>
+          <li><strong>Insumos:</strong> Limpia contactos, grasa siliconada, aceites multiuso</li>
+        </ul>
+        
+        <h2>B. Instalación de periféricos externos</h2>
+        <h3>Conexión, configuración y desconexión</h3>
+        <p>Periféricos como teclado y mouse se conectan por USB o PS/2. Se debe instalar o actualizar el controlador si es necesario. Para desconectar, seguir el procedimiento de seguridad para evitar daños.</p>
+        
+        <h3>Teclado y dispositivo del cursor (mouse)</h3>
+        <ul class="custom-list">
+          <li><strong>Funcionamiento:</strong> Teclado envía señales por interrupciones; mouse detecta movimiento mediante sensores ópticos/mecánicos</li>
+          <li><strong>Normas de limpieza:</strong> Usar soplador o paño seco; evitar líquidos; limpieza regular para prolongar vida útil</li>
+        </ul>
+      </section>
+      
+      <!-- UNIDAD 2 -->
+      <section id="unidad2" class="content-section">
+        <h1>Unidad 2: Organización y Funcionamiento de la Computadora</h1>
+        
+        <h2>A. Organización lógica y funcional</h2>
+        <p>La computadora se organiza en subsistemas funcionales: entrada, procesamiento, almacenamiento y salida. Los diagramas conceptuales ayudan a entender el flujo de datos entre estos subsistemas.</p>
+        
+        <div class="highlight-box">
+          <p><strong>🔧 Planificación técnica:</strong> Analizar consecuencias y prever acciones para evitar fallas. Aplicar métodos de control y verificación para garantizar integridad tras intervenciones. Respetar normas de seguridad industrial.</p>
+        </div>
+        
+        <h2>B. Corriente y disipación</h2>
+        <div class="component">
+          <span class="part">Corriente de línea e interna</span>: La fuente convierte AC a DC para componentes<br>
+          <span class="part">Fuente de alimentación</span>: Provee voltajes estables (+3.3V, +5V, +12V, -12V)<br>
+          <span class="part">Calor y disipación</span>: Ventiladores y disipadores controlan temperatura<br>
+          <span class="comment">// Evitar sobrecalentamiento de componentes</span>
+        </div>
+      </section>
+      
+      <!-- UNIDAD 3 -->
+      <section id="unidad3" class="content-section">
+        <h1>Unidad 3: Introducción a la Electricidad y Electrónica</h1>
+        
+        <h2>A. Fundamentos</h2>
+        <ul class="custom-list">
+          <li>Fenómenos electromagnéticos en componentes electrónicos</li>
+          <li>Circuitos impresos (PCB) con pistas conductoras visibles</li>
+          <li>Interpretación de diagramas de bloques, circuitos analógicos y digitales</li>
+        </ul>
+        
+        <h2>B. Instrumentos de medición</h2>
+        <ul class="custom-list">
+          <li><strong>Multímetro:</strong> Mide tensión, corriente y resistencia</li>
+          <li>Selección correcta de escala</li>
+          <li>Conexión segura de puntas</li>
+          <li>Interpretación de resultados para diagnóstico y reparación</li>
+        </ul>
+      </section>
+      
+      <!-- UNIDAD 4 -->
+      <section id="unidad4" class="content-section">
+        <h1>Unidad 4: Monitores y Video</h1>
+        <ul class="custom-list">
+          <li>Tipos: monocromáticos o a color</li>
+          <li>Componentes electrónicos para barrido de imagen (etapas vertical/horizontal)</li>
+          <li>Diagnóstico: identificación y ajuste de fallas para recuperación de señal</li>
+        </ul>
+      </section>
+      
+      <!-- UNIDAD 5 -->
+      <section id="unidad5" class="content-section">
+        <h1>Unidad 5: Fuentes de Alimentación</h1>
+        <div class="component">
+          <span class="part">Tipos</span>: AT y ATX <span class="comment">// Diferencias en control de encendido</span><br>
+          <span class="part">Electrónica interna</span>: Regulación de voltajes, protección contra sobrecargas<br>
+          <span class="part">Diagnóstico</span>: Medición de voltajes, cambio de componentes defectuosos
+        </div>
+      </section>
+      
+      <!-- UNIDAD 6 -->
+      <section id="unidad6" class="content-section">
+        <h1>Unidad 6: Impresoras</h1>
+        <ul class="custom-list">
+          <li><strong>Tipos:</strong> Matriz de puntos, chorro de tinta, láser</li>
+          <li><strong>Mantenimiento:</strong> Limpieza, ajustes, diagnóstico de fallas mecánicas/electrónicas</li>
+          <li><strong>Reparación:</strong> Cambio de piezas según desgaste o daño</li>
+        </ul>
+      </section>
+      
+      <!-- UNIDAD 7 -->
+      <section id="unidad7" class="content-section">
+        <h1>Unidad 7: Lectoras de Discos Compactos (CD-ROM/DVD)</h1>
+        <ul class="custom-list">
+          <li><strong>Funcionamiento:</strong> Combina óptica y mecánica para lectura</li>
+          <li><strong>Mantenimiento:</strong> Limpieza y calibración</li>
+          <li><strong>Diagnóstico y reparación:</strong> Problemas mecánicos o electrónicos</li>
+        </ul>
+      </section>
+      
+      <!-- UNIDAD 8 -->
+      <section id="unidad8" class="content-section">
+        <h1>Unidad 8: Otros Dispositivos</h1>
+        <ul class="custom-list">
+          <li><strong>Dispositivos apuntadores:</strong> Mouse óptico, mecánico, inalámbrico</li>
+          <li><strong>Periféricos:</strong> Parlantes, micrófonos, escáneres</li>
+          <li><strong>Ergonomía:</strong> Prevención de lesiones y mejora de comodidad/eficiencia</li>
+        </ul>
+      </section>
+      
+      <!-- UNIDAD 9 -->
+      <section id="unidad9" class="content-section">
+        <h1>Unidad 9: Actividades Formativas Sugeridas</h1>
+        <div class="highlight-box">
+          <p><strong>📌 Prácticas recomendadas:</strong> Proyectos de desarme/montaje, diagnóstico y reparación, análisis de diagramas técnicos, conexión y verificación de componentes.</p>
+        </div>
+        
+        <ul class="custom-list">
+          <li>Proyectos de desarme, montaje y visualización funcional del hardware</li>
+          <li>Diagnóstico y reparación de componentes según especificaciones técnicas</li>
+          <li>Análisis funcional de periféricos y diagramas técnicos</li>
+          <li>Prácticas de conexión y verificación</li>
+          <li>Búsqueda y análisis de manuales y fichas técnicas</li>
+          <li>Trabajo colaborativo para compartir conocimiento y casos</li>
+        </ul>
+      </section>
+      
+      <!-- RECURSOS: VIDEO TUTORIALES -->
+      <section id="recursos" class="content-section">
+        <h1>Video Tutoriales</h1>
+        <p>Aprende con estos recursos visuales recomendados:</p>
+        
+        <div class="resource-grid">
+          <div class="resource-card">
+            <img src="https://i.ytimg.com/vi/IOlTvn-Fv-I/hqdefault.jpg" alt="Cómo Armar PC Básica">
+            <h3>Cómo Armar PC BÁSICA</h3>
+            <p>Guía completa paso a paso para ensamblar una computadora básica.</p>
+            <a href="https://www.youtube.com/watch?v=IOlTvn-Fv-I" target="_blank">Ver Tutorial</a>
+          </div>
+          
+          <div class="resource-card">
+            <img src="https://i.ytimg.com/vi/VLCMkGmM51s/hqdefault.jpg" alt="Instalación de Hardware">
+            <h3>Instalación de Hardware</h3>
+            <p>Procedimientos correctos para instalar componentes internos.</p>
+            <a href="https://www.youtube.com/watch?v=VLCMkGmM51s" target="_blank">Ver Tutorial</a>
+          </div>
+          
+          <div class="resource-card">
+            <img src="https://i.ytimg.com/vi/TVPtnVD6Qz8/hqdefault.jpg" alt="Montar PC desde Cero">
+            <h3>Montar PC desde Cero</h3>
+            <p>Tutorial completo desde la preparación hasta el primer encendido.</p>
+            <a href="https://www.youtube.com/watch?v=TVPtnVD6Qz8" target="_blank">Ver Tutorial</a>
+          </div>
+
+          <div class="resource-card">
+            <img src="https://i.ytimg.com/vi/mHPpYnDq6ck/hqdefault.jpg" alt="Mantenimiento de Hardware">
+            <h3>Mantenimiento de Hardware</h3>
+            <p>Técnicas de limpieza y mantenimiento preventivo.</p>
+            <a href="https://www.youtube.com/watch?v=mHPpYnDq6ck" target="_blank">Ver Tutorial</a>
+          </div>
+
+          <div class="resource-card">
+            <img src="https://i.ytimg.com/vi/jDgFbYoTtr4/hqdefault.jpg" alt="Diagnóstico de Fallas">
+            <h3>Diagnóstico de Fallas</h3>
+            <p>Métodos para identificar y solucionar problemas de hardware.</p>
+            <a href="https://www.youtube.com/watch?v=jDgFbYoTtr4" target="_blank">Ver Tutorial</a>
+          </div>
+
+          <div class="resource-card">
+            <img src="https://i.ytimg.com/vi/omrvbgiyyOQ/hqdefault.jpg" alt="Electricidad Básica">
+            <h3>Electricidad Básica</h3>
+            <p>Fundamentos de electricidad aplicada a computadoras.</p>
+            <a href="https://www.youtube.com/watch?v=omrvbgiyyOQ" target="_blank">Ver Tutorial</a>
+          </div>
+        </div>
+      </section>
+      
+      <!-- RECURSOS: MANUALES Y PDFS -->
+      <section id="manuales" class="content-section">
+        <h1>Manuales y Documentación PDF</h1>
+        <p>Recursos escritos para profundizar en el conocimiento técnico:</p>
+        
+        <div class="resource-grid">
+          <div class="resource-card">
+            <h3>Componentes Básicos de una PC</h3>
+            <p>Documento PDF con explicación detallada de componentes.</p>
+            <a href="https://d-bosco.com.ar/wp-content/uploads/2023/03/2-Componentes-basicos-de-una-PC.pdf" target="_blank">Abrir PDF</a>
+          </div>
+          
+          <div class="resource-card">
+            <h3>Instalación de Hardware</h3>
+            <p>Guía completa de instalación y configuración.</p>
+            <a href="https://coysion.net/inicio-2/instalacion-hardware/" target="_blank">Ver Guía</a>
+          </div>
+          
+          <div class="resource-card">
+            <h3>Mantenimiento de Hardware Monousuario</h3>
+            <p>Dossier técnico con procedimientos detallados.</p>
+            <a href="https://es.scribd.com/document/810224340/6%C2%BA-Dossier-Mantenimiento-de-Hardware-Monousuario" target="_blank">Abrir Dossier</a>
+          </div>
+
+          <div class="resource-card">
+            <h3>Sistemas Operativos</h3>
+            <p>Conceptos fundamentales de sistemas operativos.</p>
+            <a href="https://es.wikipedia.org/wiki/Sistema_operativo" target="_blank">Ver Artículo</a>
+          </div>
+
+          <div class="resource-card">
+            <h3>Elementos del Sistema Operativo</h3>
+            <p>Estructura y componentes de los sistemas operativos.</p>
+            <a href="https://somebooks.es/capitulo-4-elementos-y-estructura-del-sistema-operativo-procesos/" target="_blank">Ver Contenido</a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  
+  <!-- PIE DE PÁGINA -->
+  <footer>
+    <p>© 2025 Laboratorio de Hardware</p>
+    <p class="footer-credits">Portal educativo de M.B.I </p>
+    <p class="footer-credits">Contenido diseñado según plan de estudios oficial. No nos hacemos responsables por variaciones en los programas de cada institución.</p>
+  </footer>
+
+<script src="1° Lab. de Hardware I.js"></script>
+</body>
+</html>

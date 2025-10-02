@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estadística Aplicada</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="3° Estadística Aplicada.css">
+</head>
+<body>
+  <!-- CABECERA -->
+  <header>
+    <div class="header-content">
+      <div class="logo">Estadística Aplicada</div>
+      <a href="pagina3.html" class="back-button">← Volver</a>
+    </div>
+  </header>
+  
+  <!-- CONTENEDOR PRINCIPAL -->
+  <div class="container">
+    <!-- BARRA LATERAL -->
+    <aside class="sidebar">
+      <h3>Unidades Temáticas</h3>
+      <ul>
+        <li><a href="#" class="sidebar-link active" data-section="unidad1">1. Fundamentos de Estadística</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad2">2. Representación de Datos</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad3">3. Medidas Estadísticas</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad4">4. Correlación y Regresión</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad5">5. Teoría de Probabilidad</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad6">6. Distribuciones de Probabilidad</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad7">7. Teoría de Errores</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad8">8. Series Estadísticas</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad9">9. Ajustamiento de Curvas</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad10">10. Análisis Combinatorio</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad11">11. Aplicaciones y Herramientas</a></li>
+      </ul>
+      
+      <h3>Recursos</h3>
+      <ul>
+        <li><a href="#" class="sidebar-link" data-section="tablas">Tablas Estadísticas</a></li>
+        <li><a href="#" class="sidebar-link" data-section="ejercicios">Ejercicios Resueltos</a></li>
+        <li><a href="#" class="sidebar-link" data-section="software">Software Estadístico</a></li>
+        <li><a href="#" class="sidebar-link" data-section="casos">Casos de Estudio</a></li>
+        <li><a href="#" class="sidebar-link" data-section="bibliografia">Bibliografía</a></li>
+      </ul>
+    </aside>
+    
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="main-content">
+      <!-- UNIDAD 1 -->
+      <section id="unidad1" class="content-section active">
+        <h1>1. Fundamentos de Estadística</h1>
+        
+        <h2>Conceptos básicos</h2>
+        <p>Conceptos fundamentales que sustentan el análisis estadístico:</p>
+        
+        <div class="highlight-box">
+          <p><strong>📈 Dato clave:</strong> El 90% de las decisiones empresariales importantes se basan en análisis estadísticos, según un estudio del MIT.</p>
+        </div>
+        
+        <ul class="custom-list">
+          <li><strong>Objeto de la estadística:</strong> Estudia métodos para recopilar, organizar, analizar e interpretar datos de una población o muestra, con el objetivo de realizar inferencias y tomar decisiones basadas en información cuantitativa.</li>
+          <li><strong>Población y muestra:</strong> La población es el conjunto total de elementos u observaciones sobre los que se desea obtener información (puede ser finita o infinita). La muestra es un subconjunto representativo extraído de la población para análisis, que debe ser seleccionada de manera que permita inferir características del total.</li>
+          <li><strong>Tipos de muestreo:</strong> Incluyen muestreo aleatorio simple, estratificado, por conglomerados y sistemático, cada uno con criterios propios para selección.</li>
+          <li><strong>Variables aleatorias:</strong> Una función que asigna valores numéricos a los resultados de un experimento aleatorio, representando la incertidumbre y variabilidad en datos poblacionales.</li>
+          <li><strong>Variables discretas y continuas:</strong> Discretas tienen un conjunto finito o contable de valores, mientras que las continuas toman cualquier valor en un intervalo.</li>
+          <li><strong>Unidades bidimensionales:</strong> Relación estadística (asociación sin causalidad estricta) y relación funcional (dependencia matemática exacta).</li>
+        </ul>
+      </section>
+      
+      <!-- UNIDAD 2 -->
+      <section id="unidad2" class="content-section">
+        <h1>2. Representación de Datos</h1>
+        
+        <h2>Técnicas para organizar y visualizar información</h2>
+        <p>Técnicas para organizar y visualizar información estadística:</p>
+        
+        <ul class="custom-list">
+          <li><strong>Tablas estadísticas y de frecuencia:</strong> Formas organizadas de datos que muestran la distribución de variables, contabilizando la frecuencia de observaciones.</li>
+          <li><strong>Gráficas y tablas estadísticas:</strong> Incluyen tablas de frecuencia, variación de frecuencias, y resumen de datos para facilitar la interpretación.</li>
+          <li><strong>Histogramas:</strong> Barras que representan la frecuencia de datos agrupados en intervalos continuos.</li>
+          <li><strong>Polígonos de frecuencia:</strong> Líneas que conectan los puntos medios de las barras de un histograma para visualizar la distribución.</li>
+          <li><strong>Frecuencias acumuladas:</strong> Representan la suma acumulativa de frecuencias hasta cierto punto, útiles para ver la distribución acumulada.</li>
+        </ul>
+      </section>
+      
+      <!-- UNIDAD 3 -->
+      <section id="unidad3" class="content-section">
+        <h1>3. Medidas Estadísticas</h1>
+        
+        <h2>Indicadores cuantitativos</h2>
+        <p>Indicadores cuantitativos para describir conjuntos de datos:</p>
+        
+        <h3>a. Medidas de Posición</h3>
+        <ul class="custom-list">
+          <li><strong>Media aritmética:</strong> Promedio simple de los datos.</li>
+          <li><strong>Media geométrica:</strong> Raíz n-ésima del producto de los valores, útil en tasas y razones.</li>
+          <li><strong>Media armónica:</strong> Inversa del promedio de las inversas, aplicada en promedios de razones.</li>
+          <li><strong>Moda:</strong> Valor que más se repite en el conjunto de datos.</li>
+          <li><strong>Mediana:</strong> Valor central que divide la muestra ordenada en dos partes iguales.</li>
+          <li><strong>Momentos:</strong> Medidas que describen la forma de la distribución (asimetría, curtosis).</li>
+        </ul>
+        
+        <h3>b. Medidas de Dispersión</h3>
+        <ul class="custom-list">
+          <li><strong>Cuartiles:</strong> Dividen el conjunto ordenado en cuatro partes iguales.</li>
+          <li><strong>Desviación:</strong> Diferencia entre cada dato y la media.</li>
+          <li><strong>Desviación media:</strong> Promedio de las desviaciones absolutas.</li>
+          <li><strong>Desviación estándar:</strong> Raíz cuadrada de la varianza, mide dispersión con respecto a la media.</li>
+          <li><strong>Tipos de dispersión:</strong> Diferentes métricas para evaluar cuán dispersos están los datos (rango, varianza, desviación estándar, coeficiente de variación).</li>
+        </ul>
+      </section>
+      
+      <!-- UNIDAD 4 -->
+      <section id="unidad4" class="content-section">
+        <h1>4. Análisis de Correlación y Regresión</h1>
+        
+        <h2>Estudio de relaciones entre variables</h2>
+        <p>Métodos para estudiar la relación entre variables:</p>
+        
+        <ul class="custom-list">
+          <li><strong>Teoría de correlación:</strong> Estudia la relación y grado de asociación entre dos variables estadísticas, usada para investigar dependencias.</li>
+          <li><strong>Correlación simple:</strong> Medición numérica del grado de asociación lineal entre dos variables; usualmente representada por el coeficiente de correlación (r), que varía entre -1 y 1.</li>
+          <li><strong>Medida de la correlación:</strong> Coeficiente que indica fuerza y dirección de la relación lineal.</li>
+          <li><strong>Regresión:</strong> Modela la relación funcional entre variable dependiente y una o más independientes para predecir valores.</li>
+          <li><strong>Regresión lineal:</strong> Modelo estadístico que asume relación lineal entre variables, ajustando una línea que minimiza errores.</li>
+          <li><strong>Coeficiente de regresión:</strong> Parámetro que indica el cambio esperado en la variable dependiente por unidad de cambio en la independiente.</li>
+          <li><strong>Error del coeficiente de correlación y regresión:</strong> Estimación de la precisión estadística de los coeficientes, esencial para validar la significancia del modelo.</li>
+        </ul>
+      </section>
+      
+      <!-- UNIDAD 5 -->
+      <section id="unidad5" class="content-section">
+        <h1>5. Teoría de Probabilidad</h1>
+        
+        <h2>Fundamentos probabilísticos</h2>
+        <p>Conceptos básicos de probabilidad y sus aplicaciones:</p>
+        
+        <ul class="custom-list">
+          <li><strong>Probabilidad:</strong> Concepto, definición y propiedades: Es la medida numérica de la posibilidad de ocurrencia de un evento, con valores entre 0 y 1, cumpliendo axiomas básicos (no negatividad, suma total 1).</li>
+          <li><strong>Probabilidad compuesta:</strong> Involucra eventos múltiples, definida por reglas de suma y producto según independencia o dependencia.</li>
+          <li><strong>Estimación de probabilidad:</strong> Inferencia a partir de datos observados para aproximar probabilidades desconocidas.</li>
+          <li><strong>Número más probable de repeticiones de un suceso:</strong> Relacionado con resultados esperados en experimentos repetidos.</li>
+          <li><strong>Ley de los grandes números:</strong> Teorema que indica que la media de los resultados obtenidos de un gran número de ensayos se aproxima a la esperanza matemática.</li>
+          <li><strong>Desigualdad de Chebyshev:</strong> Estima la probabilidad de que un valor se aleje de la media más allá de un margen dado, sin asumir distribución específica.</li>
+        </ul>
+      </section>
+      
+      <!-- UNIDAD 6 -->
+      <section id="unidad6" class="content-section">
+        <h1>6. Distribuciones de Probabilidad</h1>
+        
+        <h2>Modelos de distribución</h2>
+        <p>Principales distribuciones de probabilidad y sus características:</p>
+        
+        <ul class="custom-list">
+          <li><strong>Distribución teórica:</strong> Función matemática que describe probabilidades de todas las posibles valores de una variable aleatoria.</li>
+          <li><strong>Distribución normal:</strong> Distribución continua, simétrica y en forma de campana, fundamental para inferencias estadísticas.</li>
+          <li><strong>Distribuciones de frecuencia:</strong> Clasificación y tabulación de los valores observados para analizar su distribución empírica.</li>
+          <li><strong>Distribuciones bidimensionales:</strong> Extienden el concepto a pares de variables, analizando conjuntamente su comportamiento.</li>
+        </ul>
+      </section>
+      
+      <!-- UNIDAD 7 -->
+      <section id="unidad7" class="content-section">
+        <h1>7. Teoría de Errores</h1>
+        
+        <h2>Análisis de incertidumbre en mediciones</h2>
+        <p>Estudio de los errores asociados a las mediciones y observaciones:</p>
+        
+        <ul class="custom-list">
+          <li><strong>Teoría de errores:</strong> Estudia los errores asociados a las mediciones y observaciones, su naturaleza y control.</li>
+          <li><strong>Error de una observación:</strong> Diferencia entre valor observado y valor real o verdadero.</li>
+          <li><strong>Error de la media:</strong> Error asociado al promedio de mediciones, que suele ser menor que el error individual.</li>
+        </ul>
+      </section>
+      
+      <!-- UNIDAD 8 -->
+      <section id="unidad8" class="content-section">
+        <h1>8. Series Estadísticas</h1>
+        
+        <h2>Análisis de secuencias de datos</h2>
+        <p>Estudio de conjuntos ordenados de datos:</p>
+        
+        <ul class="custom-list">
+          <li><strong>Series:</strong> Conjunto ordenado de datos o números relacionados.</li>
+          <li><strong>Series numéricas:</strong> Sucesión de números con propiedades específicas.</li>
+          <li><strong>Definición y notación:</strong> Formalismos para representar y manipular series.</li>
+          <li><strong>Series convergentes, divergentes y oscilantes:</strong> Clasificación según comportamiento límite.</li>
+          <li><strong>Criterios de convergencia y comparación:</strong> Métodos para decidir si una serie converge o diverge.</li>
+          <li><strong>Series cronológicas:</strong> Series que representan evolución temporal de variables.</li>
+        </ul>
+      </section>
+      
+      <!-- UNIDAD 9 -->
+      <section id="unidad9" class="content-section">
+        <h1>9. Ajustamiento de Curvas</h1>
+        
+        <h2>Técnicas de modelado estadístico</h2>
+        <p>Métodos para ajustar modelos a conjuntos de datos:</p>
+        
+        <ul class="custom-list">
+          <li><strong>Línea neta:</strong> Técnica para ajustar datos a una función objetivo.</li>
+          <li><strong>Método de los elementos:</strong> Procedimiento para minimizar errores en modelos ajustados.</li>
+          <li><strong>Método de los cuadrados mínimos:</strong> Técnica estadística para encontrar la línea o curva que minimiza la suma de los cuadrados de desviaciones entre datos y modelo.</li>
+        </ul>
+      </section>
+      
+      <!-- UNIDAD 10 -->
+      <section id="unidad10" class="content-section">
+        <h1>10. Análisis Combinatorio</h1>
+        
+        <h2>Técnicas de conteo y arreglos</h2>
+        <p>Estudio de métodos para contar y organizar elementos:</p>
+        
+        <ul class="custom-list">
+          <li><strong>Objeto del análisis combinatorio:</strong> Estudio de conteos, arreglos y combinaciones de objetos.</li>
+          <li><strong>Factoriales:</strong> Producto de enteros positivos descendentes, base para contar permutaciones y combinaciones.</li>
+          <li><strong>Mínimos combinatorios:</strong> Consideraciones para combinaciones mínimas usadas en conteos específicos.</li>
+          <li><strong>Potencia de un binomio:</strong> Fórmulas para expandir potencias, incluyendo teoremas de Newton y Tartaglia.</li>
+          <li><strong>Muestras ordenadas:</strong> Variaciones con o sin repetición (arreglos donde importa el orden) y permutaciones con o sin repetición.</li>
+          <li><strong>Muestras no ordenadas:</strong> Combinaciones simples (selección donde no importa el orden).</li>
+        </ul>
+      </section>
+      
+      <!-- UNIDAD 11 -->
+      <section id="unidad11" class="content-section">
+        <h1>11. Aplicaciones y Herramientas</h1>
+        
+        <h2>Implementación práctica de conceptos estadísticos</h2>
+        <p>Aplicación de herramientas y técnicas en contextos reales:</p>
+        
+        <ul class="custom-list">
+          <li><strong>Uso de herramientas informáticas:</strong> Como Calc y Excel para organizar datos, realizar cálculos estadísticos y generar gráficos.</li>
+          <li><strong>Realización de ejercicios prácticos:</strong> Aplicación de conceptos de persistencia (consistencia de patrones en datos) y periodicidad (repetición en series temporales).</li>
+          <li><strong>Análisis de casos reales:</strong> Implementación de técnicas estadísticas en problemas del mundo real.</li>
+        </ul>
+      </section>
+      
+      <!-- RECURSOS - TABLAS ESTADÍSTICAS -->
+      <section id="tablas" class="content-section">
+        <h1>Tablas Estadísticas</h1>
+        
+        <h2>Distribuciones de probabilidad</h2>
+        <div class="highlight-box">
+          <p><strong>Tablas esenciales:</strong></p>
+          <p>• Distribución normal estándar</p>
+          <p>• Distribución t-Student</p>
+          <p>• Distribución chi-cuadrado</p>
+          <p>• Distribución F de Fisher</p>
+        </div>
+        
+        <p>Las tablas estadísticas son herramientas fundamentales para la inferencia estadística, permitiendo determinar valores críticos y probabilidades asociadas a diferentes distribuciones.</p>
+      </section>
+      
+      <!-- RECURSOS - EJERCICIOS RESUELTOS -->
+      <section id="ejercicios" class="content-section">
+        <h1>Ejercicios Resueltos</h1>
+        
+        <h2>Problemas prácticos con soluciones</h2>
+        <div class="highlight-box">
+          <p><strong>Tipos de ejercicios:</strong></p>
+          <p>• Cálculo de medidas de tendencia central</p>
+          <p>• Análisis de correlación y regresión</p>
+          <p>• Problemas de probabilidad</p>
+          <p>• Aplicación de distribuciones</p>
+        </div>
+        
+        <p>Los ejercicios resueltos permiten comprender la aplicación práctica de los conceptos teóricos y desarrollar habilidades de análisis estadístico.</p>
+      </section>
+      
+      <!-- RECURSOS - SOFTWARE ESTADÍSTICO -->
+      <section id="software" class="content-section">
+        <h1>Software Estadístico</h1>
+        
+        <h2>Herramientas para análisis de datos</h2>
+        <div class="highlight-box">
+          <p><strong>Software recomendado:</strong></p>
+          <p>• R y RStudio - Análisis estadístico avanzado</p>
+          <p>• Python con pandas, numpy, scipy - Programación estadística</p>
+          <p>• SPSS - Análisis estadístico para ciencias sociales</p>
+          <p>• Excel - Herramienta básica para cálculos y gráficos</p>
+        </div>
+        
+        <p>El software estadístico moderno permite realizar análisis complejos de manera eficiente, desde cálculos básicos hasta modelados avanzados.</p>
+      </section>
+      
+      <!-- RECURSOS - CASOS DE ESTUDIO -->
+      <section id="casos" class="content-section">
+        <h1>Casos de Estudio</h1>
+        
+        <h2>Aplicaciones reales de la estadística</h2>
+        <div class="highlight-box">
+          <p><strong>Áreas de aplicación:</strong></p>
+          <p>• Investigación médica y epidemiológica</p>
+          <p>• Análisis económico y financiero</p>
+          <p>• Control de calidad industrial</p>
+          <p>• Estudios sociales y de mercado</p>
+        </div>
+        
+        <p>Los casos de estudio muestran cómo la estadística se aplica en diversos campos para resolver problemas reales y tomar decisiones basadas en datos.</p>
+      </section>
+      
+      <!-- RECURSOS - BIBLIOGRAFÍA -->
+      <section id="bibliografia" class="content-section">
+        <h1>Bibliografía Recomendada</h1>
+        
+        <h2>Fuentes de consulta</h2>
+        <div class="highlight-box">
+          <p><strong>Libros fundamentales:</strong></p>
+          <p>• "Estadística para Investigadores" - George Casella</p>
+          <p>• "Introducción a la Probabilidad y Estadística" - William Mendenhall</p>
+          <p>• "Análisis Estadístico con Excel" - David M. Levine</p>
+          <p>• "Bioestadística" - Wayne W. Daniel</p>
+        </div>
+        
+        <p>La bibliografía especializada proporciona profundización teórica y ejemplos prácticos para el estudio avanzado de la estadística aplicada.</p>
+      </section>
+    </main>
+  </div>
+  
+  <!-- PIE DE PÁGINA -->
+  <footer>
+    <p>© 2025 Estadística Aplicada</p>
+    <p class="footer-credits">Portal educativo de <strong>M.B.I.</strong></p>
+    <p class="footer-credits">Contenido diseñado según plan de estudios oficial. No nos hacemos responsables por variaciones en los programas de cada institución.</p>
+  </footer>
+  <script src="3° Estadística Aplicada.js"></script>
+</body>
+</html>

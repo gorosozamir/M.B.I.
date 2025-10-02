@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistemas Digitales I</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="2° Sistemas Digitales I.css">
+</head>
+<body>
+  <!-- CABECERA -->
+  <header>
+    <div class="header-content">
+      <div class="logo">Sistemas Digitales I</div>
+      <a href="pagina2.html" class="back-button">← Volver</a>
+    </div>
+  </header>
+  
+  <!-- CONTENEDOR PRINCIPAL -->
+  <div class="container">
+    <!-- BARRA LATERAL -->
+    <aside class="sidebar">
+      <h3>Unidades</h3>
+      <ul>
+        <li><a href="#" class="sidebar-link active" data-section="unidad1">Unidad 1: Introducción</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad2">Unidad 2: Corriente Alterna</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad3">Unidad 3: Componentes</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad4">Unidad 4: Circuitos Integrados</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad5">Unidad 5: Sistemas de Alimentación</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad6">Unidad 6: Electrónica Digital</a></li>
+      </ul>
+      
+      <h3>Recursos</h3>
+      <ul>
+        <li><a href="#" class="sidebar-link" data-section="simuladores">Simuladores</a></li>
+        <li><a href="#" class="sidebar-link" data-section="referencias">Referencias</a></li>
+      </ul>
+    </aside>
+    
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="main-content">
+      <!-- UNIDAD 1 -->
+      <section id="unidad1" class="content-section active">
+        <h1>Unidad 1: Introducción a la Electrónica</h1>
+        <p>Esta unidad introduce los conceptos fundamentales de la electrónica, base de los sistemas digitales modernos.</p>
+        
+        <div class="highlight-box">
+          <p><strong>🔌 Dato clave:</strong> La electrónica es la rama de la física y la ingeniería que estudia el control y manipulación de electrones y cargas eléctricas en dispositivos y circuitos.</p>
+        </div>
+        
+        <h2>Nociones generales del campo de la electrónica</h2>
+        <p>La electrónica se enfoca en la transmisión, procesamiento y almacenamiento de información mediante señales eléctricas. Es la base tecnológica de los sistemas digitales modernos.</p>
+        
+        <h2>Conceptos fundamentales</h2>
+        <ul class="custom-list">
+          <li><strong>Corriente eléctrica:</strong> Flujo de electrones a través de un conductor, medida en amperios (A).</li>
+          <li><strong>Tensión o voltaje:</strong> Diferencia de potencial eléctrico que impulsa el movimiento de cargas, medida en voltios (V).</li>
+          <li><strong>Resistencia eléctrica:</strong> Oposición que presenta un material al flujo de corriente, medida en ohmios (Ω).</li>
+        </ul>
+        
+        <h2>Introducción a la electrotécnica</h2>
+        <p>Estudia el aprovechamiento práctico de la electricidad en sistemas y dispositivos, enfocándose en circuitos y máquinas eléctricas.</p>
+        
+        <h2>Leyes fundamentales</h2>
+        <ul class="custom-list">
+          <li><strong>Ley de Ohm:</strong> Relaciona tensión, corriente y resistencia: I = V/R</li>
+          <li><strong>Leyes de Kirchhoff:</strong>
+            <ul>
+              <li>Ley de corrientes: La suma algebraica de corrientes en un nodo es cero.</li>
+              <li>Ley de tensiones: La suma algebraica de las diferencias de potencial en un lazo cerrado es cero.</li>
+            </ul>
+          </li>
+          <li><strong>Ley de Watt:</strong> Relaciona potencia eléctrica con tensión e intensidad: P = V × I</li>
+        </ul>
+      </section>
+      
+      <!-- UNIDAD 2 -->
+      <section id="unidad2" class="content-section">
+        <h1>Unidad 2: Corriente Alterna</h1>
+        <p>Estudio de la corriente alterna, sus características y aplicaciones en sistemas electrónicos.</p>
+        
+        <h2>Principios básicos</h2>
+        <p>Corriente cuyo sentido y magnitud varían periódicamente, con frecuencia en Hz. Se genera en centrales eléctricas y es la más usada en hogares e industria.</p>
+        
+        <h2>Diferencias entre Corriente Alterna (CA) y Corriente Continua (CC)</h2>
+        <ul class="custom-list">
+          <li><strong>CC:</strong> Flujo unidireccional y constante.</li>
+          <li><strong>CA:</strong> Flujo oscilante, permite transformación de voltajes fácilmente.</li>
+        </ul>
+        
+        <h2>Reactancia e impedancia</h2>
+        <ul class="custom-list">
+          <li><strong>Reactancia:</strong> Oposición al paso de corriente alterna por capacitores o inductores, dependiendo de la frecuencia.</li>
+          <li><strong>Impedancia:</strong> Resistencia total en CA, combina resistencia y reactancia.</li>
+        </ul>
+        
+        <h2>Ley de Ohm aplicada a CA</h2>
+        <p>Voltaje, corriente e impedancia se relacionan mediante ley análoga a CC, pero considerando magnitudes complejas y ángulos de fase.</p>
+        
+        <h2>Relaciones en circuitos serie y paralelo</h2>
+        <p>Corrientes y tensiones se distribuyen según impedancias y leyes de Kirchhoff adaptadas a CA.</p>
+        
+        <h2>Potencias</h2>
+        <ul class="custom-list">
+          <li><strong>Activa (real):</strong> Realiza trabajo efectivo.</li>
+          <li><strong>Reactiva:</strong> Asociado a almacenamiento temporal de energía.</li>
+          <li><strong>Aparente:</strong> Combinación de ambas en módulos complejos.</li>
+        </ul>
+      </section>
+      
+      <!-- UNIDAD 3 -->
+      <section id="unidad3" class="content-section">
+        <h1>Unidad 3: Componentes Electrónicos Básicos</h1>
+        <p>Estudio de los componentes fundamentales que forman los circuitos electrónicos.</p>
+        
+        <h2>Resistores, capacitores e inductores</h2>
+        <ul class="custom-list">
+          <li><strong>Resistores:</strong> Proporcionan resistencia al paso de la corriente.</li>
+          <li><strong>Capacitores:</strong> Almacenan carga eléctrica temporalmente.</li>
+          <li><strong>Inductores:</strong> Almacenan energía en forma de campo magnético.</li>
+        </ul>
+        
+        <h2>Diodos semiconductores</h2>
+        <ul class="custom-list">
+          <li><strong>Rectificador:</strong> Permite el paso de corriente en un sentido (polarización directa) y la bloquea en el inverso.</li>
+          <li><strong>Diodo Zener (ruptura):</strong> Permite circulación bajo ciertas condiciones reversas, usado para regulación de voltaje.</li>
+        </ul>
+        
+        <h2>Transistores</h2>
+        <p>Funcionan como interruptores o amplificadores; regulan grandes corrientes gracias a señales pequeñas.</p>
+        
+        <h2>Amplificadores operacionales</h2>
+        <p>Circuitos integrados para amplificar señales, con aplicaciones en filtrado, comparación y regulación.</p>
+      </section>
+      
+      <!-- UNIDAD 4 -->
+      <section id="unidad4" class="content-section">
+        <h1>Unidad 4: Circuitos Integrados y Montajes</h1>
+        <p>Introducción a los circuitos integrados y técnicas de montaje de componentes electrónicos.</p>
+        
+        <h2>Circuitos integrados</h2>
+        <p>Circuitos analógicos y digitales integrados en chips que contienen múltiples componentes en un pequeño sustrato semiconductor.</p>
+        
+        <h2>PCB (Placas de Circuito Impreso)</h2>
+        <ul class="custom-list">
+          <li>De simple y doble faz donde se montan componentes.</li>
+          <li>El diseño y montaje exige precisión para asegurar el buen contacto y funcionamiento.</li>
+        </ul>
+        
+        <h2>Técnicas de montaje</h2>
+        <p>Procesos de soldadura y ensamblaje que garantizan la correcta interconexión de componentes en las placas de circuito impreso.</p>
+      </section>
+      
+      <!-- UNIDAD 5 -->
+      <section id="unidad5" class="content-section">
+        <h1>Unidad 5: Sistemas de Alimentación y Seguridad</h1>
+        <p>Sistemas que proporcionan energía a dispositivos electrónicos y medidas de seguridad asociadas.</p>
+        
+        <h2>Fuentes de alimentación</h2>
+        <ul class="custom-list">
+          <li><strong>Corriente de línea e interna:</strong> Fuentes que proporcionan energía a dispositivos.</li>
+          <li><strong>Funcionamiento fuente de alimentación:</strong> Provee corriente continua estable y segura.</li>
+        </ul>
+        
+        <h2>Gestión térmica</h2>
+        <p><strong>Calor y disipación térmica:</strong> Ventiladores y disipadores previenen sobrecalentamiento de componentes.</p>
+        
+        <h2>Componentes eléctricos en PC</h2>
+        <p>Cables, fichas estandarizadas, adaptación a tomacorrientes, y conexión a tierra para seguridad.</p>
+        
+        <h2>Seguridad</h2>
+        <p>Dispositivos protegen a usuarios y evitan daños en equipos por sobrecargas o cortocircuitos.</p>
+      </section>
+      
+      <!-- UNIDAD 6 -->
+      <section id="unidad6" class="content-section">
+        <h1>Unidad 6: Introducción a la Electrónica Digital</h1>
+        <p>Fundamentos de la electrónica digital que diferencia señales discretas de las analógicas continuas.</p>
+        
+        <h2>Diferencias entre electrónica analógica y digital</h2>
+        <ul class="custom-list">
+          <li><strong>Electrónica analógica:</strong> Trabaja con señales continuas que varían suavemente en el tiempo.</li>
+          <li><strong>Electrónica digital:</strong> Utiliza señales discretas (binarias) representadas por dos niveles de voltaje.</li>
+        </ul>
+        
+        <h2>Elementos básicos</h2>
+        <ul class="custom-list">
+          <li><strong>Compuertas lógicas básicas:</strong> NOT, AND, OR</li>
+          <li><strong>Compuertas universales:</strong> NAND, NOR</li>
+          <li><strong>Otras compuertas:</strong> XOR, XNOR</li>
+        </ul>
+        
+        <h2>Circuitos combinacionales</h2>
+        <p>Circuitos simples basados en compuertas lógicas donde las salidas dependen exclusivamente de las combinaciones de las entradas.</p>
+      </section>
+      
+      <!-- SECCIÓN SIMULADORES -->
+      <section id="simuladores" class="resource-section">
+        <h1>Simuladores Digitales</h1>
+        
+        <h2>Software Disponible</h2>
+        <div class="highlight-box">
+          <p><strong>Logisim:</strong> Simulador educativo de circuitos digitales</p>
+          <p><strong>Digital:</strong> Simulador en línea con interfaz sencilla</p>
+          <p><strong>Proteus:</strong> Suite profesional para diseño electrónico</p>
+        </div>
+        
+        <h2>Características</h2>
+        <ul class="custom-list">
+          <li>Simulación de componentes electrónicos básicos</li>
+          <li>Creación de circuitos analógicos y digitales</li>
+          <li>Análisis de tiempos y comportamiento</li>
+        </ul>
+      </section>
+      
+      <!-- SECCIÓN REFERENCIAS -->
+      <section id="referencias" class="resource-section">
+        <h1>Referencias Bibliográficas</h1>
+        
+        <h2>Fuentes consultadas</h2>
+        <div class="highlight-box">
+          <p><strong>Humane Slaughter Association:</strong> "Corriente, voltaje y resistencia"</p>
+          <p><strong>Universidad Nacional Experimental del Táchira (UNET):</strong> "Fundamentos de Electricidad"</p>
+          <p><strong>Platzi:</strong> "Cinco conceptos básicos de electrónica"</p>
+          <p><strong>CEAC:</strong> "11 conceptos de electricidad"</p>
+          <p><strong>EducaciónIT:</strong> Curso de electrónica digital</p>
+          <p><strong>OpenAccess UOC:</strong> Introducción a la electrónica digital</p>
+        </div>
+        
+        <h2>Enlaces de interés</h2>
+        <ul class="custom-list">
+          <li>https://www.hsa.org.uk/electricidad/corriente-voltaje-y-resistencia</li>
+          <li>https://platzi.com/blog/cinco-conceptos-basicos-electronica/</li>
+          <li>https://www.educacionit.com/curso-de-electronica-digital</li>
+          <li>https://openaccess.uoc.edu/bitstream/10609/54943/1/Introducci%C3%B3n%20a%20la%20electr%C3%B3nica%20digital.pdf</li>
+        </ul>
+      </section>
+    </main>
+  </div>
+  
+  <!-- PIE DE PÁGINA -->
+  <footer>
+    <p>© 2025 Sistemas Digitales I</p>
+    <p class="footer-credits">Portal educativo de <strong>M.B.I.</strong></p>
+    <p class="footer-credits">Contenido diseñado según plan de estudios oficial. No nos hacemos responsables por variaciones en los temas dados por los Docentes.</p>
+  </footer>
+<script src="2° Sistemas Digitales I.js"></script>
+</body>
+</html>

@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Analisis de Requerimientos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="4° Analisis de Requerimientos.css">
+</head>
+<body>
+  <!-- CABECERA -->
+  <header>
+    <div class="header-content">
+      <div class="logo">Proceso de Requerimientos</div>
+      <a href="pagina4.html" class="back-button">← Volver</a>
+    </div>
+  </header>
+  
+  <!-- CONTENEDOR PRINCIPAL -->
+  <div class="container">
+    <!-- BARRA LATERAL -->
+    <aside class="sidebar">
+      <h3>Contenidos</h3>
+      <ul>
+        <li><a href="#" class="sidebar-link active" data-section="proceso">1. Proceso de Requerimientos</a></li>
+        <li><a href="#" class="sidebar-link" data-section="tecnicas">2. Técnicas de Obtención</a></li>
+        <li><a href="#" class="sidebar-link" data-section="modelizacion">3. Modelización y Especificación</a></li>
+        <li><a href="#" class="sidebar-link" data-section="calidad">4. Calidad y Seguridad</a></li>
+        <li><a href="#" class="sidebar-link" data-section="objetivos">5. Métodos Orientados a Objetivos</a></li>
+        <li><a href="#" class="sidebar-link" data-section="temporales">6. Requisitos Temporales</a></li>
+        <li><a href="#" class="sidebar-link" data-section="verificacion">7. Verificación y Validación</a></li>
+        <li><a href="#" class="sidebar-link" data-section="prioridades">8. Prioridades y Conflictos</a></li>
+        <li><a href="#" class="sidebar-link" data-section="administracion">9. Administración de Requisitos</a></li>
+        <li><a href="#" class="sidebar-link" data-section="agiles">10. Requisitos en Procesos Ágiles</a></li>
+      </ul>
+    </aside>
+    
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="main-content">
+      <!-- SECCIÓN 1: PROCESO DE REQUERIMIENTOS -->
+      <section id="proceso" class="content-section active">
+        <h1>1. Proceso de Requerimientos</h1>
+        
+        <h2>Definición</h2>
+        <p>El proceso de requerimientos es la actividad sistemática para identificar, analizar, documentar y gestionar las necesidades y expectativas de los stakeholders respecto a un sistema o software.</p>
+        
+        <h2>Fases principales</h2>
+        <ul class="custom-list">
+          <li><strong>Elicitación:</strong> Recolección de requisitos mediante interacción con stakeholders</li>
+          <li><strong>Análisis:</strong> Refinamiento y clarificación de requisitos</li>
+          <li><strong>Especificación:</strong> Documentación formal de los requisitos</li>
+          <li><strong>Validación:</strong> Verificación con stakeholders para asegurar que los requisitos reflejan sus necesidades</li>
+          <li><strong>Gestión:</strong> Control de cambios y trazabilidad durante el ciclo de vida</li>
+        </ul>
+        
+        <h2>Actores involucrados</h2>
+        <div class="highlight-box">
+          <ul class="custom-list">
+            <li>Analistas de requisitos</li>
+            <li>Usuarios finales</li>
+            <li>Clientes</li>
+            <li>Desarrolladores</li>
+            <li>Gerentes de proyecto</li>
+            <li>Expertos en dominio</li>
+            <li>Otros stakeholders que influyen o usan el sistema</li>
+          </ul>
+        </div>
+        
+        <h2>Ciclo de vida de los requerimientos</h2>
+        <p>Incluye la identificación, análisis, documentación, validación, gestión de cambios y trazabilidad hasta la implementación y mantenimiento.</p>
+      </section>
+      
+      <!-- SECCIÓN 2: TÉCNICAS DE OBTENCIÓN -->
+      <section id="tecnicas" class="content-section">
+        <h1>2. Técnicas de Obtención de Requisitos</h1>
+        
+        <h2>Entrevistas</h2>
+        <ul class="custom-list">
+          <li>Conversaciones estructuradas con stakeholders</li>
+          <li>Obtener información cualitativa y detallada</li>
+          <li>Requiere preparación y selección adecuada de entrevistados</li>
+          <li>Uso de preguntas abiertas para profundizar</li>
+        </ul>
+        
+        <h2>Cuestionarios</h2>
+        <ul class="custom-list">
+          <li>Permiten recopilar datos de un grupo amplio</li>
+          <li>Útiles para confirmar y validar información</li>
+          <li>Obtener opiniones de múltiples interesados</li>
+        </ul>
+        
+        <h2>Observación</h2>
+        <div class="highlight-box">
+          <ul class="custom-list">
+            <li>Estudio del entorno y actividades de los usuarios</li>
+            <li>Puede ser pasiva (sin interacción) o activa (con diálogo)</li>
+            <li>Útil para documentar procesos actuales</li>
+            <li>Detectar necesidades no expresadas</li>
+          </ul>
+        </div>
+        
+        <h2>Talleres de trabajo (JAD/RAD)</h2>
+        <ul class="custom-list">
+          <li>Sesiones colaborativas entre usuarios expertos y analistas</li>
+          <li>Discutir, negociar y definir requisitos</li>
+          <li>Fomentan la cooperación y clarificación rápida</li>
+        </ul>
+        
+        <h2>Análisis de documentos existentes</h2>
+        <ul class="custom-list">
+          <li>Revisión de documentación previa</li>
+          <li>Planes de negocio, contratos, especificaciones técnicas</li>
+          <li>Extraer requisitos históricos y actuales</li>
+        </ul>
+        
+        <h2>Prototipos</h2>
+        <ul class="custom-list">
+          <li>Creación de modelos visuales o interactivos</li>
+          <li>Visualización del sistema por parte de usuarios</li>
+          <li>Retroalimentación temprana</li>
+        </ul>
+      </section>
+      
+      <!-- SECCIÓN 3: MODELIZACIÓN -->
+      <section id="modelizacion" class="content-section">
+        <h1>3. Modelización y Especificación de Requisitos</h1>
+        
+        <h2>Modelos funcionales</h2>
+        <ul class="custom-list">
+          <li><strong>Casos de uso:</strong> Describen interacciones entre usuarios y sistema para capturar funcionalidades</li>
+          <li><strong>Diagramas de flujo de datos:</strong> Representan el flujo de información y procesos dentro del sistema</li>
+        </ul>
+        
+        <h2>Modelos estructurales</h2>
+        <div class="highlight-box">
+          <ul class="custom-list">
+            <li><strong>Diagramas de clases:</strong> Definen las entidades, atributos y relaciones</li>
+            <li><strong>Diagramas entidad-relación (ER):</strong> Modelan la estructura de datos y sus relaciones</li>
+          </ul>
+        </div>
+        
+        <h2>Modelos de comportamiento</h2>
+        <ul class="custom-list">
+          <li><strong>Máquinas de estados:</strong> Representan estados y transiciones del sistema</li>
+          <li><strong>Diagramas de secuencia:</strong> Muestran interacciones temporales entre objetos o componentes</li>
+        </ul>
+        
+        <h2>Lenguajes formales vs. semi-formales</h2>
+        <ul class="custom-list">
+          <li><strong>Formales:</strong> Usan notaciones matemáticas precisas para especificar requisitos (menos comunes en práctica)</li>
+          <li><strong>Semi-formales:</strong> UML (Unified Modeling Language), BPMN (Business Process Model and Notation) y especificaciones textuales estructuradas, que facilitan la comunicación entre técnicos y usuarios</li>
+        </ul>
+      </section>
+      
+      <!-- SECCIÓN 4: CALIDAD Y SEGURIDAD -->
+      <section id="calidad" class="content-section">
+        <h1>4. Tratamiento de Requisitos de Calidad y Seguridad</h1>
+        
+        <h2>Requisitos no funcionales</h2>
+        <ul class="custom-list">
+          <li>Rendimiento</li>
+          <li>Usabilidad</li>
+          <li>Confiabilidad</li>
+          <li>Mantenibilidad</li>
+          <li>Seguridad</li>
+        </ul>
+        
+        <h2>Métricas de calidad</h2>
+        <ul class="custom-list">
+          <li>Tiempos de respuesta</li>
+          <li>Tasa de errores</li>
+          <li>Disponibilidad</li>
+        </ul>
+        
+        <h2>Requisitos de seguridad y privacidad</h2>
+        <div class="highlight-box">
+          <ul class="custom-list">
+            <li>Controles para proteger confidencialidad, integridad y disponibilidad</li>
+            <li>Cumplimiento de normativas</li>
+          </ul>
+        </div>
+        
+        <h2>Normativas y estándares</h2>
+        <ul class="custom-list">
+          <li>ISO/IEC 27001 para seguridad</li>
+          <li>OWASP para seguridad en aplicaciones web</li>
+          <li>ISO/IEC 25010 para calidad de software</li>
+        </ul>
+      </section>
+      
+      <!-- SECCIÓN 5: MÉTODOS ORIENTADOS A OBJETIVOS -->
+      <section id="objetivos" class="content-section">
+        <h1>5. Métodos Orientados a Objetivos</h1>
+        
+        <p>Consideran los requisitos como metas o intenciones que el sistema debe alcanzar.</p>
+        
+        <h2>Técnicas destacadas</h2>
+        <ul class="custom-list">
+          <li><strong>KAOS:</strong> Modela objetivos, agentes y responsabilidades para derivar requisitos</li>
+          <li><strong>i*:</strong> Enfocado en actores y sus dependencias</li>
+          <li><strong>Goal-oriented Requirements Engineering (GORE):</strong> Facilita la identificación y análisis de objetivos para guiar el desarrollo</li>
+        </ul>
+      </section>
+      
+      <!-- SECCIÓN 6: REQUISITOS TEMPORALES -->
+      <section id="temporales" class="content-section">
+        <h1>6. Especificación de Requisitos Temporales</h1>
+        
+        <h2>Restricciones temporales</h2>
+        <ul class="custom-list">
+          <li>Definen condiciones relacionadas con el tiempo, como plazos o secuencias</li>
+        </ul>
+        
+        <h2>Requisitos de rendimiento</h2>
+        <div class="highlight-box">
+          <ul class="custom-list">
+            <li>Tiempos de respuesta</li>
+            <li>Throughput</li>
+            <li>Disponibilidad</li>
+            <li>Escalabilidad</li>
+          </ul>
+        </div>
+        
+        <h2>Especificación con lógica temporal</h2>
+        <p>Uso de notaciones formales como TCTL (Timed Computation Tree Logic) para expresar propiedades temporales y de tiempo real.</p>
+      </section>
+      
+      <!-- SECCIÓN 7: VERIFICACIÓN Y VALIDACIÓN -->
+      <section id="verificacion" class="content-section">
+        <h1>7. Verificación y Validación dentro del Proceso</h1>
+        
+        <h2>Revisión de requisitos</h2>
+        <ul class="custom-list">
+          <li>Inspección sistemática</li>
+          <li>Detectar errores, inconsistencias o ambigüedades</li>
+        </ul>
+        
+        <h2>Validación con stakeholders</h2>
+        <ul class="custom-list">
+          <li>Confirmar que los requisitos reflejan las necesidades reales</li>
+          <li>Entrevistas, talleres o prototipos</li>
+        </ul>
+        
+        <h2>Técnicas de verificación</h2>
+        <div class="highlight-box">
+          <ul class="custom-list">
+            <li>Inspecciones</li>
+            <li>Walkthroughs (recorridos guiados)</li>
+            <li>Pruebas de requisitos</li>
+            <li>Simulaciones</li>
+          </ul>
+        </div>
+      </section>
+      
+      <!-- SECCIÓN 8: PRIORIDADES Y CONFLICTOS -->
+      <section id="prioridades" class="content-section">
+        <h1>8. Asignación de Prioridades y Resolución de Conflictos</h1>
+        
+        <h2>Criterios de priorización</h2>
+        <ul class="custom-list">
+          <li><strong>MoSCoW:</strong> Must have, Should have, Could have, Won't have</li>
+          <li><strong>Valor de negocio:</strong> Impacto en objetivos estratégicos</li>
+          <li><strong>Riesgo:</strong> Complejidad o incertidumbre asociada</li>
+        </ul>
+        
+        <h2>Resolución de conflictos</h2>
+        <ul class="custom-list">
+          <li>Negociación entre stakeholders para llegar a acuerdos</li>
+          <li>Análisis costo-beneficio</li>
+          <li>Compromiso</li>
+        </ul>
+        
+        <h3>Técnicas:</h3>
+        <div class="highlight-box">
+          <ul class="custom-list">
+            <li>Facilitación</li>
+            <li>Mediación</li>
+            <li>Análisis de impacto</li>
+          </ul>
+        </div>
+      </section>
+      
+      <!-- SECCIÓN 9: ADMINISTRACIÓN DE REQUISITOS -->
+      <section id="administracion" class="content-section">
+        <h1>9. Administración de Requisitos</h1>
+        
+        <h2>Estándares de documentación</h2>
+        <ul class="custom-list">
+          <li>Uso de formatos claros y consistentes para describir requisitos</li>
+        </ul>
+        
+        <h2>Trazabilidad</h2>
+        <ul class="custom-list">
+          <li>Relación entre requisitos, diseño, implementación y pruebas</li>
+          <li>Asegurar cobertura y gestión de cambios</li>
+        </ul>
+        
+        <h2>Manejo de cambios y control de versiones</h2>
+        <div class="highlight-box">
+          <ul class="custom-list">
+            <li>Procesos para evaluar, aprobar y registrar modificaciones</li>
+          </ul>
+        </div>
+        
+        <h2>Herramientas de gestión</h2>
+        <ul class="custom-list">
+          <li>DOORS</li>
+          <li>Jira</li>
+          <li>Trello</li>
+        </ul>
+      </section>
+      
+      <!-- SECCIÓN 10: REQUISITOS EN PROCESOS ÁGILES -->
+      <section id="agiles" class="content-section">
+        <h1>10. Requisitos en Procesos Ágiles</h1>
+        
+        <h2>Historias de usuario</h2>
+        <ul class="custom-list">
+          <li>Descripciones breves y simples de funcionalidades desde la perspectiva del usuario</li>
+        </ul>
+        
+        <h2>Backlogs y épicas</h2>
+        <ul class="custom-list">
+          <li>Listas priorizadas de historias</li>
+          <li>Agrupaciones grandes de funcionalidades</li>
+        </ul>
+        
+        <h2>Revisión y refinamiento continuo</h2>
+        <div class="highlight-box">
+          <ul class="custom-list">
+            <li>Ajuste frecuente de requisitos con feedback constante</li>
+          </ul>
+        </div>
+        
+        <h2>Colaboración constante con el cliente</h2>
+        <ul class="custom-list">
+          <li>Comunicación directa y continua para asegurar alineación con necesidades reales</li>
+        </ul>
+      </section>
+    </main>
+  </div>
+  
+  <!-- PIE DE PÁGINA -->
+  <footer>
+    <p>© 2025 Analisis de Requerimientos</p>
+    <p class="footer-credits">Portal educativo de <strong>M.B.I</strong></p>
+    <p class="footer-credits">Contenido diseñado según plan de estudios oficial. No nos hacemos responsables por variaciones en los programas de cada institución.</p>
+  </footer>
+
+  <script src="4° Analisis de Requerimientos.js"></script>
+</body>
+</html>

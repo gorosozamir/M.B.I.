@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistemas Digitales</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="3° Sistemas Digitales II.css">
+</head>
+<body>
+  <!-- CABECERA -->
+  <header>
+    <div class="header-content">
+      <div class="logo">Sistemas Digitales II</div>
+      <a href="pagina3.html" class="back-button">← Volver</a>
+    </div>
+  </header>
+  
+  <!-- CONTENEDOR PRINCIPAL -->
+  <div class="container">
+    <!-- BARRA LATERAL -->
+    <aside class="sidebar">
+      <h3>Unidades</h3>
+      <ul>
+        <li><a href="#" class="sidebar-link active" data-section="unidad1">Unidad 1: Sistemas de Numeración</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad2">Unidad 2: Lógica Digital</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad3">Unidad 3: Diseño Lógico Combinacional</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad4">Unidad 4: Memorias y Almacenamiento</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad5">Unidad 5: Automatización y PLC</a></li>
+      </ul>
+      
+      <h3>Recursos</h3>
+      <ul>
+        <li><a href="#" class="sidebar-link" data-section="bibliografia">Bibliografía Recomendada</a></li>
+        <li><a href="#" class="sidebar-link" data-section="herramientas">Herramientas Digitales</a></li>
+        <li><a href="#" class="sidebar-link" data-section="ejercicios">Ejercicios Resueltos</a></li>
+        <li><a href="#" class="sidebar-link" data-section="enlaces">Enlaces de Interés</a></li>
+      </ul>
+    </aside>
+    
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="main-content">
+      <!-- UNIDAD 1 -->
+      <section id="unidad1" class="content-section active">
+        <h1>Unidad 1: Sistemas de Numeración y Códigos</h1>
+        <p>Esta unidad introduce los fundamentos de los sistemas numéricos utilizados en electrónica digital y computación, así como los métodos de conversión entre ellos y su aplicación práctica.</p>
+        
+        <div class="highlight-box">
+          <p><strong>💾 Dato clave:</strong> El sistema binario es la base de toda la electrónica digital moderna, desde simples circuitos lógicos hasta los procesadores más avanzados.</p>
+        </div>
+        
+        <h2>Sistemas numéricos más comunes</h2>
+        <ul class="custom-list">
+          <li><strong>Decimal (base 10):</strong> Utiliza 10 símbolos (0-9), es el sistema que usamos cotidianamente.</li>
+          <li><strong>Binario (base 2):</strong> Solo dos símbolos (0 y 1), base fundamental para la electrónica digital.</li>
+          <li><strong>Octal (base 8):</strong> Símbolos del 0 al 7, se usa en informática para representar grupos de 3 bits.</li>
+          <li><strong>Hexadecimal (base 16):</strong> Símbolos 0-9 y letras A-F, representa grupos de 4 bits con mayor compactación.</li>
+        </ul>
+        
+        <h2>Códigos binarios y alfanuméricos</h2>
+        <ul class="custom-list">
+          <li>Códigos que representan datos, como ASCII para caracteres.</li>
+          <li>Códigos binarios específicos para la detección y corrección de errores.</li>
+          <li>Sistemas de codificación especializados para aplicaciones específicas.</li>
+        </ul>
+        
+        <h2>Conversión entre sistemas</h2>
+        <ul class="custom-list">
+          <li>Se hace agrupando bits de a 3 para octal y de a 4 para hexadecimal.</li>
+          <li>Se pueden convertir directamente entre estos sistemas sin pasar por decimal siempre que la base sea potencia de 2.</li>
+          <li>Métodos sistemáticos para conversión entre cualquier sistema numérico.</li>
+        </ul>
+        
+        <h2>Aritmética en bases distintas de 10</h2>
+        <p>Técnicas para operaciones matemáticas en diferentes bases:</p>
+        <ul class="custom-list">
+          <li>Suma, resta, multiplicación y división adaptadas con reglas basadas en la base numérica.</li>
+          <li>Ejemplo: acarreo en binario funciona similar al decimal pero con límite en 1 en lugar de 9.</li>
+          <li>Representación de números positivos y negativos en complemento a 2.</li>
+        </ul>
+        
+        <h2>Representaciones especiales</h2>
+        <ul class="custom-list">
+          <li><strong>Punto fijo y punto flotante:</strong> Sistemas que permiten representar números con decimales.</li>
+          <li><strong>Números decimales codificados en binario (BCD):</strong> Representación donde cada dígito decimal es codificado en 4 bits.</li>
+          <li><strong>Representación de números con signo:</strong> Métodos como signo-magnitud, complemento a 1 y complemento a 2.</li>
+        </ul>
+      </section>
+      
+      <!-- UNIDAD 2 -->
+<section id="unidad2" class="content-section">
+  <h1>Unidad 2: Fundamentos de Lógica Digital</h1>
+  <p>Introducción a los sistemas lógicos digitales y álgebra de Boole.</p>
+  
+  <div class="highlight-box">
+    <p><strong>💾 Dato clave:</strong> El álgebra de Boole es la base matemática de todos los sistemas digitales modernos.</p>
+  </div>
+  
+  <h2>Introducción a la lógica combinacional</h2>
+  <p>Sistemas donde la salida depende únicamente de las entradas actuales.</p>
+  
+  <h2>Compuertas lógicas básicas</h2>
+  <ul class="custom-list">
+    <li>AND, OR, NOT, NAND, NOR, XOR y sus equivalentes mediante combinaciones de estas puertas.</li>
+    <li>Tablas de verdad: Pasos para verificar los valores de salida para todas las combinaciones posibles de entrada.</li>
+  </ul>
+  
+  <h2>Álgebra Booleana</h2>
+  <ul class="custom-list">
+    <li><strong>Principio de dualidad:</strong> Cada expresión tiene un dual al cambiar operadores y elementos neutros.</li>
+    <li><strong>Teoremas fundamentales:</strong> Leyes de identidad, dominación, idempotencia, complemento, asociatividad, distributividad y De Morgan.</li>
+    <li><strong>Ejemplos de simplificación:</strong> Uso de teoremas para reducir funciones lógicas.</li>
+  </ul>
+</section>
+
+<!-- UNIDAD 3 -->
+<section id="unidad3" class="content-section">
+  <h1>Unidad 3: Diseño Lógico Combinacional</h1>
+  <p>Técnicas para diseñar circuitos lógicos combinacionales optimizados.</p>
+  
+  <h2>Minimización de funciones booleanas</h2>
+  <p>Métodos para simplificar expresiones y reducir costos de implementación.</p>
+  
+  <h2>Formas estándar</h2>
+  <ul class="custom-list">
+    <li><strong>Suma de productos (SOP):</strong> Expresión como suma de términos producto.</li>
+    <li><strong>Producto de sumas (POS):</strong> Expresión como producto de términos suma.</li>
+  </ul>
+  
+  <h2>Mintermos y maxtermos</h2>
+  <p>Representaciones base para expresar funciones booleanas como combinaciones mínimas.</p>
+  
+  <h2>Mapas de Karnaugh</h2>
+  <ul class="custom-list">
+    <li>Herramienta visual para simplificar funciones lógicas agrupando 1s o 0s contiguos.</li>
+    <li>Minimización de producto de sumas mediante mapas.</li>
+    <li>Aplicación específica para simplificación en forma POS.</li>
+  </ul>
+</section>
+
+<!-- UNIDAD 4 -->
+<section id="unidad4" class="content-section">
+  <h1>Unidad 4: Memorias y Arquitecturas de Almacenamiento</h1>
+  <p>Dispositivos que almacenan información digital y sus características.</p>
+  
+  <h2>Concepto y clasificación</h2>
+  <p>Tipos de memorias según su tecnología y aplicación.</p>
+  
+  <h2>Celda bipolar y celda MOS estática/dinámica</h2>
+  <ul class="custom-list">
+    <li>Arquitecturas básicas que forman memorias RAM estáticas (SRAM) y dinámicas (DRAM).</li>
+  </ul>
+  
+  <h2>Tipos de memoria</h2>
+  <ul class="custom-list">
+    <li>ROM, PROM, RAM, EPROM y memorias magnéticas.</li>
+  </ul>
+  
+  <h2>Bancos de memoria</h2>
+  <p>Conjuntos organizados de memorias para aumentar capacidad y rendimiento.</p>
+  
+  <h2>Parámetros de rendimiento</h2>
+  <ul class="custom-list">
+    <li>Tiempos de acceso, velocidad, y capacidad de expansión.</li>
+  </ul>
+  
+  <h2>Cronogramas de lectura y escritura</h2>
+  <p>Secuencia y temporización de señales para operaciones en memoria.</p>
+</section>
+
+<!-- UNIDAD 5 -->
+<section id="unidad5" class="content-section">
+  <h1>Unidad 5: Introducción a la Automatización y PLC</h1>
+  <p>Controladores lógicos programables y sistemas de automatización industrial.</p>
+  
+  <h2>PLC (Controladores Lógicos Programables)</h2>
+  <p>Dispositivos electrónicos usados para automatizar procesos industriales mediante programación lógica.</p>
+  
+  <h2>Componentes de sistemas automatizados</h2>
+  <ul class="custom-list">
+    <li><strong>Sensores y detectores:</strong> Para captar condiciones físicas del entorno.</li>
+    <li><strong>Actuadores:</strong> Para ejecutar acciones sobre máquinas o procesos.</li>
+  </ul>
+  
+  <h2>Principios de automatización industrial</h2>
+  <ul class="custom-list">
+    <li>Control, monitoreo y optimización mediante sistemas programables.</li>
+    <li>Mejora de la eficiencia y seguridad en procesos industriales.</li>
+  </ul>
+</section>
+      
+      <!-- BIBLIOGRAFÍA -->
+      <section id="bibliografia" class="content-section">
+        <h1>Bibliografía Recomendada</h1>
+        
+        <h2>Referencias bibliográficas</h2>
+        <ul class="custom-list">
+          <li>Sistemas de Representación Numéricos - Sergio Noriega (UNLP)</li>
+          <li>Sistemas de numeración: binario, octal y hexadecimal - oposicionesguardiacivilweb.com</li>
+          <li>Sistemas Binario, Decimal, Octal y Hexadecimal - Profesional Review</li>
+          <li>Sistemas (técnicas digitales) de numeración - huergo.edu.ar</li>
+          <li>Videos explicativos sobre conversiones de sistemas numéricos (YouTube Luis Llamas y José Andalón)</li>
+        </ul>
+      </section>
+      
+      <!-- HERRAMIENTAS -->
+      <section id="herramientas" class="content-section">
+        <h1>Herramientas Digitales</h1>
+        
+        <h2>Software para diseño digital</h2>
+        <ul class="custom-list">
+          <li>Simuladores de circuitos lógicos</li>
+          <li>Herramientas de diseño FPGA</li>
+          <li>Software para programación de PLC</li>
+        </ul>
+      </section>
+      
+      <!-- EJERCICIOS -->
+      <section id="ejercicios" class="content-section">
+        <h1>Ejercicios Resueltos</h1>
+        
+        <h2>Práctica y ejemplos</h2>
+        <div class="highlight-box">
+          <p><strong>💾 Ejercicios prácticos:</strong> Conversiones entre sistemas numéricos, diseño de circuitos lógicos, programación de automatismos.</p>
+        </div>
+      </section>
+      
+      <!-- ENLACES -->
+      <section id="enlaces" class="content-section">
+        <h1>Enlaces de Interés</h1>
+        
+        <h2>Recursos online</h2>
+        <ul class="custom-list">
+          <li>Tutoriales interactivos de electrónica digital</li>
+          <li>Simuladores online de circuitos</li>
+          <li>Documentación técnica de componentes</li>
+        </ul>
+      </section>
+    </main>
+  </div>
+  
+  <!-- PIE DE PÁGINA -->
+  <footer>
+    <p>© 2025 Sistemas Digitales II</p>
+    <p class="footer-credits">Portal educativo de <strong>M.B.I.</strong></p>
+    <p class="footer-credits">Contenido diseñado según plan de estudios oficial. No nos hacemos responsables por variaciones en los programas de cada institución.</p>
+  </footer>
+  <script src="3° Sistemas Digitales II.js"></script>
+</body>
+</html>

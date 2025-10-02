@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Física</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="2° Fisica.css">
+</head>
+<body>
+  <!-- CABECERA -->
+  <header>
+    <div class="header-content">
+      <div class="logo">Física</div>
+      <a href="pagina2.html" class="back-button">← Volver</a>
+    </div>
+  </header>
+  
+  <!-- CONTENEDOR PRINCIPAL -->
+  <div class="container">
+    <!-- BARRA LATERAL -->
+    <aside class="sidebar">
+      <h3>Unidades</h3>
+      <ul>
+        <li><a href="#" class="sidebar-link active" data-section="unidad1">Unidad 1: Fundamentos</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad2">Unidad 2: Magnitudes</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad3">Unidad 3: Efectos</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad4">Unidad 4: Magnetismo</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad5">Unidad 5: Fuentes</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad6">Unidad 6: Óptica</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad7">Unidad 7: Ondas</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad8">Unidad 8: Tecnología</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad9">Unidad 9: Periféricos</a></li>
+      </ul>
+      
+      <h3>Recursos</h3>
+      <ul>
+        <li><a href="#" class="sidebar-link" data-section="formulas">Fórmulas</a></li>
+        <li><a href="#" class="sidebar-link" data-section="fuentes">Fuentes</a></li>
+      </ul>
+    </aside>
+    
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="main-content">
+      <!-- UNIDAD 1 -->
+      <section id="unidad1" class="content-section active">
+        <h1>Unidad 1: Fundamentos de Electricidad</h1>
+        <p>Esta unidad introduce los conceptos básicos de la electricidad, desde su definición hasta los principios fundamentales que rigen su comportamiento.</p>
+        
+        <div class="highlight-box">
+          <p><strong>🔭 Dato clave:</strong> La energía eléctrica es la segunda forma de energía más utilizada en el mundo después de la energía química (combustibles fósiles).</p>
+        </div>
+        
+        <h2>Energía eléctrica: concepto general</h2>
+        <p>La energía eléctrica es una forma de energía originada por el movimiento de electrones a través de un conductor, capaz de transformar y realizar trabajo en sistemas eléctricos.</p>
+        
+        <h2>Electrones y cargas conductoras</h2>
+        <p>La electricidad se produce por la liberación y movimiento de electrones, partículas subatómicas con carga negativa que se desplazan a través de materiales conductores (como el cobre) generando corriente eléctrica.</p>
+        
+        <h2>Variación de las cargas en el tiempo</h2>
+        <p>La corriente eléctrica es el flujo de electrones que puede ser constante en el tiempo (corriente continua) o variar en dirección/cantidad (corriente alterna).</p>
+        
+        <h2>Potencial eléctrico</h2>
+        <p>Es la energía potencial por unidad de carga en un punto dentro de un campo eléctrico, generando una diferencia de potencial (voltaje) que impulsa el movimiento de cargas.</p>
+        
+        <h2>Nociones básicas de electricidad y circuitos eléctricos</h2>
+        <p>Un circuito eléctrico es una trayectoria cerrada que permite el paso de corriente eléctrica. Componentes básicos incluyen la fuente de energía, conductores y cargas (resistencias, lámparas, motores). La interacción determina el comportamiento del circuito.</p>
+      </section>
+      
+      <!-- UNIDAD 2 -->
+      <section id="unidad2" class="content-section">
+        <h1>Unidad 2: Magnitudes Eléctricas Básicas</h1>
+        <p>Estudio de las principales magnitudes que describen y cuantifican los fenómenos eléctricos.</p>
+        
+        <h2>Intensidad de corriente</h2>
+        <p>Medida de la cantidad de carga eléctrica que pasa por un punto de un circuito por unidad de tiempo, expresada en amperios (A).</p>
+        
+        <h2>Potencia eléctrica</h2>
+        <p>Es la tasa de consumo o generación de energía eléctrica, calculada como el producto de la tensión y la corriente (P=U·I), con unidad en vatios (W).</p>
+        
+        <h2>Resistencia eléctrica</h2>
+        <p>Oposición que presenta un material al paso de la corriente eléctrica, medida en ohmios (Ω).</p>
+        
+        <h2>Ley de Ohm</h2>
+        <div class="highlight-box">
+          <p>Establece que la intensidad de corriente en un circuito es directamente proporcional al voltaje aplicado e inversamente proporcional a la resistencia: I=U/R.</p>
+        </div>
+        
+        <h2>Asociación de resistores</h2>
+        <ul class="custom-list">
+          <li><strong>En serie:</strong> resistencias suman, R<sub>total</sub> = R<sub>1</sub> + R<sub>2</sub> + ...</li>
+          <li><strong>En paralelo:</strong> inverso de la suma de inversos, 1/R<sub>total</sub> = 1/R<sub>1</sub> + 1/R<sub>2</sub> + ...</li>
+        </ul>
+        
+        <h2>Compatibilidad de corriente continua y alterna</h2>
+        <p>Sistemas eléctricos pueden trabajar con corrientes continuas (DC) o alternas (AC). Cada tipo tiene características que afectan la compatibilidad de dispositivos y la forma de conectar circuitos.</p>
+      </section>
+      
+      <!-- UNIDAD 3 -->
+      <section id="unidad3" class="content-section">
+        <h1>Unidad 3: Efectos y Analogías</h1>
+        <p>Fenómenos relacionados con la transformación de energía eléctrica y sus analogías con otros sistemas físicos.</p>
+        
+        <h2>Efecto Joule</h2>
+        <p>Fenómeno donde la energía eléctrica se transforma en calor al pasar corriente por un conductor resistivo, calculado como Q = R·I²·t.</p>
+        
+        <h2>Analogía entre conducción térmica y eléctrica</h2>
+        <p>Ambos fenómenos describen transporte, uno de calor y otro de carga eléctrica, con analogías en leyes y ecuaciones que regulan el flujo.</p>
+        
+        <h2>Transformación de otras formas de energía en eléctrica</h2>
+        <p>Se puede convertir energía mecánica, luminosa o química en energía eléctrica, por ejemplo mediante generadores, células solares y baterías.</p>
+      </section>
+      
+      <!-- UNIDAD 4 -->
+      <section id="unidad4" class="content-section">
+        <h1>Unidad 4: Magnetismo e Inducción</h1>
+        <p>Estudio de los fenómenos magnéticos y su relación con la electricidad.</p>
+        
+        <h2>Interacción magnética</h2>
+        <p>Los campos magnéticos generan fuerzas sobre cargas en movimiento y otros imanes; resultado de corrientes eléctricas o propiedades magnéticas de materiales.</p>
+        
+        <h2>Principio de inducción electromagnética</h2>
+        <p>Variación de un campo magnético a través de un circuito induce un voltaje y corriente eléctrica (Ley de Faraday).</p>
+        
+        <h2>Campo eléctrico</h2>
+        <p>Zona de influencia alrededor de una carga eléctrica donde se manifiestan fuerzas eléctricas.</p>
+        
+        <h2>Campo magnético</h2>
+        <p>Zona alrededor de un imán o conductor por donde pasan líneas de campo magnético, que afectan otras cargas en movimiento.</p>
+        
+        <h2>Relación entre campo eléctrico y magnético</h2>
+        <p>Son dos aspectos del electromagnetismo; un campo eléctrico variable genera campo magnético y viceversa, base para la propagación de ondas electromagnéticas.</p>
+      </section>
+      
+      <!-- UNIDAD 5 -->
+      <section id="unidad5" class="content-section">
+        <h1>Unidad 5: Fuentes y Corrientes</h1>
+        <p>Estudio de las fuentes de energía eléctrica y los tipos de corriente.</p>
+        
+        <h2>Corriente de línea y corriente interna</h2>
+        <p>La corriente de línea es la medida de corriente externa suministrada; la interna hace referencia a las corrientes dentro del dispositivo o fuente que alimenta el circuito.</p>
+        
+        <h2>Función de la fuente eléctrica</h2>
+        <p>Proveer la energía eléctrica necesaria para que los electrones circulen, manteniendo una diferencia de potencial constante o variable.</p>
+        
+        <h2>Principios físicos aplicados a memorias y plaquetas</h2>
+        <p>Memorias y circuitos en placas utilizan principios eléctricos y magnéticos para almacenar y procesar información, como almacenamiento magnético en discos duros y cargas eléctricas en memorias RAM.</p>
+      </section>
+      
+      <!-- UNIDAD 6 -->
+      <section id="unidad6" class="content-section">
+        <h1>Unidad 6: Óptica Geométrica</h1>
+        <p>Estudio del comportamiento de la luz como rayos y su interacción con diferentes medios.</p>
+        
+        <h2>Propagación de la luz: ondas y rayos</h2>
+        <p>La luz se propaga en línea recta como rayos y presenta propiedades ondulatorias (frecuencia, longitud de onda).</p>
+        
+        <h2>Reflexión y refracción</h2>
+        <p>La luz se refleja en superficies y cambia de dirección al pasar de un medio a otro según las leyes de Snell.</p>
+        
+        <h2>Espejos y lentes</h2>
+        <ul class="custom-list">
+          <li><strong>Espejos cóncavos y convexos:</strong> reflejan la luz formando imágenes con características distintas.</li>
+          <li><strong>Lentes convergentes y divergentes:</strong> modifican la trayectoria de rayos para enfocar o dispersar la luz.</li>
+        </ul>
+        
+        <h2>Marcha de rayos</h2>
+        <p>Trayectoria de la luz en medios con diferentes índices de refracción, determinando formación de imágenes y efectos ópticos.</p>
+      </section>
+      
+      <!-- UNIDAD 7 -->
+      <section id="unidad7" class="content-section">
+        <h1>Unidad 7: Ondas e Intercambio de Energía</h1>
+        <p>Estudio de las ondas como medio de transporte de energía.</p>
+        
+        <h2>Intercambio de energía mediante ondas</h2>
+        <p>Las ondas transportan energía sin transportar materia, ejemplos incluyen ondas luminosas y sonoras.</p>
+        
+        <h2>Características: longitud de onda, frecuencia, velocidad</h2>
+        <p>Relacionadas por la fórmula: v = λ·f</p>
+        
+        <h2>Relación con el color y el calor en ondas luminosas</h2>
+        <p>La frecuencia o longitud de onda determina el color visible; energía absorbida por objetos la puede transformar en calor.</p>
+      </section>
+      
+      <!-- UNIDAD 8 -->
+      <section id="unidad8" class="content-section">
+        <h1>Unidad 8: Tecnología Óptica en Dispositivos de Almacenamiento</h1>
+        <p>Aplicación de principios ópticos en tecnologías de almacenamiento de datos.</p>
+        
+        <h2>CD-ROM, DVD-ROM, Blu-ray Disc</h2>
+        <p>Funcionan mediante láser que lee datos reflejados en pistas microscópicas codificadas en discos ópticos.</p>
+        
+        <h2>Láser, reflexión y codificación</h2>
+        <p>Láseres de diferente longitud de onda para cada tipo de disco permiten mayor densidad de datos y rapidez. La información está codificada en forma de pits y lands que reflejan el haz.</p>
+      </section>
+      
+      <!-- UNIDAD 9 -->
+      <section id="unidad9" class="content-section">
+        <h1>Unidad 9: Principios Físicos en Periféricos y Dispositivos Digitales</h1>
+        <p>Aplicación de conceptos físicos en dispositivos tecnológicos cotidianos.</p>
+        
+        <h2>Mouse</h2>
+        <p>El funcionamiento del mouse óptico y mecánico se basa en la detección del movimiento relativo mediante sensores ópticos que capturan imágenes o la rotación de una bola mecánica traducida en impulsos eléctricos.</p>
+        <p>Matemáticamente, el movimiento se relaciona con desplazamientos y coordenadas para mover el cursor en pantalla.</p>
+        
+        <h2>Monitores</h2>
+        <p>Funcionamiento basado en emisión de luz (pantallas LED, LCD) o excitación fosforescente (CRT anterior).</p>
+        <p>Composición de colores por síntesis aditiva de RGB para formar imágenes.</p>
+        <p>Resolución gráfica indica número de píxeles; mayor resolución significa mayor calidad de imagen.</p>
+      </section>
+      
+      <!-- SECCIONES DE RECURSOS -->
+      <section id="formulas" class="resource-section">
+        <h1>Fórmulas Importantes</h1>
+        
+        <h2>Electricidad</h2>
+        <div class="highlight-box">
+          <p><strong>Ley de Ohm:</strong> V = I·R</p>
+          <p><strong>Potencia eléctrica:</strong> P = V·I</p>
+          <p><strong>Energía:</strong> E = P·t</p>
+          <p><strong>Resistencias en serie:</strong> R<sub>total</sub> = R<sub>1</sub> + R<sub>2</sub> + ...</p>
+          <p><strong>Resistencias en paralelo:</strong> 1/R<sub>total</sub> = 1/R<sub>1</sub> + 1/R<sub>2</sub> + ...</p>
+        </div>
+        
+        <h2>Óptica</h2>
+        <div class="highlight-box">
+          <p><strong>Ley de Snell:</strong> n<sub>1</sub>·senθ<sub>1</sub> = n<sub>2</sub>·senθ<sub>2</sub></p>
+          <p><strong>Ecuación de ondas:</strong> v = λ·f</p>
+        </div>
+      </section>
+      
+      <section id="fuentes" class="resource-section">
+        <h1>Fuentes de Información</h1>
+        
+        <h2>Referencias Bibliográficas</h2>
+        <div class="highlight-box">
+          <p>SunFields Europe, "Fundamentos: La electricidad"</p>
+          <p>Aragón Electrónica, "Conceptos Básicos de Electricidad para Principiantes"</p>
+          <p>CEAC, "11 conceptos de electricidad que debes conocer"</p>
+          <p>Universidad Nacional Experimental del Táchira (UNET), "Fundamentos de Electricidad"</p>
+          <p>Wikipedia, "Electricidad"</p>
+        </div>
+        
+        <h2>Enlaces Útiles</h2>
+        <ul class="custom-list">
+          <li><a href="https://www.sfe-solar.com/noticias/articulos/fundamentos-la-electricidad/" target="_blank">Fundamentos de la Electricidad</a></li>
+          <li><a href="https://aragonelectronica.com/blogs/noticias/conceptos-basicos-de-electricidad-para-principiantes" target="_blank">Conceptos Básicos de Electricidad</a></li>
+          <li><a href="https://www.ceac.es/blog/11-conceptos-de-electricidad-que-debes-conocer" target="_blank">11 Conceptos de Electricidad</a></li>
+          <li><a href="http://www.unet.edu.ve/aula10c/Electrotecnia/Fundamentos%20de%20Electricidad.pdf" target="_blank">Fundamentos de Electricidad (PDF)</a></li>
+          <li><a href="https://es.wikipedia.org/wiki/Electricidad" target="_blank">Electricidad en Wikipedia</a></li>
+        </ul>
+      </section>
+    </main>
+  </div>
+  
+  <!-- PIE DE PÁGINA -->
+  <footer>
+    <p>© 2025 Física</p>
+    <p class="footer-credits">Portal educativo de <strong>M.B.I.</strong></p>
+    <p class="footer-credits">Contenido diseñado según plan de estudios oficial. No nos hacemos responsables por variaciones en los temas dados por los Docentes.</p>
+  </footer>
+<script src="2° Fisica.js"></script>
+</body>
+</html>

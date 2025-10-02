@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Física</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="1° Fisica.css">
+</head>
+<body>
+  <!-- CABECERA -->
+  <header>
+    <div class="header-content">
+      <div class="logo">Física </div>
+      <a href="pagina1.html" class="back-button">← Volver</a>
+    </div>
+  </header>
+  
+  <!-- CONTENEDOR PRINCIPAL -->
+  <div class="container">
+    <!-- BARRA LATERAL -->
+    <aside class="sidebar">
+      <h3>Unidades</h3>
+      <ul>
+        <li><a href="#" class="sidebar-link active" data-section="unidad1">Unidad 1: Magnitudes y Medición</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad2">Unidad 2: Magnitudes Vectoriales</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad3">Unidad 3: Estática y Fuerzas</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad4">Unidad 4: Cinemática y Movimiento</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad5">Unidad 5: Energía y Trabajo</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad6">Unidad 6: Calor y Temperatura</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad7">Unidad 7: Dilatación Térmica</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad8">Unidad 8: Energías Alternativas</a></li>
+      </ul>
+      
+      <h3>Recursos</h3>
+      <ul>
+        <li><a href="#" class="sidebar-link" data-section="formulas">Fórmulas Clave</a></li>
+        <li><a href="#" class="sidebar-link" data-section="ejemplos">Problemas Resueltos</a></li>
+      </ul>
+    </aside>
+    
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="main-content">
+      <!-- UNIDAD 1 -->
+      <section id="unidad1" class="content-section active">
+        <h1>Unidad 1: Magnitudes y Medición en Física</h1>
+        
+        <h2>A. La física y su relación con otras ciencias</h2>
+        <p>La física es fundamental como base para disciplinas como la química, biología e ingeniería, ya que estudia las leyes esenciales que gobiernan la naturaleza y los fenómenos físicos que sustentan estas ciencias.</p>
+        
+        <h2>B. La medida en física</h2>
+        <p>Cantidades físicas: clasificadas en:</p>
+        <ul class="custom-list">
+          <li><strong>Fundamentales:</strong> longitud, masa, tiempo.</li>
+          <li><strong>Derivadas:</strong> velocidad, fuerza, energía, etc.</li>
+        </ul>
+        
+        <h3>Patrones y unidades fundamentales</h3>
+        <ul class="custom-list">
+          <li><strong>Longitud (metro, m):</strong> definida como la distancia que recorre la luz en el vacío durante 1/299,792,458 segundos.</li>
+          <li><strong>Masa (kilogramo, kg):</strong> actualmente definida mediante la constante de Planck.</li>
+          <li><strong>Tiempo (segundo, s):</strong> basado en la frecuencia de la radiación del átomo de cesio-133.</li>
+        </ul>
+        
+        <h2>C. Sistemas de unidades</h2>
+        <ul class="custom-list">
+          <li><strong>Sistema Internacional (SI):</strong> conjunto de unidades estándar adoptado globalmente para garantizar uniformidad y precisión.</li>
+          <li><strong>Sistema Métrico Legal Argentino (SI.ME.L.A):</strong> adaptación nacional argentina del SI con regulaciones legales específicas.</li>
+        </ul>
+        
+        <h2>D. Herramientas y análisis de medición</h2>
+        <ul class="custom-list">
+          <li><strong>Análisis dimensional:</strong> técnica para comprobar la coherencia en unidades de ecuaciones físicas, ayudando a validar fórmulas y transformar unidades.</li>
+          <li><strong>Teoría de errores:</strong> distingue entre errores sistemáticos (repetitivos, corregibles) y aleatorios (variaciones inevitables).</li>
+          <li><strong>Conversión de unidades:</strong> se realizan usando factores de conversión establecidos (ejemplo: 1 km = 1000 m).</li>
+        </ul>
+        
+        <div class="example">
+          <div class="example-title">Ejemplo de Análisis Dimensional</div>
+          <p>Para validar la unidad de la fuerza:</p>
+          <p>Fuerza = m × a</p>
+          <p>Dimensiones:</p>
+          <p>[M] × [LT⁻²] = [MLT⁻²]</p>
+          <p>Esto confirma que un Newton corresponde a kg·m/s²</p>
+        </div>
+      </section>
+      
+      <!-- UNIDAD 2 -->
+      <section id="unidad2" class="content-section">
+        <h1>Unidad 2: Magnitudes Vectoriales y Escalares</h1>
+        
+        <h2>A. Clasificación</h2>
+        <ul class="custom-list">
+          <li><strong>Escalares:</strong> magnitud sin dirección (ej: masa, temperatura).</li>
+          <li><strong>Vectoriales:</strong> cuentan con magnitud y dirección (ej: fuerza, velocidad).</li>
+        </ul>
+        
+        <h2>B. Operaciones con vectores</h2>
+        <ul class="custom-list">
+          <li><strong>Suma y resta:</strong> se pueden realizar con métodos gráficos (polígono, triángulo) o analíticos (componentes).</li>
+          <li><strong>Descomposición vectorial:</strong> vectores se descomponen en componentes x e y usando trigonometría para facilitar cálculos.</li>
+        </ul>
+        
+        <div class="formula">
+          <p>Descomposición vectorial:</p>
+          <p>F<sub>x</sub> = F · cos(θ)</p>
+          <p>F<sub>y</sub> = F · sin(θ)</p>
+        </div>
+      </section>
+      
+      <!-- UNIDAD 3 -->
+      <section id="unidad3" class="content-section">
+        <h1>Unidad 3: Estática y Fuerzas</h1>
+        
+        <h2>Concepto de Fuerza</h2>
+        <p>Agente físico que puede modificar el estado de movimiento o deformar un cuerpo, se representa como vector y su unidad es el Newton (N = kg·m/s²).</p>
+        
+        <h2>Campo gravitatorio</h2>
+        <p>Región donde cuerpos masivos sienten la fuerza gravitacional; fuerza proporcional a la masa y a la aceleración gravitatoria.</p>
+        <div class="formula">
+          <p>F = m · g</p>
+          <p>Energía potencial gravitatoria: U<sub>g</sub> = m · g · h</p>
+        </div>
+        
+        <h2>Equilibrio</h2>
+        <p><strong>Tipos:</strong></p>
+        <ul class="custom-list">
+          <li><strong>Estático:</strong> cuerpo en reposo, suma de fuerzas y momentos debe ser cero.</li>
+          <li><strong>Dinámico:</strong> movimiento rectilíneo uniforme.</li>
+        </ul>
+        
+        <h2>Rozamiento (Fricción)</h2>
+        <p>Fuerza que se opone al movimiento entre superficies en contacto, con coeficientes estático (μ<sub>e</sub>) y cinético (μ<sub>k</sub>).</p>
+        <div class="formula">
+          <p>Rozamiento estático máximo: f<sub>e,max</sub> = μ<sub>e</sub> · N</p>
+          <p>Rozamiento cinético: f<sub>k</sub> = μ<sub>k</sub> · N</p>
+        </div>
+        
+        <div class="example">
+          <div class="example-title">Ejemplo práctico</div>
+          <p>Si un bloque de 10 kg está en reposo sobre una superficie horizontal (μ<sub>e</sub> = 0.5):</p>
+          <p>Fuerza normal (N): N = m · g = 10 kg × 9.8 m/s² = 98 N</p>
+          <p>Rozamiento estático máximo: f<sub>e,max</sub> = 0.5 × 98 N = 49 N</p>
+          <p>Para moverlo, hay que aplicar una fuerza > 49 N</p>
+        </div>
+      </section>
+      
+      <!-- UNIDAD 4 -->
+      <section id="unidad4" class="content-section">
+        <h1>Unidad 4: Cinemática y Movimiento</h1>
+        
+        <h2>Conceptos básicos</h2>
+        <ul class="custom-list">
+          <li><strong>Velocidad:</strong> cambio de posición por unidad de tiempo.</li>
+          <li><strong>Aceleración:</strong> cambio de velocidad por unidad de tiempo.</li>
+          <li><strong>Tiempo de latencia:</strong> tiempo de reacción en sistemas físicos.</li>
+        </ul>
+        
+        <h2>Dinámica de rotación</h2>
+        <p>Movimiento angular caracterizado por velocidad angular (ω) y aceleración angular (α).</p>
+        
+        <div class="formula">
+          <p>Velocidad angular: ω = Δθ/Δt</p>
+          <p>Aceleración angular: α = Δω/Δt</p>
+        </div>
+      </section>
+      
+      <!-- UNIDAD 5 -->
+      <section id="unidad5" class="content-section">
+        <h1>Unidad 5: Energía y Trabajo</h1>
+        
+        <h2>Conceptos fundamentales</h2>
+        <ul class="custom-list">
+          <li><strong>Trabajo:</strong> producto escalar entre fuerza y desplazamiento W = F⃗ · d⃗.</li>
+          <li><strong>Energía:</strong> capacidad para realizar trabajo, unidad en Joules (J).</li>
+          <li><strong>Potencia:</strong> trabajo realizado por unidad de tiempo P = W/t.</li>
+        </ul>
+        
+        <h2>Principios de conservación</h2>
+        <ul class="custom-list">
+          <li><strong>Conservación de energía:</strong> La energía no se crea ni destruye, solo se transforma.</li>
+          <li><strong>Conservación del momento lineal:</strong> En sistemas aislados sin fuerzas externas.</li>
+          <li><strong>Conservación del momento angular:</strong> En ausencia de torque externo.</li>
+        </ul>
+        
+        <div class="formula">
+          <p>Energía cinética: K = ½mv²</p>
+          <p>Energía potencial elástica: U = ½kx²</p>
+        </div>
+      </section>
+      
+      <!-- UNIDAD 6 -->
+      <section id="unidad6" class="content-section">
+        <h1>Unidad 6: Calor y Temperatura</h1>
+        
+        <h2>Conceptos y diferencias</h2>
+        <ul class="custom-list">
+          <li><strong>Temperatura:</strong> medida de la energía cinética media de partículas.</li>
+          <li><strong>Calor:</strong> transferencia de energía térmica entre cuerpos.</li>
+          <li><strong>Equilibrio térmico:</strong> estado donde no hay transferencia neta de calor.</li>
+        </ul>
+        
+        <h2>Transferencia de calor</h2>
+        <ul class="custom-list">
+          <li><strong>Conducción:</strong> En sólidos (ej: cuchara metálica).</li>
+          <li><strong>Convección:</strong> En fluidos (ej: corrientes de aire).</li>
+          <li><strong>Radiación:</strong> Por ondas electromagnéticas (ej: luz solar).</li>
+        </ul>
+        
+        <h2>Escalas termométricas</h2>
+        <div class="formula">
+          <p>Conversiones:</p>
+          <p>K = °C + 273.15</p>
+          <p>°F = (9/5)°C + 32</p>
+        </div>
+      </section>
+      
+      <!-- UNIDAD 7 -->
+      <section id="unidad7" class="content-section">
+        <h1>Unidad 7: Dilatación Térmica</h1>
+        
+        <h2>Dilatación en diferentes estados</h2>
+        <ul class="custom-list">
+          <li><strong>Sólidos:</strong> dilatación lineal (ΔL = αL₀ΔT), superficial y volumétrica.</li>
+          <li><strong>Líquidos y gases:</strong> dilatación volumétrica (ΔV = βV₀ΔT).</li>
+        </ul>
+        
+        <h2>Aplicaciones prácticas</h2>
+        <p>Juntas de expansión en puentes, termostatos y otros dispositivos técnicos que deben compensar los cambios de tamaño por temperatura.</p>
+        
+        <div class="formula">
+          <p>Dilatación lineal: ΔL = αL₀ΔT</p>
+          <p>Dilatación volumétrica: ΔV = βV₀ΔT</p>
+        </div>
+      </section>
+      
+      <!-- UNIDAD 8 -->
+      <section id="unidad8" class="content-section">
+        <h1>Unidad 8: Energías Alternativas y Nucleares</h1>
+        
+        <h2>Fuentes de energía alternativa</h2>
+        <ul class="custom-list">
+          <li><strong>Solar:</strong> Conversión fotovoltaica de luz solar en electricidad.</li>
+          <li><strong>Eólica:</strong> Aprovechamiento de la energía cinética del viento.</li>
+          <li><strong>Mareomotriz:</strong> Energía de las mareas oceánicas.</li>
+          <li><strong>Energía de las olas:</strong> Aprovechamiento del movimiento ondulatorio del mar.</li>
+        </ul>
+        
+        <h2>Energía nuclear</h2>
+        <ul class="custom-list">
+          <li><strong>Cuantificación de la energía:</strong> Relación masa-energía (E=mc²).</li>
+          <li><strong>Procesos:</strong> Fisión (división de núcleos pesados) y fusión (unión de núcleos ligeros).</li>
+        </ul>
+        
+        <div class="highlight-box">
+          <p><strong>⚡ Dato importante:</strong> La energía nuclear actual se basa en fisión, mientras que la fusión nuclear (como en el Sol) es una tecnología en desarrollo que promete energía limpia y abundante.</p>
+        </div>
+      </section>
+      
+      <!-- SECCIÓN FÓRMULAS CLAVE -->
+      <section id="formulas" class="content-section">
+        <h1>Fórmulas Clave</h1>
+        
+        <h2>Mecánica</h2>
+        <div class="formula">
+          <p>Segunda Ley de Newton: F = m · a</p>
+          <p>Energía potencial gravitatoria: U<sub>g</sub> = m · g · h</p>
+          <p>Rozamiento estático máximo: f<sub>e,max</sub> = μ<sub>e</sub> · N</p>
+        </div>
+        
+        <h2>Cinemática</h2>
+        <div class="formula">
+          <p>Velocidad: v = Δx/Δt</p>
+          <p>Aceleración: a = Δv/Δt</p>
+          <p>Movimiento uniformemente acelerado: x = x₀ + v₀t + ½at²</p>
+        </div>
+        
+        <h2>Energía</h2>
+        <div class="formula">
+          <p>Trabajo: W = F · d · cosθ</p>
+          <p>Energía cinética: K = ½mv²</p>
+          <p>Potencia: P = W/t</p>
+        </div>
+        
+        <h2>Termodinámica</h2>
+        <div class="formula">
+          <p>Dilatación lineal: ΔL = αL₀ΔT</p>
+          <p>Conversión de temperatura: °F = (9/5)°C + 32</p>
+          <p>Calor específico: Q = mcΔT</p>
+        </div>
+      </section>
+      
+      <!-- SECCIÓN PROBLEMAS RESUELTOS -->
+      <section id="ejemplos" class="content-section">
+        <h1>Problemas Resueltos</h1>
+        
+        <div class="example">
+          <div class="example-title">Problema 1: Rozamiento estático</div>
+          <p>Un bloque de 20 kg está en reposo sobre una superficie horizontal con μ<sub>e</sub> = 0.4. ¿Qué fuerza mínima se necesita para moverlo?</p>
+          <p><strong>Solución:</strong></p>
+          <p>1. Calcular fuerza normal: N = m·g = 20 kg × 9.8 m/s² = 196 N</p>
+          <p>2. Calcular rozamiento máximo: f<sub>e,max</sub> = μ<sub>e</sub>·N = 0.4 × 196 N = 78.4 N</p>
+          <p>3. Se necesita una fuerza > 78.4 N para mover el bloque.</p>
+        </div>
+        
+        <div class="example">
+          <div class="example-title">Problema 2: Conversión de temperatura</div>
+          <p>Convertir 25°C a Fahrenheit y Kelvin.</p>
+          <p><strong>Solución:</strong></p>
+          <p>1. A Fahrenheit: °F = (9/5)×25 + 32 = 77°F</p>
+          <p>2. A Kelvin: K = 25 + 273.15 = 298.15 K</p>
+        </div>
+        
+        <div class="example">
+          <div class="example-title">Problema 3: Energía potencial</div>
+          <p>Calcular la energía potencial de un objeto de 5 kg a 10 m de altura.</p>
+          <p><strong>Solución:</strong></p>
+          <p>U<sub>g</sub> = m·g·h = 5 kg × 9.8 m/s² × 10 m = 490 J</p>
+        </div>
+        
+        <div class="example">
+          <div class="example-title">Problema 4: Dilatación térmica</div>
+          <p>Una barra de hierro (α = 12×10⁻⁶ °C⁻¹) mide 2 m a 20°C. ¿Cuánto se alargará a 50°C?</p>
+          <p><strong>Solución:</strong></p>
+          <p>ΔT = 50°C - 20°C = 30°C</p>
+          <p>ΔL = αL₀ΔT = 12×10⁻⁶ × 2 m × 30 = 0.00072 m = 0.72 mm</p>
+        </div>
+      </section>
+    </main>
+  </div>
+  
+  <!-- PIE DE PÁGINA -->
+  <footer>
+    <p>© 2025 Física Completa</p>
+    <p>Portal educativo de M.B.I</p>
+    <p class="footer-credits">Contenido diseñado según plan de estudios oficial. No nos hacemos responsables por variaciones en los programas de cada institución.</p>
+  </footer>
+  <script src="1° Fisica.js"></script>
+</body>
+</html>

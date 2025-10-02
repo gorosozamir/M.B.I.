@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programación Estructurada</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="3° Programación Estructurada.css">
+</head>
+<body>
+  <!-- CABECERA -->
+  <header>
+    <div class="header-content">
+      <div class="logo">Programación Estructurada</div>
+      <a href="pagina3.html" class="back-button">← Volver</a>
+    </div>
+  </header>
+  
+  <!-- CONTENEDOR PRINCIPAL -->
+  <div class="container">
+    <!-- BARRA LATERAL -->
+    <aside class="sidebar">
+      <h3>Unidades</h3>
+      <ul>
+        <li><a href="#" class="sidebar-link active" data-section="unidad1">1. Programación Orientada a Objetos</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad2">2. Lenguajes de Programación</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad3">3. Tipos y Estructuras de Datos</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad4">4. Estructuras Dinámicas</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad5">5. Iteración y Recorridos</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad6">6. Conjuntos y TAD Derivados</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad7">7. Almacenamiento Externo</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad8">8. Competencias a Desarrollar</a></li>
+      </ul>
+      
+      <h3>Recursos</h3>
+      <ul>
+        <li><a href="#" class="sidebar-link" data-section="ejercicios">Ejercicios Resueltos</a></li>
+        <li><a href="#" class="sidebar-link" data-section="plantillas">Plantillas de Código</a></li>
+        <li><a href="#" class="sidebar-link" data-section="bibliografia">Bibliografía Recomendada</a></li>
+        <li><a href="#" class="sidebar-link" data-section="proyectos">Proyectos Prácticos</a></li>
+      </ul>
+    </aside>
+    
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="main-content">
+      <!-- UNIDAD 1 -->
+      <section id="unidad1" class="content-section active">
+        <h1>1. Programación Orientada a Objetos (POO)</h1>
+        
+        <h2>Fundamentos de la Programación Orientada a Objetos</h2>
+        <p>La POO es un paradigma de programación basado en la estructura de objetos, que contienen datos (atributos) y funciones (métodos) que manipulan dichos datos. Se orienta a modelar entidades del mundo real y sus interacciones para facilitar la organización, reutilización y mantenimiento del código.</p>
+        
+        <div class="highlight-box">
+          <p><strong>Relación entre la POO y la calidad del software:</strong> POO contribuye a mejorar la calidad del software al promover modularidad, reutilización de código, abstracción y encapsulamiento, lo cual aumenta la mantenibilidad, reduce errores y facilita la evolución del software.</p>
+        </div>
+        
+        <h2>Conceptos Clave de POO</h2>
+        <ul class="custom-list">
+          <li><strong>Clases y objetos:</strong> Una clase es un molde o plantilla que define atributos y comportamientos comunes; un objeto es una instancia concreta de una clase.</li>
+          <li><strong>Encapsulamiento:</strong> Oculta la información interna del objeto, permitiendo acceso solo a través de métodos públicos, protegiendo datos y facilitando la modularidad.</li>
+          <li><strong>Herencia:</strong> Permite que una clase derive características y comportamientos de otra, favoreciendo la reutilización y extensión del código.</li>
+          <li><strong>Polimorfismo:</strong> Permite que diferentes clases respondan a la misma interfaz de manera distinta, facilitando la flexibilidad y el diseño extensible.</li>
+        </ul>
+        
+        <h2>Contextualización de estructuras de datos en POO</h2>
+        <p>Las estructuras de datos se modelan como clases u objetos, encapsulando tanto los datos (nodos, elementos) como operaciones (inserción, eliminación), integrándose con los principios de la orientación a objetos para una mejor organización y abstracción.</p>
+        
+        <h2>Beneficios de la POO</h2>
+        <ul class="custom-list">
+          <li><strong>Modularidad:</strong> El código se organiza en componentes independientes (objetos)</li>
+          <li><strong>Reutilización:</strong> Las clases pueden ser extendidas y reutilizadas en diferentes contextos</li>
+          <li><strong>Mantenibilidad:</strong> Cambios en una parte del sistema tienen menor impacto en otras</li>
+          <li><strong>Escalabilidad:</strong> Facilita el crecimiento y evolución del software</li>
+          <li><strong>Modelado realista:</strong> Representación más intuitiva de problemas del mundo real</li>
+        </ul>
+      </section>
+      
+      <!-- UNIDAD 2 -->
+      <section id="unidad2" class="content-section">
+        <h1>2. Lenguajes de Programación</h1>
+        
+        <h2>Definición de un lenguaje algorítmico</h2>
+        <p>Es un lenguaje formal que permite expresar algoritmos de manera estructurada y comprensible para ser ejecutados por computadoras, con reglas sintácticas, semánticas y pragmáticas claras.</p>
+        
+        <h2>Lenguaje Java</h2>
+        
+        <h3>Aspectos sintácticos</h3>
+        <p>Utiliza una sintaxis similar a C++, con definición de clases, uso de llaves para bloques, tipos de datos estáticos y una estructura clara de métodos y constructores.</p>
+        
+        <h3>Aspectos semánticos</h3>
+        <p>Establece el significado de las instrucciones, control de tipos, comportamiento de objetos, manejo de memoria automática, y reglas para ejecución correcta.</p>
+        
+        <h3>Aspectos pragmáticos</h3>
+        <p>Incluyen diseño orientado a objetos, portabilidad multiplataforma mediante la JVM, manejo de excepciones, concurrencia y librerías estándar para diversas aplicaciones.</p>
+        
+        <h2>Recursos de Java para:</h2>
+        <ul class="custom-list">
+          <li><strong>Iteración:</strong> Bucles for, while, do-while, y el uso de iteradores para recorrer colecciones.</li>
+          <li><strong>Abstracción:</strong> Definición de clases abstractas e interfaces para describir comportamientos sin implementar detalles concretos.</li>
+          <li><strong>Implementación de estructuras de datos:</strong> Uso de clases como ArrayList, LinkedList, Stack, y definición personalizada con encapsulamiento y métodos específicos.</li>
+        </ul>
+      </section>
+      
+      <!-- UNIDAD 3 -->
+      <section id="unidad3" class="content-section">
+        <h1>3. Tipos y Estructuras de Datos</h1>
+        
+        <h2>Conceptos fundamentales</h2>
+        <ul class="custom-list">
+          <li><strong>Tipos de datos:</strong> Son categorías que identifican la naturaleza del dato (int, float, char, boolean, etc.) y definen operaciones válidas.</li>
+          <li><strong>Estructuras de datos:</strong> Formas de organizar y almacenar datos para facilitar acceso y modificación (listas, pilas, colas, árboles).</li>
+          <li><strong>Tipos abstractos de datos (TAD):</strong> Definiciones de estructuras de datos que incluyen operaciones específicas, independiente de su implementación.</li>
+          <li><strong>Tipos de datos recursivos:</strong> Tipos definidos en términos de sí mismos, usados para estructuras como listas enlazadas y árboles.</li>
+          <li><strong>Representación de datos en memoria:</strong> Datos almacenados secuencial o enlazadamente, usando direcciones de memoria y punteros para estructuras dinámicas.</li>
+        </ul>
+        
+        <h2>Estructuras básicas</h2>
+        
+        <h3>Pilas (Stacks)</h3>
+        <ul class="custom-list">
+          <li><strong>Definición:</strong> TAD que modela una colección LIFO (último en entrar, primero en salir).</li>
+          <li><strong>Implementación:</strong> Con arreglos o listas enlazadas, operaciones principales: push (insertar), pop (eliminar), y peek (consultar).</li>
+          <li><strong>Aplicaciones:</strong> Recursión, reversión y análisis sintáctico.</li>
+        </ul>
+        
+        <h3>Colas (Queues)</h3>
+        <ul class="custom-list">
+          <li><strong>Definición:</strong> TAD para una colección FIFO (primero en entrar, primero en salir).</li>
+          <li><strong>Implementación:</strong> Similar a pilas, con operaciones enqueue (insertar) y dequeue (eliminar).</li>
+          <li><strong>Variantes:</strong> Colas dobles, circulares y de prioridad que combinan comportamientos de pilas y colas.</li>
+        </ul>
+      </section>
+      
+      <!-- UNIDAD 4 -->
+      <section id="unidad4" class="content-section">
+        <h1>4. Estructuras Dinámicas</h1>
+        
+        <h2>Estructuras enlazadas</h2>
+        <p>Listas donde cada elemento apunta al siguiente (y opcionalmente al anterior), permitiendo inserciones y eliminaciones dinámicas.</p>
+        
+        <h2>Estructuras dinámicas</h2>
+        <p>Permiten modificar su tamaño durante la ejecución, facilitando gestión flexible de memoria y datos.</p>
+        
+        <h2>Aplicaciones</h2>
+        <p>Manejo eficiente de memoria, pilas o colas dinámicas, árboles, grafos.</p>
+        
+        <h2>Representación en POO</h2>
+        <p>Cada nodo y estructura representado como objeto con atributos y métodos, facilitando modularidad y reutilización.</p>
+        
+        <h2>Implementación en Java</h2>
+        <p>Definición de clases para nodos y estructuras, uso de referencias para manejar enlaces.</p>
+      </section>
+      
+      <!-- UNIDAD 5 -->
+      <section id="unidad5" class="content-section">
+        <h1>5. Iteración y Recorridos</h1>
+        
+        <h2>Recorrido de estructuras de datos</h2>
+        <p>Técnicas para visitar todos los elementos, ej. recorrido secuencial, preorden/inorden/postorden en árboles.</p>
+        
+        <h2>Mecanismos de abstracción</h2>
+        <p>Uso del TAD Iterador que unifica la interfaz para recorrer distintas estructuras sin conocer su implementación específica.</p>
+        
+        <h2>Java y iteración</h2>
+        <p>La interfaz Iterator permite recorrer colecciones de manera uniforme con métodos hasNext() y next().</p>
+        
+        <h2>Iteración en estructuras lineales</h2>
+        <p>Aplicación de iteradores en listas, pilas y colas para procesar sus elementos.</p>
+      </section>
+      
+      <!-- UNIDAD 6 -->
+      <section id="unidad6" class="content-section">
+        <h1>6. Conjuntos y Tipos Abstractos Derivados</h1>
+        
+        <h2>TAD Conjunto</h2>
+        <p>Modelo que representa colecciones sin orden ni duplicados, con operaciones de inserción, eliminación y consulta.</p>
+        
+        <h2>Estructuras para conjuntos</h2>
+        <p>Arrays, listas enlazadas, tablas hash, árboles balanceados para representación eficiente.</p>
+        
+        <h2>Modelos conjuntistas</h2>
+        <ul class="custom-list">
+          <li><strong>Colas con prioridad:</strong> Seleccionan el próximo elemento basado en una prioridad.</li>
+          <li><strong>Diccionarios o mapas:</strong> Asocian llaves a valores utilizando estructuras como tablas hash o árboles.</li>
+        </ul>
+        
+        <h2>Aplicaciones e implementaciones</h2>
+        <p>Búsqueda rápida, gestión de datos, bases de datos en memoria.</p>
+        
+        <h2>Análisis comparativo</h2>
+        <p>Depende de requisitos de eficiencia en acceso, inserción, eliminación y uso de memoria.</p>
+      </section>
+      
+      <!-- UNIDAD 7 -->
+      <section id="unidad7" class="content-section">
+        <h1>7. Almacenamiento Externo</h1>
+        
+        <h2>Medios de almacenamiento externo</h2>
+        <p>Discos duros, SSD, cintas magnéticas, memorias flash, etc., clasificados por tecnología, velocidad y acceso.</p>
+        
+        <h2>Organización</h2>
+        <ul class="custom-list">
+          <li><strong>Secuencial:</strong> Datos almacenados uno tras otro.</li>
+          <li><strong>Con índices:</strong> Listas auxiliares para acelerar búsqueda.</li>
+          <li><strong>Acceso directo:</strong> Datos accesibles en cualquier orden sin leer secuencialmente.</li>
+        </ul>
+        
+        <h2>Archivos</h2>
+        <ul class="custom-list">
+          <li><strong>Organización secuencial:</strong> Usada en listas y archivos de texto.</li>
+          <li><strong>Organización con índices:</strong> Para optimizar búsquedas.</li>
+          <li><strong>Acceso directo:</strong> Permite actualización rápida sin reescribir todo el archivo.</li>
+        </ul>
+        
+        <h2>Estructuras de datos aptas para almacenamiento externo</h2>
+        <p>Árboles B y variantes, listas indexadas.</p>
+        
+        <h2>Aplicaciones prácticas</h2>
+        <p>Bases de datos, sistemas de archivos, almacenamiento en caché.</p>
+      </section>
+      
+      <!-- UNIDAD 8 -->
+      <section id="unidad8" class="content-section">
+        <h1>8. Competencias a Desarrollar</h1>
+        
+        <h2>Habilidades del programador</h2>
+        <ul class="custom-list">
+          <li><strong>Buscar y analizar código ajeno:</strong> Para entender su estructura y funcionalidad.</li>
+          <li><strong>Elegir la mejor implementación de TAD:</strong> Considerando eficiencia y contexto del problema.</li>
+          <li><strong>Analizar críticamente estructuras de datos:</strong> Según flexibilidad, rendimiento, y adaptabilidad.</li>
+          <li><strong>Pensamiento algorítmico:</strong> Resolución lógica de problemas.</li>
+          <li><strong>Depuración:</strong> Identificación y corrección de errores.</li>
+          <li><strong>Trabajo en equipo:</strong> Colaboración en proyectos.</li>
+          <li><strong>Aprendizaje continuo:</strong> Adaptación a nuevas tecnologías.</li>
+        </ul>
+      </section>
+      
+      <!-- EJERCICIOS RESUELTOS -->
+      <section id="ejercicios" class="content-section">
+        <h1>Ejercicios Resueltos</h1>
+        
+        <h2>Práctica guiada</h2>
+        <div class="highlight-box">
+          <p><strong>Ejercicios paso a paso:</strong> Resolución detallada de problemas comunes de programación con explicaciones claras.</p>
+        </div>
+      </section>
+      
+      <!-- PLANTILLAS DE CÓDIGO -->
+      <section id="plantillas" class="content-section">
+        <h1>Plantillas de Código</h1>
+        
+        <h2>Estructuras reutilizables</h2>
+        <ul class="custom-list">
+          <li><strong>Plantilla de clase:</strong> Estructura básica de una clase</li>
+          <li><strong>Plantilla de lista enlazada:</strong> Implementación completa</li>
+          <li><strong>Plantilla de árbol binario:</strong> Con métodos de recorrido</li>
+        </ul>
+      </section>
+      
+      <!-- BIBLIOGRAFÍA -->
+      <section id="bibliografia" class="content-section">
+        <h1>Bibliografía Recomendada</h1>
+        
+        <h2>Fuentes de consulta</h2>
+        <div class="highlight-box">
+          <p><strong>Libros fundamentales:</strong></p>
+          <p>• "Introducción a la Programación" - Deitel & Deitel</p>
+          <p>• "Estructuras de Datos y Algoritmos" - Alfred V. Aho</p>
+          <p>• "Clean Code" - Robert C. Martin</p>
+        </div>
+      </section>
+      
+      <!-- PROYECTOS PRÁCTICOS -->
+      <section id="proyectos" class="content-section">
+        <h1>Proyectos Prácticos</h1>
+        
+        <h2>Aplicación real de conceptos</h2>
+        <div class="highlight-box">
+          <p><strong>Proyectos guiados:</strong> Desarrollo de aplicaciones completas que integran todos los conceptos aprendidos.</p>
+        </div>
+      </section>
+    </main>
+  </div>
+  
+  <!-- PIE DE PÁGINA -->
+  <footer>
+    <p>© 2025 Programación Estructurada</p>
+    <p class="footer-credits">Portal educativo de <strong>M.B.I.</strong></p>
+    <p class="footer-credits">Contenido diseñado según plan de estudios oficial. No nos hacemos responsables por variaciones en los programas de cada institución.</p>
+  </footer>
+  <script src="3° Programación Estructurada.js"></script>
+</body>
+</html>

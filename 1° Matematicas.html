@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matemáticas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="1° Matematicas.css">
+</head>
+<body>
+  <!-- CABECERA CON DEGRADADO -->
+  <header>
+    <div class="header-content">
+      <div class="logo">Matemáticas</div>
+      <button class="back-button" onclick="window.location.href='pagina1.html'">
+        ← Volver
+      </button>
+    </div>
+  </header>
+  
+  <!-- CONTENEDOR PRINCIPAL -->
+  <div class="container">
+    <!-- BARRA LATERAL CON ÍCONOS -->
+    <aside class="sidebar">
+      <h3>Unidades</h3>
+      <ul>
+        <li><a href="#" class="sidebar-link active" data-section="unidad1">Unidad 1: Números Reales</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad2">Unidad 2: Radicales</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad3">Unidad 3: Función Lineal</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad4">Unidad 4: Distancias en el Plano</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad5">Unidad 5: Trigonometría</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad6">Unidad 6: Función Cuadrática</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad7">Unidad 7: Números Complejos</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad8">Unidad 8: Logaritmos</a></li>
+      </ul>
+      
+      <h3>Recursos</h3>
+      <ul>
+        <li><a href="#" class="sidebar-link" data-section="formulas-clave">Fórmulas Clave</a></li>
+        <li><a href="#" class="sidebar-link" data-section="ejemplos-practicos">Ejemplos Prácticos</a></li>
+        <li><a href="#" class="sidebar-link" data-section="graficos-interactivos">Gráficos Interactivos</a></li>
+      </ul>
+    </aside>
+    
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="main-content">
+      <!-- UNIDAD 1: NÚMEROS REALES -->
+      <section id="unidad1" class="content-section active">
+        <h1>Unidad 1: Conjunto de Números Reales</h1>
+        
+        <h2>Operaciones con números racionales</h2>
+        <p>Los números racionales forman parte de los reales y son cerrados bajo suma, multiplicación y división (excepto por 0), es decir, el resultado de estas operaciones entre racionales da un racional.</p>
+        
+        <div class="highlight-box">
+          <p><strong>📌 Propiedades:</strong> Cumplen la asociatividad, conmutatividad y tienen elementos neutros para suma (0) y multiplicación (1).</p>
+        </div>
+        
+        <h2>Potenciación y radicación</h2>
+        <p>La potenciación consiste en multiplicar un número por sí mismo varias veces; la radicación es su operación inversa.</p>
+        <ul class="custom-list">
+          <li><strong>Producto de potencias:</strong> aⁿ·aᵐ = aⁿ⁺ᵐ</li>
+          <li><strong>Cociente de potencias:</strong> aⁿ/aᵐ = aⁿ⁻ᵐ</li>
+          <li><strong>Potencia de una potencia:</strong> (aⁿ)ᵐ = aⁿ·ᵐ</li>
+          <li><strong>Potencia de un producto:</strong> (a·b)ⁿ = aⁿ·bⁿ</li>
+          <li><strong>Raíz de una raíz:</strong> ⁿ√ᵐ√a = ⁿ·ᵐ√a</li>
+        </ul>
+        
+        <h2>Operaciones combinadas</h2>
+        <p>Pueden mezclarse suma, multiplicación, división, potenciación y radicación respetando jerarquía de operaciones.</p>
+        
+        <h2>Existencia del número irracional</h2>
+        <p>Los números irracionales no pueden expresarse como fracción; ejemplos: √2, π. En la recta numérica se pueden representar construyendo triángulos rectángulos cuyos lados permiten ubicar raíces usando el teorema de Pitágoras (ejemplo: la hipotenusa de un triángulo isósceles de lados 1 vale √2), luego se traslada esa longitud a la recta.</p>
+      </section>
+      
+      <!-- UNIDAD 2: RADICALES -->
+      <section id="unidad2" class="content-section">
+        <h1>Unidad 2: Radicales</h1>
+        
+        <h2>Raíces sucesivas y simplificación</h2>
+        <p>Raíces sucesivas: anidar radicales equivale a multiplicar los índices. Para simplificar se factorea el radicando y se extraen factores que son potencias exactas.</p>
+        
+        <h2>Operaciones con radicales</h2>
+        <ul class="custom-list">
+          <li><strong>Suma:</strong> Solo se suman radicales semejantes (mismo índice y radicando)</li>
+          <li><strong>Multiplicación:</strong> Radicales con mismo índice: ⁿ√a·ⁿ√b = ⁿ√(a·b)</li>
+          <li><strong>División:</strong> ⁿ√a/ⁿ√b = ⁿ√(a/b)</li>
+        </ul>
+        
+        <h2>Racionalización de denominadores</h2>
+        <p>Proceso para eliminar raíces del denominador multiplicando por un radical adecuado.</p>
+        
+        <h2>Exponentes racionales</h2>
+        <p>Todo radical puede expresarse como potencia con exponente racional: ⁿ√aᵐ = aᵐ/ⁿ.</p>
+      </section>
+      
+      <!-- UNIDAD 3: FUNCIÓN LINEAL -->
+      <section id="unidad3" class="content-section">
+        <h1>Unidad 3: Función Lineal</h1>
+        
+        <h2>Ecuación explícita</h2>
+        <p>Tiene forma y = mx + b, donde m es la pendiente e b la ordenada al origen. Pendiente (m) indica inclinación; ordenada al origen (b) es la intersección con eje Y.</p>
+        
+        <h2>Representación gráfica</h2>
+        <p>La gráfica es una recta con inclinación determinada por la pendiente m, que corta al eje y en el punto (0,b).</p>
+        
+        <h2>Ecuación de una recta por un punto o dos puntos</h2>
+        <p>Haz de rectas: conjunto de todas las rectas que pasan por un punto dado, su ecuación tiene forma y - y₁ = m(x - x₁).</p>
+        <p>La ecuación de la recta que pasa por dos puntos (x₁,y₁) y (x₂,y₂) es: y - y₁ = (y₂-y₁)/(x₂-x₁) * (x - x₁)</p>
+        
+        <h2>Paralelismo y perpendicularidad</h2>
+        <ul class="custom-list">
+          <li>Dos rectas son paralelas si sus pendientes son iguales</li>
+          <li>Son perpendiculares si el producto de sus pendientes es -1</li>
+        </ul>
+      </section>
+      
+      <!-- UNIDAD 4: DISTANCIAS EN EL PLANO -->
+      <section id="unidad4" class="content-section">
+        <h1>Unidad 4: Distancias en el Plano</h1>
+        
+        <h2>Entre dos puntos</h2>
+        <p>d = √[(x₂-x₁)² + (y₂-y₁)²]</p>
+        
+        <h2>Entre un punto y una recta</h2>
+        <p>Para el punto (x₁,y₁) y la recta Ax + By + C = 0: d = |Ax₁ + By₁ + C|/√(A² + B²)</p>
+      </section>
+      
+      <!-- UNIDAD 5: TRIGONOMETRÍA -->
+      <section id="unidad5" class="content-section">
+        <h1>Unidad 5: Trigonometría</h1>
+        
+        <h2>Ángulos en grados y radianes</h2>
+        <p>Sistemas de medición angular: sexagesimal (grados, minutos, segundos) y circular (radianes).</p>
+        
+        <h2>Razones trigonométricas en triángulo rectángulo</h2>
+        <ul class="custom-list">
+          <li>seno = opuesto/hipotenusa</li>
+          <li>coseno = adyacente/hipotenusa</li>
+          <li>tangente = opuesto/adyacente</li>
+        </ul>
+        
+        <h2>Uso de calculadora</h2>
+        <p>Transformación entre razones y ángulos usando funciones trigonométricas inversas.</p>
+        
+        <h2>Teoremas fundamentales</h2>
+        <ul class="custom-list">
+          <li><strong>Teorema del seno:</strong> a/senA = b/senB = c/senC = 2R</li>
+          <li><strong>Teorema del coseno:</strong> a² = b² + c² - 2bc·cosA</li>
+        </ul>
+        
+        <h2>Identidades trigonométricas</h2>
+        <p>Relaciones fundamentales como sen²x + cos²x = 1, tanx = senx/cosx, y fórmulas de suma y resta de ángulos.</p>
+        
+        <h2>Circunferencia trigonométrica</h2>
+        <p>Círculo unitario donde se identifican razones circulares.</p>
+        
+        <h2>Ecuaciones y resolución de problemas</h2>
+        <p>Aplicación de las razones trigonométricas principales en la resolución de problemas prácticos.</p>
+      </section>
+      
+      <!-- UNIDAD 6: FUNCIÓN CUADRÁTICA -->
+      <section id="unidad6" class="content-section">
+        <h1>Unidad 6: Función Cuadrática</h1>
+        
+        <h2>Concepto</h2>
+        <p>y = ax² + bx + c, función polinómica de grado 2. Gráfica: parábola, que se abre hacia arriba si a>0 o hacia abajo si a<0.</p>
+        
+        <h2>Formas de expresión</h2>
+        <ul class="custom-list">
+          <li><strong>Polinómica:</strong> f(x) = ax² + bx + c</li>
+          <li><strong>Canónica:</strong> f(x) = a(x-h)² + k (vértice en (h,k))</li>
+          <li><strong>Factorizada:</strong> f(x) = a(x-x₁)(x-x₂) (si existen raíces reales)</li>
+        </ul>
+        
+        <h2>Análisis de la función</h2>
+        <ul class="custom-list">
+          <li>Vértice: x_v = -b/(2a), y_v = f(x_v)</li>
+          <li>Eje de simetría: x = x_v</li>
+          <li>Máximo o mínimo según el signo de a</li>
+          <li>Dos raíces si corta al eje X; una raíz si es tangente, ninguna si no corta</li>
+        </ul>
+        
+        <h2>Ecuaciones de segundo grado</h2>
+        <p>ax² + bx + c = 0 se resuelve con x = [-b ± √(b²-4ac)]/(2a). La discriminante (b²-4ac) determina la naturaleza de las raíces.</p>
+        <p><strong>Métodos de resolución:</strong> factorización, fórmula cuadrática o gráficamente.</p>
+      </section>
+      
+      <!-- UNIDAD 7: NÚMEROS COMPLEJOS -->
+      <section id="unidad7" class="content-section">
+        <h1>Unidad 7: Números Complejos</h1>
+        
+        <h2>Definición</h2>
+        <p>z = a + bi, donde i² = -1 (a parte real, b parte imaginaria)</p>
+        
+        <h2>Formas de expresión</h2>
+        <ul class="custom-list">
+          <li><strong>Binómica:</strong> z = a + bi</li>
+          <li><strong>Cartesiana:</strong> representación en el plano complejo</li>
+          <li><strong>Polar/Trigonométrica:</strong> z = r(cosθ + isenθ) donde r es módulo y θ argumento</li>
+        </ul>
+        
+        <h2>Operaciones</h2>
+        <ul class="custom-list">
+          <li><strong>Suma/resta:</strong> componentes reales e imaginarios</li>
+          <li><strong>Multiplicación:</strong> regla distributiva, empleando que i² = -1</li>
+          <li><strong>División:</strong> racionalizando por el conjugado</li>
+        </ul>
+        
+        <h2>Potencias de i</h2>
+        <p>Ciclo cada 4 potencias: i⁰=1, i¹=i, i²=-1, i³=-i, repitiéndose este patrón.</p>
+        
+        <h2>Representación gráfica</h2>
+        <p>Plano complejo; módulo (|z| = √(a²+b²)), argumento (arg(z) = arctan(b/a)), forma polar y trigonométrica.</p>
+        
+        <h2>Pasaje entre formas</h2>
+        <p>Conversión entre forma binómica, polar y trigonométrica.</p>
+      </section>
+      
+      <!-- UNIDAD 8: LOGARITMOS -->
+      <section id="unidad8" class="content-section">
+        <h1>Unidad 8: Logaritmos</h1>
+        
+        <h2>Definición</h2>
+        <p>logₐb = x es el exponente x para el cual aˣ = b (a > 0, a ≠ 1, b > 0)</p>
+        
+        <h2>Propiedades</h2>
+        <ul class="custom-list">
+          <li>logₐ(bc) = logₐb + logₐc</li>
+          <li>logₐ(b/c) = logₐb - logₐc</li>
+          <li>logₐ(bʳ) = r·logₐb</li>
+          <li>Cambio de base: logₐb = logₖb/logₖa</li>
+        </ul>
+        
+        <h2>Logaritmo natural</h2>
+        <p>Logaritmo neperiano (ln) tiene base e ≈ 2.71828, importante en cálculo.</p>
+        
+        <h2>Solución de ecuaciones</h2>
+        <p>Ecuaciones exponenciales y logarítmicas se resuelven aplicando propiedades y en muchos casos requieren el uso de calculadora científica para aproximaciones decimales.</p>
+        
+        <h2>Ejercicios y uso de calculadora</h2>
+        <p>Aplicación de conversiones y operaciones de logaritmos en situaciones prácticas y problemas combinados.</p>
+      </section>
+
+      <!-- SECCIONES DE RECURSOS (MANTENIDAS) -->
+      <section id="formulas-clave" class="resource-section">
+        <h1>Fórmulas Clave</h1>
+        
+        <h2>Álgebra</h2>
+        <ul class="custom-list">
+          <li><strong>Binomio al cuadrado:</strong> (a ± b)² = a² ± 2ab + b²</li>
+          <li><strong>Diferencia de cuadrados:</strong> a² - b² = (a + b)(a - b)</li>
+          <li><strong>Fórmula cuadrática:</strong> x = [-b ± √(b²-4ac)]/(2a)</li>
+        </ul>
+        
+        <h2>Geometría Analítica</h2>
+        <ul class="custom-list">
+          <li><strong>Distancia entre puntos:</strong> d = √[(x₂-x₁)² + (y₂-y₁)²]</li>
+          <li><strong>Pendiente:</strong> m = (y₂-y₁)/(x₂-x₁)</li>
+          <li><strong>Ecuación recta:</strong> y = mx + b</li>
+        </ul>
+        
+        <h2>Trigonometría</h2>
+        <ul class="custom-list">
+          <li><strong>Identidad fundamental:</strong> sen²x + cos²x = 1</li>
+          <li><strong>Teorema del seno:</strong> a/senA = b/senB = c/senC</li>
+          <li><strong>Teorema del coseno:</strong> a² = b² + c² - 2bc·cosA</li>
+        </ul>
+      </section>
+
+      <section id="ejemplos-practicos" class="resource-section">
+        <h1>Ejemplos Prácticos</h1>
+        
+        <h2>Resolución de ecuaciones</h2>
+        <div class="highlight-box">
+          <p><strong>Ejemplo 1:</strong> Resolver 2x + 5 = 17<br>
+          Solución: 2x = 17 - 5 → 2x = 12 → x = 6</p>
+        </div>
+        
+        <div class="highlight-box">
+          <p><strong>Ejemplo 2:</strong> Resolver x² - 5x + 6 = 0<br>
+          Solución: (x-2)(x-3)=0 → x=2 o x=3</p>
+        </div>
+        
+        <h2>Problemas de aplicación</h2>
+        <div class="highlight-box">
+          <p><strong>Problema:</strong> Un terreno rectangular tiene 20m más de largo que de ancho y su área es de 800m². ¿Cuáles son sus dimensiones?<br>
+          <strong>Solución:</strong> x(x+20)=800 → x²+20x-800=0 → x=20m (ancho), 40m (largo)</p>
+        </div>
+      </section>
+
+      <section id="graficos-interactivos" class="resource-section">
+        <h1>Gráficos Interactivos</h1>
+        
+        <div class="highlight-box">
+          <p><strong>Funciones lineales:</strong> Visualiza cómo cambia una recta al modificar su pendiente y ordenada al origen.</p>
+        </div>
+        
+        <div class="highlight-box">
+          <p><strong>Parábolas:</strong> Observa cómo los coeficientes afectan la forma y posición de una función cuadrática.</p>
+        </div>
+        
+        <div class="highlight-box">
+          <p><strong>Circunferencia trigonométrica:</strong> Explora las razones trigonométricas en el círculo unitario.</p>
+        </div>
+        
+        <p class="highlight-box"><strong>Nota:</strong> Estos recursos requieren conexión a internet para cargar las herramientas interactivas.</p>
+      </section>
+    </main>
+  </div>
+  
+  <!-- PIE DE PÁGINA -->
+  <footer>
+    <p>© 2025 Matemáticas </p>
+    <p>Portal educativo de M.B.I</p>
+    <p class="footer-credits">Contenido diseñado según plan de estudios oficial. No nos hacemos responsables por variaciones en los programas de cada institución.</p>
+  </footer>
+
+<script src="1° Matematicas.js"></script>
+</body>
+</html>

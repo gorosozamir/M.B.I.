@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Análisis de Sistemas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="3° Analisis de Sistemas.css">
+</head>
+<body>
+  <!-- CABECERA -->
+  <header>
+    <div class="header-content">
+      <div class="logo">Análisis de Sistemas</div>
+      <a href="pagina3.html" class="back-button">← Volver</a>
+    </div>
+  </header>
+  
+  <!-- CONTENEDOR PRINCIPAL -->
+  <div class="container">
+    <!-- BARRA LATERAL -->
+    <aside class="sidebar">
+      <h3>Unidades</h3>
+      <ul>
+        <li><a href="#" class="sidebar-link active" data-section="unidad1">1. Conceptos fundamentales</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad2">2. La empresa como sistema</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad3">3. Ciclo de vida del software y gestión de requerimientos</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad4">4. Análisis y modelado del sistema</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad5">5. Análisis de datos y procesos</a></li>
+      </ul>
+      
+      <h3>Recursos</h3>
+      <ul>
+        <li><a href="#" class="sidebar-link" data-section="bibliografia">Bibliografía</a></li>
+        <li><a href="#" class="sidebar-link" data-section="herramientas">Herramientas</a></li>
+        <li><a href="#" class="sidebar-link" data-section="casos">Casos prácticos</a></li>
+      </ul>
+    </aside>
+    
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="main-content">
+      <!-- UNIDAD 1 -->
+      <section id="unidad1" class="content-section active">
+        <h1>1. Conceptos fundamentales</h1>
+        
+        <h2>Concepto de sistema y de sistema de información</h2>
+        <p>Un sistema es un conjunto de elementos interrelacionados y organizados que actúan de manera coordinada para lograr un objetivo común. Estos elementos pueden ser físicos, humanos, procesos, etc.</p>
+        
+        <div class="highlight-box">
+          <p><strong>🔍 Definición clave:</strong> Un sistema de información es un conjunto ordenado de personas, procesos y herramientas cuyo objetivo es administrar datos e información para que puedan ser recuperados, procesados y utilizados eficientemente en una organización. Incluye recursos humanos, tecnológicos y de procesos, no es solo un sistema informático.</p>
+        </div>
+        
+        <h2>Desarrollo histórico de la Teoría General de Sistemas (TGS)</h2>
+        <p>La TGS fue planteada en 1950 por Ludwig von Bertalanffy, quien la concibió como una teoría interdisciplinaria para describir principios válidos para todos los sistemas.</p>
+        
+        <ul class="custom-list">
+          <li>Busca integrar ciencias naturales y sociales</li>
+          <li>Promueve modelos teóricos aplicables en varias disciplinas</li>
+          <li>Fomenta la unidad de la ciencia</li>
+          <li>Ha influido en áreas como cibernética, teoría de la información, teoría del caos y ciencias de la complejidad</li>
+        </ul>
+        
+        <h2>Pensamiento sistémico</h2>
+        <p>Es la habilidad de analizar sistemas complejos considerando las interconexiones, dinámicas de cambio y retroalimentación entre sus partes.</p>
+        
+        <ul class="custom-list">
+          <li>Va de lo concreto a lo general, buscando entender la totalidad del sistema</li>
+          <li>Examina las causas profundas de problemas, en lugar de un análisis lineal y fragmentado</li>
+          <li>Permite abordar problemas y soluciones considerando el efecto a corto y largo plazo</li>
+          <li>Analiza cómo cada parte afecta al todo y las relaciones entre componentes</li>
+        </ul>
+      </section>
+      
+      <!-- UNIDAD 2 -->
+      <section id="unidad2" class="content-section">
+        <h1>2. La empresa como sistema</h1>
+        
+        <h2>Estructura</h2>
+        <p>La empresa es un sistema compuesto por subsistemas funcionales (producción, comercial, financiero, dirección y gestión, información).</p>
+        
+        <div class="highlight-box">
+          <p><strong>🔍 Dato clave:</strong> La estructura organiza funciones y responsabilidades, jerarquías, órganos de dirección, comunicación interna y normas, para alcanzar objetivos comunes. Debe ser flexible, escalable y alineada con la estrategia organizacional para adaptarse a un entorno cambiante.</p>
+        </div>
+        
+        <h2>Organización y aprendizaje</h2>
+        <p>La organización de aprendizaje es aquella que fomenta el aprendizaje continuo de todos sus miembros, compartiendo conocimiento y adaptándose permanentemente.</p>
+        
+        <ul class="custom-list">
+          <li>Se basa en la comunicación, la cooperación y la innovación continua</li>
+          <li>Transforma la cultura empresarial hacia una mentalidad de mejora constante</li>
+          <li>Incluye aprendizaje a nivel individual, grupal y organizacional</li>
+          <li>Permite adaptación y mejora constante frente a cambios del entorno</li>
+        </ul>
+      </section>
+      
+      <!-- UNIDAD 3 -->
+      <section id="unidad3" class="content-section">
+        <h1>3. Ciclo de vida del software y gestión de requerimientos</h1>
+        
+        <h2>El ciclo de vida del software</h2>
+        <p>Comprende desde la concepción, planificación, análisis, diseño, desarrollo, pruebas, despliegue hasta el mantenimiento del software. Asegura calidad y eficiencia en el desarrollo mediante fases con objetivos y procesos definidos.</p>
+        
+        <h2>El problema de requisitos</h2>
+        <p>La gestión de requerimientos asegura que se entiendan, documenten y mantengan las necesidades del sistema, tanto funcionales como técnicas. Es fundamental para definir el alcance y evitar fallos de funcionalidad o costos extras.</p>
+        
+        <h2>Análisis del problema</h2>
+        <p>Incluye definición detallada del problema, identificación de involucrados, límites y restricciones. Se busca el entendimiento compartido entre cliente y desarrolladores, definiendo entradas, salidas y expectativas.</p>
+        
+        <h2>Concepto de requisito, necesidad de acuerdo y documentación</h2>
+        <p>Un requisito es una necesidad o condición que el sistema debe satisfacer. Requiere acuerdo explícito entre cliente y proveedor y debe ser documentado claramente para evitar malentendidos.</p>
+        
+        <h2>Requisitos funcionales y no funcionales</h2>
+        <ul class="custom-list">
+          <li><strong>Funcionales:</strong> describen qué debe hacer el sistema (tareas, procesos explícitos)</li>
+          <li><strong>No funcionales:</strong> describen cómo debe comportarse el sistema (rendimiento, seguridad, usabilidad)</li>
+        </ul>
+        
+        <h2>Obtención de requisitos y técnicas de recolección</h2>
+        <p>Técnicas comunes: entrevistas, cuestionarios, observación, análisis de documentos, prototipos, lluvia de ideas. Permiten extraer información necesaria para especificar requerimientos claros y completos.</p>
+        
+        <h2>El rol del analista de sistemas</h2>
+        <p>Analiza necesidades de negocio, diseña soluciones tecnológicas, gestiona integración y supervisa bases de datos y seguridad. Es puente entre usuarios y desarrolladores, facilitando comunicación y ayudando a definir requisitos técnicos.</p>
+      </section>
+      
+      <!-- UNIDAD 4 -->
+      <section id="unidad4" class="content-section">
+        <h1>4. Análisis y modelado del sistema</h1>
+        
+        <h2>Análisis de escenarios y de la interacción del usuario con el sistema</h2>
+        <p>Se identifican distintos escenarios de uso y cómo el usuario interactúa con el sistema para capturar requerimientos y comportamientos esperados.</p>
+        
+        <h2>Modelización conceptual del problema: técnicas</h2>
+        <p>Se utilizan diagramas y modelos para representar entidades, relaciones y procesos, facilitando la comprensión del problema.</p>
+        
+        <h2>Casos de uso, representación y análisis</h2>
+        <p>Diagramas UML de casos de uso representan funciones del sistema desde el punto de vista del usuario (actor). Se usan para visualizar interacciones, definir alcance y clarificar funciones del software.</p>
+        
+        <h2>Modelado con UML</h2>
+        <p>UML es un lenguaje estandarizado para modelar sistemas complejos con diagramas de estructura, comportamiento e interacción. Facilita la comunicación entre desarrolladores y stakeholders, proporcionando una visión clara del sistema.</p>
+      </section>
+      
+      <!-- UNIDAD 5 -->
+      <section id="unidad5" class="content-section">
+        <h1>5. Análisis de datos y procesos</h1>
+        
+        <h2>Análisis de los datos del sistema: modelado conceptual de datos, diccionario de datos</h2>
+        <p>Modelo conceptual describe entidades, atributos y relaciones a nivel alto, sin definir aún cómo se almacenan. El diccionario de datos documenta los elementos de datos (tablas, campos, tipos) para asegurar claridad y uniformidad.</p>
+        
+        <h2>Análisis estructurado de procesos: DFD (Diagramas de Flujo de Datos)</h2>
+        <p>Técnica para representar visualmente el flujo de información y transformación de datos del sistema mediante símbolos y diagramas. Ayuda a entender cómo fluyen los datos, qué procesos se llevan a cabo y las interacciones entre ellos.</p>
+        
+        <h2>Análisis de estados</h2>
+        <p>Estudia las diferentes condiciones o estados que un sistema o componente puede tener y las transiciones entre ellos. Fundamental para modelar sistemas dinámicos y comportamientos en respuesta a eventos y condiciones externas.</p>
+      </section>
+      
+      <!-- BIBLIOGRAFÍA -->
+      <section id="bibliografia" class="content-section">
+        <h1>Bibliografía</h1>
+        
+        <h2>Fuentes recomendadas</h2>
+        <div class="highlight-box">
+          <p><strong>Libros fundamentales:</strong></p>
+          <p>• "Análisis y Diseño de Sistemas" - Kendall & Kendall</p>
+          <p>• "Teoría General de Sistemas" - Ludwig von Bertalanffy</p>
+          <p>• "UML y Patrones" - Craig Larman</p>
+        </div>
+      </section>
+      
+      <!-- HERRAMIENTAS -->
+      <section id="herramientas" class="content-section">
+        <h1>Herramientas</h1>
+        
+        <h2>Software para análisis de sistemas</h2>
+        <ul class="custom-list">
+          <li><strong>Lucidchart:</strong> Diagramas de flujo y UML</li>
+          <li><strong>Visual Paradigm:</strong> Modelado empresarial</li>
+          <li><strong>Enterprise Architect:</strong> Diseño de sistemas complejos</li>
+        </ul>
+      </section>
+      
+      <!-- CASOS PRÁCTICOS -->
+      <section id="casos" class="content-section">
+        <h1>Casos prácticos</h1>
+        
+        <h2>Ejemplos reales de aplicación</h2>
+        <div class="highlight-box">
+          <p><strong>Estudio de casos:</strong> Análisis de sistemas implementados en empresas reales con sus desafíos y soluciones.</p>
+        </div>
+      </section>
+    </main>
+  </div>
+  
+  <!-- PIE DE PÁGINA -->
+  <footer>
+    <p>© 2025 Análisis de Sistemas</p>
+    <p class="footer-credits">Portal educativo de <strong>M.B.I.</strong></p>
+    <p class="footer-credits">Contenido diseñado según plan de estudios oficial. No nos hacemos responsables por variaciones en los programas de cada institución.</p>
+  </footer>
+  <script src="3° Analisis de Sistemas.js"></script>
+</body>
+</html>
+

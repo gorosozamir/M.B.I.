@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lógica y Álgebra</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="1° Logica y Algebra.css">
+</head>
+<body>
+  <!-- CABECERA -->
+  <header>
+    <div class="header-content">
+      <div class="logo">Lógica y Álgebra</div>
+      <a href="pagina1.html" class="back-button">← Volver</a>
+    </div>
+  </header>
+  
+  <!-- CONTENEDOR PRINCIPAL -->
+  <div class="container">
+    <!-- BARRA LATERAL -->
+    <aside class="sidebar">
+      <h3>Unidades</h3>
+      <ul>
+        <li><a href="#" class="active" data-section="unidad1">Unidad 1: Lógica computacional</a></li>
+        <li><a href="#" data-section="unidad2">Unidad 2: Lógica de primer orden</a></li>
+        <li><a href="#" data-section="unidad3">Unidad 3: Lógica conjuntista</a></li>
+        <li><a href="#" data-section="unidad4">Unidad 4: Conjuntos regulares</a></li>
+        <li><a href="#" data-section="unidad5">Unidad 5: Álgebra de extensiones</a></li>
+        <li><a href="#" data-section="unidad6">Unidad 6: Álgebra de Boole</a></li>
+        <li><a href="#" data-section="unidad7">Unidad 7: Compuertas lógicas</a></li>
+      </ul>
+      
+      <h3>Recursos</h3>
+      <ul>
+        <li><a href="#" data-section="tablas-verdad">Tablas de Verdad</a></li>
+        <li><a href="#" data-section="ejercicios">Ejercicios Resueltos</a></li>
+        <li><a href="#" data-section="diagramas">Diagramas</a></li>
+      </ul>
+    </aside>
+    
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="main-content">
+      <!-- UNIDAD 1 -->
+      <section id="unidad1" class="content-section active">
+        <h1>Unidad 1: Lógica computacional y lenguajes formales</h1>
+        
+        <h2>Nociones básicas de lógica computacional</h2>
+        <p>La lógica computacional es la aplicación de la lógica matemática en ciencias de la computación. Se utiliza para razonar formalmente sobre programas, propiedades de sistemas y construcción de lenguajes precisos para especificar y verificar software. Es fundamental en la creación de lenguajes de programación, algoritmos, pruebas formales y desarrollo de sistemas confiables.</p>
+        
+        <h2>Introducción a los lenguajes formales</h2>
+        <p>Un lenguaje formal es un conjunto de cadenas formadas por símbolos tomados de un alfabeto, limitadas por reglas estrictas llamadas gramáticas que definen la estructura sintáctica válida. Estas cadenas o fórmulas bien formadas constituyen el lenguaje que puede usarse para describir patrones en la computación, como lenguajes de programación o sistemas de razonamiento.</p>
+        
+        <h2>Definición de lenguaje formal</h2>
+        <p>Un lenguaje formal es un conjunto de palabras o cadenas de símbolos que cumplen reglas sintácticas predefinidas. Los símbolos forman un alfabeto y las reglas, la gramática formal. Por ejemplo, un lenguaje formal sobre el alfabeto {a,b} podría ser todas las cadenas que comienzan con a y terminan con b.</p>
+        
+        <h2>Expresiones, términos y fórmulas</h2>
+        <ul class="custom-list">
+          <li><strong>Expresión:</strong> Combinación de símbolos que representa un valor o entidad.</li>
+          <li><strong>Término:</strong> Tipo de expresión que puede representar objetos o elementos en el dominio.</li>
+          <li><strong>Fórmula:</strong> Expresión que representa una proposición o sentencia que puede ser verdadera o falsa. Las fórmulas se construyen con términos y conectivos lógicos según reglas formales.</li>
+        </ul>
+        
+        <h2>Variables libres y ligadas</h2>
+        <ul class="custom-list">
+          <li><strong>Variables libres:</strong> Aparecen en una fórmula sin estar cuantificadas; su valor no está restringido por operadores cuantificadores.</li>
+          <li><strong>Variables ligadas:</strong> Están bajo el alcance de cuantificadores como ∀ (para todo) o ∃ (existe), restringiendo su interpretación dentro de la fórmula. Esta distinción es importante para la semántica y validez lógica de las expresiones en lógica formal.</li>
+        </ul>
+        
+        <div class="highlight-box">
+          <p><strong>🔍 Importante:</strong> La lógica proposicional es la base para el diseño de circuitos digitales y la programación.</p>
+        </div>
+      </section>
+      
+      <!-- UNIDAD 2 -->
+      <section id="unidad2" class="content-section">
+        <h1>Unidad 2: Lógica formal de primer orden</h1>
+        
+        <h2>El cálculo deductivo de primer orden</h2>
+        <p>Se basa en formulaciones con cuantificadores y predicados, estructura que permite expresar propiedades sobre elementos de un dominio. Permite deducir teoremas mediante reglas formales de inferencia y es la base para sistemas de razonamiento automático.</p>
+        
+        <h2>Reglas derivadas de inferencia</h2>
+        <p>Incluyen modus ponens, modus tollens, generalización, instanciación y otros métodos que permiten obtener conclusiones válidas a partir de premisas. Estas reglas garantizan que las deducciones mantengan la verdad lógica en la lógica de primer orden.</p>
+        
+        <h2>Técnicas de deducción</h2>
+        <p>La deducción matemática en lógica de primer orden usa métodos como la deducción natural, tablas de verdad, resolución y sistematización formal para obtener conclusiones correctas y verificar la validez de proposiciones o programas.</p>
+        
+        <h2>Teorías axiomáticas</h2>
+        <p>Son conjuntos de axiomas y reglas que definen sistemas lógicos o matemáticos formales, donde se pueden derivar teoremas y estudiar propiedades como consistencia y completitud.</p>
+        
+        <h2>Conceptos: verdad, validez lógica, consistencia</h2>
+        <ul class="custom-list">
+          <li><strong>Verdad:</strong> Corresponde a la interpretación semántica en la cual una fórmula es verdadera.</li>
+          <li><strong>Validez lógica:</strong> Una fórmula es válida si es verdadera bajo cualquier interpretación.</li>
+          <li><strong>Consistencia:</strong> Un sistema lógico es consistente si no se derivan contradicciones.</li>
+        </ul>
+      </section>
+      
+      <!-- UNIDAD 3 -->
+      <section id="unidad3" class="content-section">
+        <h1>Unidad 3: Lógica conjuntista y ordinales</h1>
+        
+        <h2>Introducción a la lógica conjuntista</h2>
+        <p>Es el estudio de conjuntos y sus propiedades desde un enfoque lógico y formal, donde conjuntos se definen y manipulan con reglas precisas.</p>
+        
+        <h2>Construcción de los ordinales</h2>
+        <p>Los números ordinales extienden los naturales para describir ordenamientos bien fundados y secuencias que pueden ser infinitas, usados para medir posiciones y longitudes en orden.</p>
+        
+        <h2>Inducción y recursión transfinita</h2>
+        <p>Son técnicas matemáticas para definir funciones o realizar demostraciones sobre conjuntos y ordinales infinitos más allá del infinito numerable.</p>
+        
+        <h2>Funciones normales y aritmética ordinal</h2>
+        <p>Son funciones que preservan el orden y tienen propiedades especiales para el estudio combinatorio y algebraico de ordinales.</p>
+        
+        <h2>Forma normal de Cantor</h2>
+        <p>Es una representación única y canónica de cualquier número ordinal como suma de potencias decrecientes de ω (el primer ordinal infinito), necesaria para su análisis estructural.</p>
+        
+        <div class="highlight-box">
+          <p><strong>📚 Aplicación:</strong> Estos conceptos son fundamentales en teoría de conjuntos avanzada y fundamentos de matemáticas.</p>
+        </div>
+      </section>
+      
+      <!-- UNIDAD 4 -->
+      <section id="unidad4" class="content-section">
+        <h1>Unidad 4: Teoría de conjuntos regulares</h1>
+        
+        <h2>Conjuntos regulares</h2>
+        <p>Son conjuntos que cumplen ciertas propiedades axiomáticas que excluyen elementos como conjuntos que se contienen a sí mismos, evitando así paradojas.</p>
+        
+        <h2>Átomos en la teoría de conjuntos</h2>
+        <p>Elementos que no son conjuntos, pero pueden pertenecer a ellos; usados en extensiones de la teoría de conjuntos para modelar objetos no construidos a partir de conjuntos.</p>
+        
+        <div class="highlight-box">
+          <p><strong>⚠️ Prevención:</strong> Esta teoría evita paradojas como el conjunto de todos los conjuntos que no se contienen a sí mismos.</p>
+        </div>
+      </section>
+      
+      <!-- UNIDAD 5 -->
+      <section id="unidad5" class="content-section">
+        <h1>Unidad 5: Álgebra de extensiones y trazas</h1>
+        
+        <h2>Introducción al álgebra de extensiones</h2>
+        <p>Estudia extensiones de campos en álgebra, donde un campo más grande contiene a otro más pequeño, y cómo se relacionan sus elementos.</p>
+        
+        <h2>Extensiones algebraicas</h2>
+        <p>Son extensiones en las que cada elemento del campo extendido es raíz de un polinomio no nulo con coeficientes en el campo base.</p>
+        
+        <h2>Homomorfismos entre extensiones</h2>
+        <p>Son funciones que preservan la estructura de extensión, mapeando elementos manteniendo operaciones algebraicas.</p>
+        
+        <h2>Clausuras algebraicas</h2>
+        <p>Extensiones en las que todo polinomio tiene una raíz, es decir, el campo es algebraicamente cerrado.</p>
+        
+        <h2>Extensiones normales y separables</h2>
+        <p>Tipos de extensiones con propiedades que facilitan la descomposición y estudio de polinomios.</p>
+        
+        <h2>Teorema del elemento primitivo</h2>
+        <p>Establece que cualquier extensión finita separable de campos tiene un único generador.</p>
+        
+        <h2>Normas y trazas</h2>
+        <p>Son funciones que asocian elementos de la extensión a elementos del campo base, útiles en teoría de campos y aplicaciones.</p>
+      </section>
+      
+      <!-- UNIDAD 6 -->
+      <section id="unidad6" class="content-section">
+        <h1>Unidad 6: Álgebra de Boole y lógica digital</h1>
+        
+        <h2>Definiciones lógicas básicas</h2>
+        <p>Álgebra de Boole es un sistema algebraico que captura operaciones lógicas clásicas (AND, OR, NOT) definidas sobre un conjunto con dos elementos {0,1}.</p>
+        
+        <h2>Definición axiomática del álgebra de Boole</h2>
+        <p>Es un álgebra distributiva con elementos neutros y complementos que cumplen ciertos axiomas como idempotencia, conmutatividad, distributividad y ley del complemento.</p>
+        
+        <h2>Teoremas y propiedades del álgebra de Boole</h2>
+        <p>Incluyen leyes importantes como las leyes de De Morgan, absorción, doble negación, entre otras.</p>
+        
+        <h2>Funciones booleanas</h2>
+        <p>Son funciones de variables booleanas que toman valores en {0,1}, representando expresiones lógicas.</p>
+        
+        <h2>Otras operaciones lógicas</h2>
+        <p>Incluyen XOR, NAND, NOR y equivalencia, usadas para construir circuitos digitales y simplificar expresiones.</p>
+        
+        <div class="highlight-box">
+          <p><strong>💡 Dato clave:</strong> George Boole, en el siglo XIX, sentó las bases de la lógica algebraica que hoy usamos en circuitos digitales y programación.</p>
+        </div>
+      </section>
+      
+      <!-- UNIDAD 7 -->
+      <section id="unidad7" class="content-section">
+        <h1>Unidad 7: Compuertas lógicas y circuitos digitales</h1>
+        
+        <h2>Compuertas lógicas digitales</h2>
+        <p>Son circuitos básicos que implementan funciones booleanas: AND, OR, NOT, NAND, NOR, XOR, XNOR.</p>
+        
+        <h2>Familias de circuitos integrados lógicos digitales</h2>
+        <p>Incluyen tecnologías como TTL (Transistor-Transistor Logic) y CMOS (Complementary Metal-Oxide-Semiconductor), que diferencian eficiencia, velocidad y consumo.</p>
+        
+        <h3>Compuertas básicas</h3>
+        <ul class="custom-list">
+          <li><strong>AND:</strong> Salida verdadera solo si todas las entradas son verdaderas</li>
+          <li><strong>OR:</strong> Salida verdadera si al menos una entrada es verdadera</li>
+          <li><strong>NOT:</strong> Invierte el valor de entrada</li>
+          <li><strong>XOR:</strong> Salida verdadera si las entradas son diferentes</li>
+          <li><strong>NAND:</strong> Negación de AND</li>
+          <li><strong>NOR:</strong> Negación de OR</li>
+        </ul>
+        
+        <div class="highlight-box">
+          <p><strong>🔌 Aplicación:</strong> Estas compuertas son la base de todos los circuitos digitales modernos, desde calculadoras hasta supercomputadoras.</p>
+        </div>
+      </section>
+      
+      <!-- RECURSOS: TABLAS DE VERDAD -->
+      <section id="tablas-verdad" class="content-section">
+        <h2>Tablas de Verdad</h2>
+        <p>Herramienta fundamental para analizar proposiciones lógicas y determinar sus valores de verdad bajo todas las interpretaciones posibles.</p>
+        
+        <h3>Tablas básicas</h3>
+        <ul class="custom-list">
+          <li><strong>Negación (¬p):</strong> Invierte el valor de verdad</li>
+          <li><strong>Conjunción (p ∧ q):</strong> Verdadera solo cuando ambos operandos son verdaderos</li>
+          <li><strong>Disyunción (p ∨ q):</strong> Falsa solo cuando ambos operandos son falsos</li>
+          <li><strong>Implicación (p → q):</strong> Falsa solo cuando p es verdadera y q falsa</li>
+          <li><strong>Equivalencia (p ↔ q):</strong> Verdadera cuando ambos operandos tienen el mismo valor</li>
+        </ul>
+        
+        <div class="highlight-box">
+          <p><strong>💡 Consejo:</strong> Las tablas de verdad son esenciales para verificar tautologías y contradicciones.</p>
+        </div>
+      </section>
+      
+      <!-- RECURSOS: EJERCICIOS RESUELTOS -->
+      <section id="ejercicios" class="content-section">
+        <h2>Ejercicios Resueltos</h2>
+        <p>Colección de problemas prácticos con soluciones detalladas para reforzar los conceptos teóricos.</p>
+        
+        <h3>Ejercicios de lógica proposicional</h3>
+        <ul class="custom-list">
+          <li><strong>Ejercicio 1:</strong> Construir la tabla de verdad para (p → q) ∧ (q → p)</li>
+          <li><strong>Ejercicio 2:</strong> Simplificar la expresión ¬(¬p ∧ q) ∨ (p ∧ ¬q)</li>
+          <li><strong>Ejercicio 3:</strong> Probar que (p → q) ≡ (¬p ∨ q) usando tablas de verdad</li>
+        </ul>
+        
+        <h3>Ejercicios de álgebra de Boole</h3>
+        <ul class="custom-list">
+          <li><strong>Ejercicio 4:</strong> Simplificar la expresión A·B + A·¬B usando propiedades booleanas</li>
+          <li><strong>Ejercicio 5:</strong> Implementar la función F = A·B + ¬A·C usando compuertas lógicas</li>
+        </ul>
+      </section>
+      
+      <!-- RECURSOS: DIAGRAMAS -->
+      <section id="diagramas" class="content-section">
+        <h2>Diagramas</h2>
+        <p>Representaciones gráficas que facilitan la comprensión de relaciones y estructuras en lógica y álgebra.</p>
+        
+        <h3>Tipos de diagramas</h3>
+        <ul class="custom-list">
+          <li><strong>Diagramas de Venn:</strong> Visualizan relaciones entre conjuntos</li>
+          <li><strong>Diagramas de Hasse:</strong> Representan órdenes parciales</li>
+          <li><strong>Circuitos lógicos:</strong> Muestran conexiones entre compuertas</li>
+          <li><strong>Árboles sintácticos:</strong> Representan la estructura de fórmulas lógicas</li>
+          <li><strong>Diagramas de estados:</strong> Modelan sistemas con estados finitos</li>
+        </ul>
+        
+        <div class="highlight-box">
+          <p><strong>📊 Utilidad:</strong> Los diagramas ayudan a visualizar conceptos abstractos y facilitan el aprendizaje.</p>
+        </div>
+      </section>
+    </main>
+  </div>
+  
+  <!-- PIE DE PÁGINA -->
+  <footer>
+    <p>© 2025 Lógica y Álgebra</p>
+    <p class="footer-credits">Portal educativo de <strong>M.B.I.</strong></p>
+    <p class="footer-credits">Contenido diseñado según plan de estudios oficial. No nos hacemos responsables por variaciones en los programas de cada institución.</p>
+  </footer>
+
+<script src="1° Logica y Algebra.js"></script>
+</body>
+</html>

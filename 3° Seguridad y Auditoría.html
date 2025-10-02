@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seguridad y Auditoría</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="3° Seguridad y Auditoría.css">
+</head>
+<body>
+  <!-- CABECERA -->
+  <header>
+    <div class="header-content">
+      <div class="logo">Seguridad y Auditoría</div>
+      <a href="pagina3.html" class="back-button">← Volver</a>
+    </div>
+  </header>
+  
+  <!-- CONTENEDOR PRINCIPAL -->
+  <div class="container">
+    <!-- BARRA LATERAL -->
+    <aside class="sidebar">
+      <h3>Unidades</h3>
+      <ul>
+        <li><a href="#" class="sidebar-link active" data-section="unidad1">Unidad 1: Fundamentos</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad2">Unidad 2: Organización y Gestión</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad3">Unidad 3: Seguridad Operativa</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad4">Unidad 4: Criptografía</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad5">Unidad 5: Seguridad Física</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad6">Unidad 6: Ciclo de Vida del Software</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad7">Unidad 7: Gestión de Incidentes</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad8">Unidad 8: Auditoría y Marco Legal</a></li>
+      </ul>
+      
+      <h3>Recursos</h3>
+      <ul>
+        <li><a href="#" class="sidebar-link" data-section="bibliografia">Bibliografía Recomendada</a></li>
+        <li><a href="#" class="sidebar-link" data-section="casos">Casos Prácticos</a></li>
+        <li><a href="#" class="sidebar-link" data-section="plantillas">Plantillas de Informes</a></li>
+        <li><a href="#" class="sidebar-link" data-section="enlaces">Enlaces de Referencia</a></li>
+      </ul>
+    </aside>
+    
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="main-content">
+      <!-- UNIDAD 1 -->
+      <section id="unidad1" class="content-section active">
+        <h1>Unidad 1: Fundamentos de la Seguridad Informática</h1>
+        
+        <h2>Conceptos básicos y objetivos</h2>
+        <p>La seguridad informática o ciberseguridad es la práctica de proteger sistemas, redes, programas y datos de ataques, daños o accesos no autorizados. Los objetivos principales son proteger la confidencialidad, integridad y disponibilidad de la información, además de asegurar la autenticidad y no repudio.</p>
+        
+        <div class="highlight-box">
+          <p><strong>🛡️ Dato clave:</strong> El costo promedio de una violación de datos en 2025 superará los $5 millones por incidente, según IBM Security.</p>
+        </div>
+        
+        <h3>Principios fundamentales</h3>
+        <ul class="custom-list">
+          <li><strong>Privacidad/Confidencialidad:</strong> Garantizar que solo usuarios autorizados accedan a la información.</li>
+          <li><strong>Integridad:</strong> Asegurar que los datos no sean alterados sin permiso.</li>
+          <li><strong>Disponibilidad:</strong> La información debe estar accesible cuando se requiera.</li>
+        </ul>
+        
+        <h3>Tipos de amenazas y vulnerabilidades</h3>
+        <p>Amenazas incluyen malware (virus, ransomware), phishing, ataques DDoS, ingeniería social y amenazas internas. Vulnerabilidades son debilidades en sistemas que pueden ser explotadas.</p>
+        
+        <h3>Concepto de riesgo informático</h3>
+        <p>El riesgo es la posibilidad de que una amenaza explote una vulnerabilidad causando daño. Se evalúa para establecer prioridades y medidas preventivas.</p>
+      </section>
+      
+      <!-- UNIDAD 2 -->
+      <section id="unidad2" class="content-section">
+        <h1>Unidad 2: Organización y Gestión de la Seguridad</h1>
+        
+        <h2>Organización y control</h2>
+        <p>La seguridad debe implementarse a nivel organizativo con responsabilidades claras, control permanente y políticas definidas.</p>
+        
+        <h3>Políticas de Seguridad</h3>
+        <p>Documento que establece las reglas, responsabilidades y procedimientos para proteger los recursos informáticos, abarcando diseño, implementación y seguimiento.</p>
+        
+        <h3>Seguridad en la gestión de activos</h3>
+        <p>Incluye identificar, clasificar, proteger y controlar activos físicos y digitales para reducir riesgos.</p>
+        
+        <h3>Seguridad de Recursos Humanos</h3>
+        <p>Define roles y responsabilidades, fomenta la concientización mediante capacitación y controles para minimizar riesgos humanos.</p>
+      </section>
+      
+      <!-- UNIDAD 3 -->
+      <section id="unidad3" class="content-section">
+        <h1>Unidad 3: Seguridad Operativa y Comunicaciones</h1>
+        
+        <h2>Gestión segura de comunicaciones y operaciones</h2>
+        <p>Incluye control de acceso, autenticación, autorización y monitorización de sistemas.</p>
+        
+        <h3>Seguridad en redes</h3>
+        <p>Uso de protocolos seguros (TLS, VPN), redes cableadas e inalámbricas protegidas, firewalls y sistemas IDS/IPS para detección y bloqueo de intrusiones.</p>
+        
+        <h3>Seguridad en sistemas operativos y bases de datos</h3>
+        <p>Actualización constante, control de accesos, auditorías y gestión de vulnerabilidades específicas para estos sistemas.</p>
+        
+        <h3>Seguridad en transacciones y sistemas distribuidos</h3>
+        <p>Medidas criptográficas y de control para garantizar integridad y privacidad en procesos distribuidos.</p>
+      </section>
+      
+      <!-- UNIDAD 4 -->
+      <section id="unidad4" class="content-section">
+        <h1>Unidad 4: Criptografía y Mecanismos de Protección</h1>
+        
+        <h2>Fundamentos de criptografía</h2>
+        <p>Ciencia que asegura confidencialidad, integridad y autenticidad mediante métodos matemáticos.</p>
+        
+        <h3>Sistemas criptográficos</h3>
+        <ul class="custom-list">
+          <li><strong>Simétricos:</strong> misma clave para cifrado y descifrado (ej. AES).</li>
+          <li><strong>Asimétricos:</strong> clave pública para cifrar, clave privada para descifrar (ej. RSA).</li>
+        </ul>
+        
+        <h3>Certificados digitales y firma digital</h3>
+        <p>Herramientas que acreditan identidad y garantizan la integridad y autenticidad de documentos electrónicos con validez legal.</p>
+      </section>
+      
+      <!-- UNIDAD 5 -->
+      <section id="unidad5" class="content-section">
+        <h1>Unidad 5: Seguridad Física y Ambiental</h1>
+        
+        <h2>Protección física</h2>
+        <p>Control de acceso a centros de datos, cámaras, alarmas, cerraduras, vigilancia presencial.</p>
+        
+        <h3>Control ambiental</h3>
+        <p>Monitoreo y regulación de temperatura, humedad, y calidad energética para preservar hardware crítico.</p>
+        
+        <h3>Sistemas de respaldo energético</h3>
+        <p>UPS y generadores garantizan continuidad ante fallos eléctricos.</p>
+        
+        <h3>Medidas contra incendios e inundaciones</h3>
+        <p>Sistemas de detección, extinción automática y planes de contingencia para mitigar daños.</p>
+      </section>
+      
+      <!-- UNIDAD 6 -->
+      <section id="unidad6" class="content-section">
+        <h1>Unidad 6: Seguridad en el Ciclo de Vida del Software</h1>
+        
+        <h2>Seguridad en adquisición, desarrollo y mantenimiento</h2>
+        <p>Incluir prácticas seguras desde el diseño, revisiones, pruebas de vulnerabilidades y aplicación de parches y actualizaciones.</p>
+        
+        <h3>Gestión de vulnerabilidades</h3>
+        <p>Identificación, evaluación y corrección o mitigación de fallos en software y sistemas para evitar explotaciones.</p>
+      </section>
+      
+      <!-- UNIDAD 7 -->
+      <section id="unidad7" class="content-section">
+        <h1>Unidad 7: Gestión de Incidentes y Continuidad del Negocio</h1>
+        
+        <h2>Identificación y tratamiento de incidentes</h2>
+        <p>Monitoreo, registro y respuesta rápida ante incidentes para minimizar impacto.</p>
+        
+        <h3>Planes de contingencia y continuidad operativa</h3>
+        <p>Documentos y procedimientos para mantener operaciones críticas y recuperar sistemas tras desastres o ataques.</p>
+      </section>
+      
+      <!-- UNIDAD 8 -->
+      <section id="unidad8" class="content-section">
+        <h1>Unidad 8: Auditoría, Forense y Marco Legal</h1>
+        
+        <h2>Auditoría de Seguridad Informática</h2>
+        <p>Evaluación continua de controles, políticas y sistemas para garantizar cumplimiento y eficacia.</p>
+        
+        <h3>Peritaje informático e informática forense</h3>
+        <p>Análisis técnico y legal de sucesos relacionados con incidentes de seguridad para evidencias legales.</p>
+        
+        <h3>Normativas y marcos legales</h3>
+        <p>Regulaciones nacionales e internacionales, tales como la Ley de Protección de Datos y normativa sectorial.</p>
+        
+        <h3>Estándares y buenas prácticas</h3>
+        <p>Frameworks como ISO 27001 y NIST guían la implementación sistemática y efectiva de la seguridad.</p>
+      </section>
+      
+      <!-- BIBLIOGRAFÍA -->
+      <section id="bibliografia" class="content-section">
+        <h1>Bibliografía Recomendada</h1>
+        
+        <h2>Fuentes fundamentales</h2>
+        <div class="highlight-box">
+          <p><strong>Libros esenciales:</strong></p>
+          <p>• "Seguridad Informática" - Manuel Ángel Méndez</p>
+          <p>• "Auditoría de Sistemas" - James A. Hall</p>
+          <p>• "Criptografía y Seguridad" - William Stallings</p>
+        </div>
+      </section>
+      
+      <!-- CASOS PRÁCTICOS -->
+      <section id="casos" class="content-section">
+        <h1>Casos Prácticos</h1>
+        
+        <h2>Ejemplos reales de aplicación</h2>
+        <div class="highlight-box">
+          <p><strong>Estudio de casos:</strong> Análisis de incidentes de seguridad reales y cómo fueron resueltos.</p>
+        </div>
+      </section>
+      
+      <!-- PLANTILLAS -->
+      <section id="plantillas" class="content-section">
+        <h1>Plantillas de Informes</h1>
+        
+        <h2>Recursos útiles</h2>
+        <ul class="custom-list">
+          <li>Plantilla de informe de auditoría</li>
+          <li>Formato de evaluación de riesgos</li>
+          <li>Checklist de seguridad</li>
+        </ul>
+      </section>
+      
+      <!-- ENLACES -->
+      <section id="enlaces" class="content-section">
+        <h1>Enlaces de Referencia</h1>
+        
+        <h2>Recursos online</h2>
+        <div class="highlight-box">
+          <p><strong>Sitios oficiales:</strong> ISO, NIST, OWASP, SANS Institute</p>
+        </div>
+      </section>
+    </main>
+  </div>
+  
+  <!-- PIE DE PÁGINA -->
+  <footer>
+    <p>© 2025 Seguridad y Auditoría</p>
+    <p class="footer-credits">Portal educativo de <strong>M.B.I.</strong></p>
+    <p class="footer-credits">Contenido diseñado según plan de estudios oficial. No nos hacemos responsables por variaciones en los programas de cada institución.</p>
+  </footer>
+  <script src="3° Seguridad y Auditoría.js"></script>
+</body>
+</html>

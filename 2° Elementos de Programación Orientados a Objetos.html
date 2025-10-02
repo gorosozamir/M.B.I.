@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EPOO - Elementos de Programación Orientados a Objetos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="2° Elementos de Programación Orientados a Objetos.css">
+</head>
+<body>
+  <!-- CABECERA -->
+  <header>
+    <div class="header-content">
+      <div class="logo">Elementos de POO</div>
+      <a href="pagina2.html" class="back-button">← Volver</a>
+    </div>
+  </header>
+  
+  <!-- CONTENEDOR PRINCIPAL -->
+  <div class="container">
+    <!-- BARRA LATERAL -->
+    <aside class="sidebar">
+      <h3>Unidades</h3>
+      <ul>
+        <li><a href="#" class="sidebar-link active" data-section="unidad1">Unidad 1: Fundamentos</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad2">Unidad 2: Diseño OO</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad3">Unidad 3: Conceptos Básicos</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad4">Unidad 4: Métodos</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad5">Unidad 5: Clases</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad6">Unidad 6: Memoria</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad7">Unidad 7: TDA</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad8">Unidad 8: Arreglos</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad9">Unidad 9: Algoritmos</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad10">Unidad 10: Paradigmas</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad11">Unidad 11: Herencia</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad12">Unidad 12: Polimorfismo</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad13">Unidad 13: GUI</a></li>
+      </ul>
+      
+      <h3>Recursos</h3>
+      <ul>
+        <li><a href="#" class="sidebar-link" data-section="ejercicios">Ejercicios prácticos</a></li>
+        <li><a href="#" class="sidebar-link" data-section="casos">Casos de estudio</a></li>
+        <li><a href="#" class="sidebar-link" data-section="diagramas">Diagramas UML</a></li>
+      </ul>
+    </aside>
+    
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="main-content">
+      <!-- UNIDAD 1 -->
+      <section id="unidad1" class="content-section active">
+        <h1>Unidad 1: Fundamentos del Desarrollo de Software</h1>
+        <p>Esta unidad introduce los conceptos básicos del proceso de desarrollo de software, incluyendo metodologías, etapas y principios de calidad.</p>
+        
+        <div class="highlight-box">
+          <p><strong>💡 Dato clave:</strong> El desarrollo de software es un conjunto de actividades planificadas destinadas a diseñar, construir, probar y mantener sistemas de software funcionales y eficientes.</p>
+        </div>
+        
+        <h2>El proceso de desarrollo de software</h2>
+        <p>Este proceso incluye la recolección de requisitos, análisis, diseño, codificación, pruebas y mantenimiento. Se considera esencial seguir metodologías que aseguren calidad y control durante el desarrollo.</p>
+        <p><strong>Fuentes:</strong> Maida & Pacienzia, Metodologías de Desarrollo de Software, UCA; Instituto Badra</p>
+        
+        <h2>Etapas del desarrollo</h2>
+        <ul class="custom-list">
+          <li><strong>Especificación o análisis de requerimientos:</strong> Definición de lo que el sistema debe hacer.</li>
+          <li><strong>Diseño del software:</strong> Creación de la arquitectura y componentes.</li>
+          <li><strong>Implementación o codificación:</strong> Construcción del sistema según diseño.</li>
+          <li><strong>Pruebas y validación:</strong> Verificación de que el sistema cumple requisitos.</li>
+          <li><strong>Mantenimiento y evolución:</strong> Adaptación a nuevos requerimientos y corrección de errores.</li>
+        </ul>
+        
+        <h2>Calidad y productividad del software</h2>
+        <p>La calidad se mide por la corrección, eficiencia, mantenibilidad y usabilidad del software. La productividad está vinculada a la capacidad de entregar software de calidad en tiempo y forma mediante control de procesos y herramientas adecuadas.</p>
+        <p><strong>Fuente:</strong> Fundamentos del desarrollo de software</p>
+        
+        <h2>Abstracciones y modelos</h2>
+        <ul class="custom-list">
+          <li><strong>Abstracción basada en acciones:</strong> Considera las operaciones o procedimientos que el software debe realizar, enfocándose en qué hacer sin detallar cómo.</li>
+          <li><strong>Abstracción basada en datos:</strong> Se centra en los datos y las estructuras que manipula el software, modelando los elementos y sus relaciones.</li>
+        </ul>
+        <p>Ambas abstracciones son clave para diseñar sistemas claros y modularizados.</p>
+      </section>
+      
+      <!-- UNIDAD 2 -->
+      <section id="unidad2" class="content-section">
+        <h1>Unidad 2: Introducción al Diseño Orientado a Objetos</h1>
+        <p>Esta unidad explora los fundamentos del paradigma orientado a objetos y su aplicación en el diseño de software.</p>
+        
+        <h2>Análisis y diseño orientado a objetos</h2>
+        <p>Metodología que modela el sistema como conjunto de objetos con atributos y comportamientos, facilitando reutilización y escalabilidad. El análisis se centra en entender problemáticas del dominio mientras el diseño define estructuras y relaciones.</p>
+        
+        <h2>Lenguajes de modelado de datos</h2>
+        <p>Se usan diagramas y lenguajes específicos para representar estructuras y relaciones, facilitando la comunicación entre equipos y documentación.</p>
+        
+        <h2>Introducción a UML (Unified Modeling Language)</h2>
+        <p>UML es el lenguaje estándar para el modelado orientado a objetos. Usa diagramas como de clases, secuencia y casos de uso para describir la estructura y comportamiento del sistema.</p>
+        
+        <h2>El modelo computacional</h2>
+        <p>Modelo abstracto que define como un software procesará datos y realizará acciones, basándose en clases, objetos y mensajes entre ellos.</p>
+        <p><strong>Fuentes:</strong> Fundamentos del desarrollo de software</p>
+      </section>
+      
+      <!-- UNIDAD 3 -->
+      <section id="unidad3" class="content-section">
+        <h1>Unidad 3: Conceptos Básicos de los Lenguajes Orientados a Objetos</h1>
+        <p>Esta unidad cubre los elementos fundamentales de los lenguajes de programación orientados a objetos.</p>
+        
+        <h2>Conceptos clave</h2>
+        <ul class="custom-list">
+          <li><strong>Variables y constantes</strong> de tipos primitivos (int, float, boolean, etc.)</li>
+          <li><strong>Conversión y asignación</strong> entre tipos compatibles</li>
+          <li><strong>Entrada y salida</strong> en consola básicas</li>
+          <li><strong>Estructuras de control:</strong> condicionales (if, switch) y repetitivas (for, while)</li>
+          <li><strong>Estructura básica</strong> de programas orientados a objetos: clases, métodos y punto de entrada</li>
+        </ul>
+        <p><strong>Fuentes:</strong> Fundamentos del desarrollo de software</p>
+      </section>
+      
+      <!-- UNIDAD 4 -->
+      <section id="unidad4" class="content-section">
+        <h1>Unidad 4: Métodos y Algoritmos</h1>
+        <p>Esta unidad explora el diseño y uso de métodos, así como estrategias algorítmicas fundamentales.</p>
+        
+        <h2>Temas principales</h2>
+        <ul class="custom-list">
+          <li><strong>Definición de métodos</strong> con parámetros y valores de retorno</li>
+          <li><strong>Ámbito de variables</strong> y ambiente de referenciamiento en bloques de código</li>
+          <li><strong>Diseño de algoritmos</strong> con estrategias como divide y vencerás, búsqueda y ordenamiento</li>
+          <li><strong>Casos de estudio</strong> centrados en problemas numéricos</li>
+          <li><strong>Manejo de errores</strong> por truncado y propagación: estático (durante compilación) y dinámico (en ejecución)</li>
+        </ul>
+        <p><strong>Fuente:</strong> Fundamentos del desarrollo de software</p>
+      </section>
+      
+      <!-- UNIDAD 5 -->
+      <section id="unidad5" class="content-section">
+        <h1>Unidad 5: Clases y Objetos</h1>
+        <p>Esta unidad profundiza en los conceptos fundamentales de clases y objetos en la programación orientada a objetos.</p>
+        
+        <h2>Contenidos principales</h2>
+        <ul class="custom-list">
+          <li><strong>Diferencias</strong> entre objetos del problema real y objetos de software</li>
+          <li><strong>Definición de atributos</strong> (datos) y comportamientos (métodos)</li>
+          <li><strong>Variables de clase</strong> (estáticas) y de instancia</li>
+          <li><strong>Constructores</strong> para inicialización, comandos y consultas</li>
+          <li><strong>Sobrecarga de métodos</strong> para múltiples versiones con distintos parámetros</li>
+          <li><strong>La clase String</strong> y sus particularidades</li>
+        </ul>
+        <p><strong>Fuente:</strong> Fundamentos del desarrollo de software</p>
+      </section>
+      
+      <!-- UNIDAD 6 -->
+      <section id="unidad6" class="content-section">
+        <h1>Unidad 6: Manejo de Memoria y Referencias</h1>
+        <p>Esta unidad aborda cómo los lenguajes OO gestionan la memoria y las referencias a objetos.</p>
+        
+        <h2>Temas cubiertos</h2>
+        <ul class="custom-list">
+          <li><strong>Gestión dinámica</strong> de memoria durante la ejecución del programa</li>
+          <li><strong>Representación</strong> de objetos y referencias en memoria</li>
+          <li><strong>Manejo de referencias</strong> nulas y asociadas, igualdad de referencias</li>
+          <li><strong>Encapsulamiento</strong> y modificadores de acceso (private, public, protected)</li>
+          <li><strong>Interfaces y paquetes</strong> como herramientas para modularidad</li>
+        </ul>
+        <p><strong>Fuente:</strong> Fundamentos del desarrollo de software</p>
+      </section>
+      
+      <!-- UNIDAD 7 -->
+      <section id="unidad7" class="content-section">
+        <h1>Unidad 7: Tipos de Datos Abstractos y Relaciones entre Clases</h1>
+        <p>Esta unidad explora los tipos abstractos de datos y las relaciones entre clases en el diseño OO.</p>
+        
+        <h2>Contenidos</h2>
+        <ul class="custom-list">
+          <li><strong>Definición de tipos abstractos</strong> (TDA) que ocultan implementación</li>
+          <li><strong>Asociación has-a</strong> entre clases (relación de contención o uso)</li>
+          <li><strong>Administración de memoria</strong>, representación extendida y por referencia</li>
+          <li><strong>Igualdad superficial</strong> (referencia) vs. igualdad en profundidad (contenido)</li>
+          <li><strong>Copia y clonación</strong> de objetos</li>
+        </ul>
+        <p><strong>Fuente:</strong> Fundamentos del desarrollo de software</p>
+      </section>
+      
+      <!-- UNIDAD 8 -->
+      <section id="unidad8" class="content-section">
+        <h1>Unidad 8: Estructuras de Datos con Arreglos</h1>
+        <p>Esta unidad cubre el uso de arreglos como estructura de datos fundamental en programación.</p>
+        
+        <h2>Temas principales</h2>
+        <ul class="custom-list">
+          <li><strong>Definición y tipos</strong> de arreglos (vectores, matrices)</li>
+          <li><strong>Creación, acceso</strong> y recorridos exhaustivos/no exhaustivos</li>
+          <li><strong>Operaciones</strong> sobre conjuntos representados con arreglos</li>
+          <li><strong>Tablas ordenadas</strong> con inserción, eliminación, búsqueda</li>
+          <li><strong>Matrices bidimensionales</strong> y uso</li>
+        </ul>
+        <p><strong>Fuente:</strong> Fundamentos del desarrollo de software</p>
+      </section>
+      
+      <!-- UNIDAD 9 -->
+      <section id="unidad9" class="content-section">
+        <h1>Unidad 9: Algoritmos Fundamentales</h1>
+        <p>Esta unidad explora algoritmos esenciales para el procesamiento de datos.</p>
+        
+        <h2>Algoritmos clave</h2>
+        <ul class="custom-list">
+          <li><strong>Recorrido, búsqueda</strong> y actualización de datos</li>
+          <li><strong>Métodos de ordenamiento:</strong> burbuja, merge sort, quick sort</li>
+          <li><strong>Búsqueda binaria</strong></li>
+          <li><strong>Algoritmos</strong> con backtracking</li>
+        </ul>
+        <p><strong>Fuente:</strong> Fundamentos del desarrollo de software</p>
+      </section>
+      
+      <!-- UNIDAD 10 -->
+      <section id="unidad10" class="content-section">
+        <h1>Unidad 10: Paradigmas de Programación</h1>
+        <p>Esta unidad compara diferentes paradigmas de programación, con énfasis en OO.</p>
+        
+        <h2>Comparación de paradigmas</h2>
+        <ul class="custom-list">
+          <li><strong>Paradigma procedural</strong> vs. orientado a objetos</li>
+          <li><strong>Extensibilidad y reusabilidad</strong> como ventajas del paradigma OO</li>
+        </ul>
+        <p><strong>Fuente:</strong> Fundamentos del desarrollo de software</p>
+      </section>
+      
+      <!-- UNIDAD 11 -->
+      <section id="unidad11" class="content-section">
+        <h1>Unidad 11: Herencia y Jerarquías de Clases</h1>
+        <p>Esta unidad cubre el concepto de herencia como mecanismo fundamental en POO.</p>
+        
+        <h2>Conceptos clave</h2>
+        <ul class="custom-list">
+          <li><strong>Concepto de herencia</strong> para reutilización y extensión</li>
+          <li><strong>Generalización</strong> y especialización</li>
+          <li><strong>Relación is-a</strong></li>
+          <li><strong>Uso de super</strong> para acceder a miembros de la clase base</li>
+          <li><strong>Clase base Object</strong></li>
+        </ul>
+        <p><strong>Fuente:</strong> Fundamentos del desarrollo de software</p>
+      </section>
+      
+      <!-- UNIDAD 12 -->
+      <section id="unidad12" class="content-section">
+        <h1>Unidad 12: Polimorfismo y Tipado Dinámico</h1>
+        <p>Esta unidad explora el polimorfismo como característica fundamental de POO.</p>
+        
+        <h2>Temas principales</h2>
+        <ul class="custom-list">
+          <li><strong>Definición y uso</strong> del polimorfismo</li>
+          <li><strong>Variables y asignaciones</strong> polimórficas</li>
+          <li><strong>Chequeo estático</strong> y dinámico de tipos</li>
+          <li><strong>Ligadura dinámica</strong> y redefinición de métodos</li>
+          <li><strong>Sobrecarga y casting</strong></li>
+          <li><strong>Genericidad</strong> por medio de herencia</li>
+        </ul>
+        <p><strong>Fuente:</strong> Fundamentos del desarrollo de software</p>
+      </section>
+      
+      <!-- UNIDAD 13 -->
+      <section id="unidad13" class="content-section">
+        <h1>Unidad 13: Interfaces Gráficas y Programación por Eventos</h1>
+        <p>Esta unidad introduce el desarrollo de interfaces gráficas en el contexto de POO.</p>
+        
+        <h2>Contenidos</h2>
+        <ul class="custom-list">
+          <li><strong>Introducción a GUI</strong> y componentes visuales</li>
+          <li><strong>Contenedores</strong> y diagramado de interfaces</li>
+          <li><strong>Conceptos de eventos</strong> y listeners</li>
+          <li><strong>Comportamiento de componentes</strong> y uso de clases adaptadoras (adapters)</li>
+        </ul>
+        <p><strong>Fuente:</strong> Fundamentos del desarrollo de software</p>
+      </section>
+      
+      <!-- SECCIONES DE RECURSOS -->
+      <section id="ejercicios" class="resource-section">
+        <h1>Ejercicios Prácticos</h1>
+        
+        <h2>Actividades de Aprendizaje</h2>
+        <div class="highlight-box">
+          <p><strong>Ejercicio 1:</strong> Implementación de clases básicas</p>
+          <p><strong>Ejercicio 2:</strong> Creación de relaciones entre clases</p>
+          <p><strong>Ejercicio 3:</strong> Aplicación de herencia y polimorfismo</p>
+        </div>
+      </section>
+      
+      <section id="casos" class="resource-section">
+        <h1>Casos de Estudio</h1>
+        
+        <h2>Ejemplos Reales</h2>
+        <div class="highlight-box">
+          <p><strong>Sistema Bancario:</strong> Modelado de cuentas y transacciones</p>
+          <p><strong>Tienda Online:</strong> Productos, carritos y usuarios</p>
+          <p><strong>Biblioteca:</strong> Libros, préstamos y usuarios</p>
+        </div>
+      </section>
+      
+      <section id="diagramas" class="resource-section">
+        <h1>Diagramas UML</h1>
+        
+        <h2>Herramientas de Modelado</h2>
+        <div class="highlight-box">
+          <p><strong>Diagrama de Clases:</strong> Estructura estática del sistema</p>
+          <p><strong>Diagrama de Secuencia:</strong> Interacción entre objetos</p>
+          <p><strong>Diagrama de Estados:</strong> Comportamiento de objetos</p>
+        </div>
+      </section>
+    </main>
+  </div>
+  
+  <!-- PIE DE PÁGINA -->
+  <footer>
+    <p>© 2025 Elementos de POO</p>
+    <p class="footer-credits">Portal educativo de <strong>M.B.I.</strong></p>
+    <p class="footer-credits">Contenido diseñado según plan de estudios oficial. No nos hacemos responsables por variaciones en los temas dados por los Docentes.</p>
+  </footer>
+
+<script src="2° Elementos de Programación Orientados a Objetos.js"></script>
+</body>
+</html>

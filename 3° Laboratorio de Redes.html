@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laboratorio de Redes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="3° Laboratorio de Redes.css">
+</head>
+<body>
+  <!-- CABECERA -->
+  <header>
+    <div class="header-content">
+      <div class="logo">Laboratorio de Redes</div>
+      <a href="Taller3.html" class="back-button">← Volver</a>
+    </div>
+  </header>
+  
+  <!-- CONTENEDOR PRINCIPAL -->
+  <div class="container">
+    <!-- BARRA LATERAL -->
+    <aside class="sidebar">
+      <h3>Unidades</h3>
+      <ul>
+        <li><a href="#" class="sidebar-link active" data-section="unidad1">1. Fundamentos de Redes</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad2">2. Redes y Servicios</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad3">3. Servicios de Internet</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad4">4. Aplicaciones en Redes</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad5">5. Desarrollo Web</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad6">6. Competencias Técnicas</a></li>
+      </ul>
+      
+      <h3>Recursos</h3>
+      <ul>
+        <li><a href="#" class="sidebar-link" data-section="bibliografia">Bibliografía</a></li>
+        <li><a href="#" class="sidebar-link" data-section="protocolos">Protocolos</a></li>
+        <li><a href="#" class="sidebar-link" data-section="herramientas">Herramientas</a></li>
+        <li><a href="#" class="sidebar-link" data-section="enlaces">Enlaces útiles</a></li>
+      </ul>
+    </aside>
+    
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="main-content">
+      <!-- UNIDAD 1 -->
+      <section id="unidad1" class="content-section active">
+        <h1>Unidad 1: Fundamentos de Redes y Comunicación</h1>
+        <p>Esta unidad cubre los conceptos básicos de las redes de computadoras, su evolución histórica y los protocolos fundamentales que hacen posible la comunicación en Internet.</p>
+        
+        <div class="highlight-box">
+          <p><strong>🌐 Dato clave:</strong> ARPANET, la precursora de Internet, fue desarrollada en 1969 por el Departamento de Defensa de EE.UU. y conectaba inicialmente solo 4 universidades.</p>
+        </div>
+        
+        <h2>Antecedentes de la comunicación entre computadores</h2>
+        <p>La comunicación entre computadores comenzó en la década de 1960 con el desarrollo de ARPANET, una red experimental militar en Estados Unidos que permitía conectar diferentes equipos mediante conmutación de paquetes. Esta red fue el antecedente directo de Internet.</p>
+        
+        <h2>Desarrollo de Internet</h2>
+        <p>Internet evolucionó a partir de ARPANET y otros proyectos de redes interconectadas. En 1983, se incorporó el protocolo TCP/IP como estándar, facilitando la comunicación entre redes heterogéneas y dando paso a la Internet moderna.</p>
+        
+        <h2>Concepto y funciones del protocolo TCP/IP</h2>
+        <p>TCP/IP es una familia de protocolos que permite la transmisión confiable de datos a través de redes diversas. TCP gestiona la conexión, asegurando la entrega secuencial y sin errores de los paquetes; IP se encarga del direccionamiento y encaminamiento de esos paquetes para llegar a su destino. Este modelo tiene varias capas (aplicación, transporte, internet, y física) que dividen funciones específicas.</p>
+        
+        <h2>Panorama de arquitecturas y topologías de redes</h2>
+        <p>Se distinguen múltiples arquitecturas como cliente-servidor y peer-to-peer, y topologías físicas como bus, estrella, anillo y malla, cada una con características de interconexión, redundancia y escalabilidad adaptadas a distintos usos.</p>
+        
+        <h2>Evolución y antecedentes de sistemas operativos de red</h2>
+        <p>Desde sistemas sencillos que solo gestionaban nodos, hasta complejos sistemas operativos como UNIX BSD que incorporaron servicios de red (FTP, Telnet, email), la evolución se relaciona con la creciente integración de funciones de comunicación en la capa de sistema operativo para soportar redes distribuidas.</p>
+        
+        <h2>La web como ejemplo de computación cliente-servidor</h2>
+        <p>La Web se basa en una arquitectura cliente-servidor donde los navegadores (clientes) solicitan recursos (páginas web, archivos) a servidores, que responden generando contenido dinámico o estático a través de protocolos como HTTP.</p>
+        
+        <h2>Protocolos: HTML, XML</h2>
+        <p>HTML es el lenguaje estándar para la creación de páginas web, definiendo la estructura y contenido. XML es un lenguaje de marcado para almacenar y transportar datos, con un enfoque en la flexibilidad y legibilidad tanto para humanos como para máquinas.</p>
+        
+        <h2>Formatos de páginas web</h2>
+        <p>Incluyen HTML, XHTML, así como otras combinaciones de tecnologías web, que permiten la presentación de contenido multimedia, interactividad, y formatos de datos estructurados.</p>
+        
+        <h2>Compresión de datos</h2>
+        <p>Se utilizan técnicas (como gzip, deflate) para reducir el tamaño de los datos transmitidos, mejorando la velocidad y eficiencia de la comunicación en redes.</p>
+      </section>
+      
+      <!-- UNIDAD 2 -->
+      <section id="unidad2" class="content-section">
+        <h1>Unidad 2: Redes y Servicios de Red</h1>
+        
+        <div class="highlight-box">
+          <p><strong>🔌 Dato clave:</strong> Las redes LAN (Local Area Network) conectan dispositivos en un área geográfica limitada, como una oficina o edificio.</p>
+        </div>
+        
+        <h2>Contraseñas y mecanismos de control de acceso</h2>
+        <p>Utilizan autenticación, autorización y cifrado para proteger el acceso a recursos de red.</p>
+        
+        <h2>Nombres de dominio</h2>
+        <p>Sistemas jerárquicos de nombres que permiten identificar recursos en Internet de forma legible (DNS).</p>
+        
+        <h2>Nombres de servicios</h2>
+        <p>Identificadores para servicios específicos en una red, como HTTP, FTP, SMTP.</p>
+        
+        <h2>Conectar una red local a una red extendida</h2>
+        <p>Requiere routers, gateways y configuración adecuada para interconectar LANs a WANs.</p>
+        
+        <h2>Verificar el funcionamiento de los componentes</h2>
+        <p>Herramientas y comandos (ping, traceroute, monitoreo SNMP) permiten diagnosticar y verificar conectividad.</p>
+        
+        <h2>Instalación y administración de redes extendidas</h2>
+        <p>Incluye configuración de equipos, asignación de direcciones IP, monitorización y mantenimiento.</p>
+      </section>
+      
+      <!-- UNIDAD 3 -->
+      <section id="unidad3" class="content-section">
+        <h1>Unidad 3: Servicios de Internet</h1>
+        
+        <h2>Principales servicios de Internet</h2>
+        
+        <div class="highlight-box">
+          <p><strong>🌐 Dato clave:</strong> Los servicios de Internet permiten el acceso global a información y recursos mediante protocolos estandarizados.</p>
+        </div>
+        
+        <h3>Páginas web</h3>
+        <p>Acceso a información multimedia vía HTTP/HTTPS.</p>
+        
+        <h3>FTP (File Transfer Protocol)</h3>
+        <p>Transferencia de archivos mediante un protocolo dedicado.</p>
+        
+        <h3>Correo electrónico</h3>
+        <p>Comunicación asincrónica mediante SMTP, POP3, IMAP.</p>
+        
+        <h3>Obtención de archivos</h3>
+        <p>Descargas directas o mediante protocolos de transferencia.</p>
+        
+        <h2>Operatoria de los servicios</h2>
+        <p>La operatoria implica protocolos, servidores dedicados y clientes que facilitan acceso global a información y servicios.</p>
+      </section>
+      
+      <!-- UNIDAD 4 -->
+      <section id="unidad4" class="content-section">
+        <h1>Unidad 4: Aplicaciones en Redes Informáticas</h1>
+        
+        <h2>Instalación y Configuración</h2>
+        <p>Proyectos en redes locales requieren planificación de recursos, compatibilidad y análisis del impacto de aplicaciones sobre el rendimiento y seguridad de la red.</p>
+        
+        <div class="highlight-box">
+          <p><strong>💻 Dato clave:</strong> Las aplicaciones en red transforman la forma en que trabajamos y nos comunicamos, permitiendo colaboración en tiempo real.</p>
+        </div>
+        
+        <h2>Tipos de Aplicaciones</h2>
+        
+        <h3>Aplicaciones de control</h3>
+        <p>Incluyen sistemas automáticos, control de procesos industriales.</p>
+        
+        <h3>Redes como sistema de recolección de datos</h3>
+        <p>Sensores conectados para monitoreo remoto.</p>
+        
+        <h3>Aplicaciones cooperativas</h3>
+        <p>Software colaborativo que facilita trabajo en red.</p>
+        
+        <h3>Sistemas distribuidos y bases de datos</h3>
+        <p>Manejo de información descentralizada.</p>
+        
+        <h3>Aplicaciones multimedia</h3>
+        <p>Transmisión de audio y video en red.</p>
+      </section>
+      
+      <!-- UNIDAD 5 -->
+      <section id="unidad5" class="content-section">
+        <h1>Unidad 5: Desarrollo y Gestión en Ambientes Web</h1>
+        
+        <h2>Desarrollo web</h2>
+        <p>Implica diseño, programación, despliegue y mantenimiento de aplicaciones web, usando tecnologías y frameworks modernos.</p>
+        
+        <div class="highlight-box">
+          <p><strong>🚀 Dato clave:</strong> La Web 2.0 representa el salto hacia una web interactiva y social, con participación activa del usuario.</p>
+        </div>
+        
+        <h2>Web 2.0</h2>
+        <p>Representa el salto hacia una web interactiva y social, con participación activa del usuario, integración de contenidos generados por usuarios y nuevas formas de comunicación y colaboración en línea.</p>
+      </section>
+      
+      <!-- UNIDAD 6 -->
+      <section id="unidad6" class="content-section">
+        <h1>Unidad 6: Competencias Técnicas y Prácticas</h1>
+        
+        <h2>Habilidades Prácticas</h2>
+        
+        <div class="highlight-box">
+          <p><strong>🔧 Dato clave:</strong> Las competencias técnicas combinan conocimiento teórico con habilidades prácticas para resolver problemas reales.</p>
+        </div>
+        
+        <h3>Realizar proyectos de conexión de computadoras a redes extendidas</h3>
+        <p>Implica comprensión técnica, instalación, configuración y pruebas de funcionamiento.</p>
+        
+        <h3>Observar medidas de seguridad industrial e informática</h3>
+        <p>Garantiza protección del personal y sistemas.</p>
+        
+        <h3>Buscar, interpretar y relacionar información técnica</h3>
+        <p>Permite tomar decisiones informadas.</p>
+        
+        <h3>Seleccionar soluciones técnicas eficientes</h3>
+        <p>Requiere análisis de requisitos y adecuación tecnológica.</p>
+      </section>
+      
+      <!-- BIBLIOGRAFÍA -->
+      <section id="bibliografia" class="content-section">
+        <h1>Bibliografía</h1>
+        
+        <h2>Fuentes Recomendadas</h2>
+        <div class="highlight-box">
+          <p><strong>Libros fundamentales:</strong></p>
+          <p>• "Redes de Computadoras" - Andrew S. Tanenbaum</p>
+          <p>• "TCP/IP Illustrated" - W. Richard Stevens</p>
+          <p>• "Computer Networking: A Top-Down Approach" - Kurose & Ross</p>
+        </div>
+        
+        <h2>Referencias Online</h2>
+        <ul class="custom-list">
+          <li>https://es.wikipedia.org/wiki/Familia_de_protocolos_de_internet</li>
+          <li>https://interlir.com/es/2024/02/22/evolucion-de-los-protocolos-de-internet/</li>
+          <li>https://ibero.mx/prensa/como-surge-el-internet-aqui-una-breve-historia</li>
+          <li>https://es.scribd.com/document/130813730/Historia-Del-Protocolo-TCP</li>
+          <li>https://www.revista.unam.mx/vol.5/num8/art51/sep_art51.pdf</li>
+          <li>https://es.wikipedia.org/wiki/Modelo_TCP/IP</li>
+          <li>https://www.hackio.com/blog/todo-sobre-el-protocolo-tcp-ip-y-su-rol-en-la-web</li>
+          <li>https://www.revista.unam.mx/vol.5/num8/art51/art51-pp2.htm</li>
+          <li>https://www.telefonica.com/es/sala-comunicacion/blog/historia-internet-como-nacio-evolucion/</li>
+        </ul>
+      </section>
+      
+      <!-- PROTOCOLOS -->
+      <section id="protocolos" class="content-section">
+        <h1>Protocolos</h1>
+        
+        <h2>Protocolos de Red</h2>
+        <ul class="custom-list">
+          <li><strong>TCP/IP:</strong> Suite completa de protocolos</li>
+          <li><strong>HTTP/HTTPS:</strong> Protocolos web</li>
+          <li><strong>FTP/SFTP:</strong> Transferencia de archivos</li>
+          <li><strong>SSH:</strong> Conexión segura remota</li>
+          <li><strong>SMTP/POP3/IMAP:</strong> Protocolos de correo electrónico</li>
+          <li><strong>DNS:</strong> Sistema de nombres de dominio</li>
+          <li><strong>DHCP:</strong> Protocolo de configuración dinámica de host</li>
+        </ul>
+      </section>
+      
+      <!-- HERRAMIENTAS -->
+      <section id="herramientas" class="content-section">
+        <h1>Herramientas</h1>
+        
+        <h2>Software para Laboratorio de Redes</h2>
+        <ul class="custom-list">
+          <li><strong>Wireshark:</strong> Analizador de protocolos</li>
+          <li><strong>Packet Tracer:</strong> Simulador de redes</li>
+          <li><strong>Putty:</strong> Cliente SSH/Telnet</li>
+          <li><strong>Nmap:</strong> Escáner de seguridad</li>
+          <li><strong>ping/traceroute:</strong> Diagnóstico de conectividad</li>
+          <li><strong>SNMP:</strong> Protocolo de monitoreo de red</li>
+        </ul>
+      </section>
+      
+      <!-- ENLACES ÚTILES -->
+      <section id="enlaces" class="content-section">
+        <h1>Enlaces Útiles</h1>
+        
+        <h2>Recursos Online</h2>
+        <div class="highlight-box">
+          <p><strong>Sitios recomendados:</strong></p>
+          <p>• Cisco Networking Academy</p>
+          <p>• W3Schools - Tutoriales web</p>
+          <p>• RFC Editor - Documentos oficiales de protocolos</p>
+          <p>• IETF - Internet Engineering Task Force</p>
+        </div>
+      </section>
+    </main>
+  </div>
+  
+  <!-- PIE DE PÁGINA -->
+  <footer>
+    <p>© 2025 Laboratorio de Redes</p>
+    <p class="footer-credits">Portal educativo de <strong>M.B.I.</strong></p>
+    <p class="footer-credits">Contenido diseñado según plan de estudios oficial. No nos hacemos responsables por variaciones en los programas de cada institución.</p>
+  </footer>
+  <script src="3° Laboratorio de Redes.js"></script>
+</body>
+</html>
