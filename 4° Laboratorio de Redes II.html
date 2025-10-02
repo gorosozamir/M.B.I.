@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redes II</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="4° Laboratorio de Redes II.css">
+</head>
+<body>
+  <!-- CABECERA -->
+  <header>
+    <div class="header-content">
+      <div class="logo">Redes II</div>
+      <a href="Taller4.html" class="back-button">← Volver</a>
+    </div>
+  </header>
+  
+  <!-- CONTENEDOR PRINCIPAL -->
+  <div class="container">
+    <!-- BARRA LATERAL -->
+    <aside class="sidebar">
+      <h3>Unidades</h3>
+      <ul>
+        <li><a href="#" class="sidebar-link active" data-section="unidad1">Unidad 1: Fundamentos de Redes</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad2">Unidad 2: Modelo OSI</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad3">Unidad 3: Protocolos WAN</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad4">Unidad 4: Cableado Estructurado</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad5">Unidad 5: Seguridad en Redes</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad6">Unidad 6: Sistemas Operativos</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad7">Unidad 7: Administración</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad8">Unidad 8: Prácticas</a></li>
+      </ul>
+      
+      <h3>Recursos</h3>
+      <ul>
+        <li><a href="#" class="sidebar-link" data-section="simuladores">Simuladores</a></li>
+        <li><a href="#" class="sidebar-link" data-section="herramientas">Herramientas</a></li>
+        <li><a href="#" class="sidebar-link" data-section="referencias">Referencias</a></li>
+      </ul>
+    </aside>
+    
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="main-content">
+      <!-- UNIDAD 1 -->
+      <section id="unidad1" class="content-section active">
+        <h1>Unidad 1: Fundamentos de Redes de Datos</h1>
+        
+        <h2>1.1 Arquitectura de redes</h2>
+        <h3>Modelo OSI</h3>
+        <p>Es un modelo de referencia que divide la comunicación en 7 capas:</p>
+        <ul class="custom-list">
+          <li><strong>Capa física:</strong> Transmisión de bits a través del medio</li>
+          <li><strong>Capa de enlace de datos:</strong> Gestión de tramas y control de flujo</li>
+          <li><strong>Capa de red:</strong> Enrutamiento y direccionamiento lógico</li>
+          <li><strong>Capa de transporte:</strong> Control de conexiones y confiabilidad</li>
+          <li><strong>Capa de sesión:</strong> Establecimiento y mantenimiento de sesiones</li>
+          <li><strong>Capa de presentación:</strong> Traducción y cifrado de datos</li>
+          <li><strong>Capa de aplicación:</strong> Interfaz con aplicaciones de usuario</li>
+        </ul>
+        
+        <h3>Concepto de servicio</h3>
+        <p>En redes, un servicio es la función que una capa ofrece a la capa superior, abstraída de cómo se implementa.</p>
+        
+        <h2>1.2 Tipos de redes</h2>
+        <h3>LAN (Local Area Network)</h3>
+        <p>Redes de área local que conectan dispositivos en espacios reducidos como oficinas o edificios, usando cables Ethernet o Wi-Fi.</p>
+        
+        <h3>WAN (Wide Area Network)</h3>
+        <p>Redes de área amplia que conectan redes LAN a gran escala geográfica, utilizando tecnologías como MPLS, VPN y enlaces satelitales.</p>
+        
+        <h3>Topologías de red</h3>
+        <p>Disposición física o lógica de los nodos:</p>
+        <ul class="custom-list">
+          <li><strong>Estrella:</strong> Todos los nodos conectados a un punto central</li>
+          <li><strong>Bus:</strong> Todos los nodos conectados a un cable principal</li>
+          <li><strong>Anillo:</strong> Nodos conectados en círculo</li>
+          <li><strong>Malla:</strong> Conexiones redundantes entre nodos</li>
+        </ul>
+        
+        <h3>Técnicas y medios de transmisión</h3>
+        <ul class="custom-list">
+          <li>Cables de cobre (UTP, STP)</li>
+          <li>Fibra óptica (monomodo, multimodo)</li>
+          <li>Ondas de radio (Wi-Fi, Bluetooth)</li>
+          <li>Infrarrojos</li>
+        </ul>
+      </section>
+      
+      <!-- UNIDAD 2 -->
+      <section id="unidad2" class="content-section">
+        <h1>Unidad 2: Capas del Modelo OSI y dispositivos asociados</h1>
+        
+        <h2>2.1 Nivel físico</h2>
+        <ul class="custom-list">
+          <li>Mecanismos de transmisión de bits a través de medios físicos</li>
+          <li>Corrección y detección de errores: técnicas como paridad, CRC</li>
+          <li>Protocolos de nivel físico definen señales eléctricas, ópticas o radio</li>
+          <li><strong>Dispositivos:</strong> Hubs (repetidores multi-puerto) y Repetidores (amplifican señales)</li>
+        </ul>
+        
+        <h2>2.2 Nivel de enlace de datos</h2>
+        <ul class="custom-list">
+          <li>Protocolos como Ethernet y Token Ring gestionan la comunicación dentro de una red local</li>
+          <li>Control de acceso al medio (MAC)</li>
+          <li>Detección y corrección de errores</li>
+          <li><strong>Dispositivos:</strong> Bridges (filtran tráfico entre segmentos) y Switches (conmutan tramas a puertos específicos)</li>
+        </ul>
+        
+        <h2>2.3 Capa de red</h2>
+        <ul class="custom-list">
+          <li>Protocolos de enrutamiento que determinan la mejor ruta para los paquetes (ej. IP)</li>
+          <li>Algoritmos de ruteo como RIP, OSPF, BGP</li>
+          <li>Fragmentación y ensamblado de paquetes</li>
+          <li><strong>Dispositivos:</strong> Routers (dirigen paquetes entre redes) y Firewalls (controlan acceso y seguridad)</li>
+        </ul>
+        
+        <h2>2.4 Conmutación</h2>
+        <ul class="custom-list">
+          <li>Conmutación a nivel 2 (tramas) y nivel 3 (paquetes)</li>
+          <li>Usada para dirigir tráfico en redes</li>
+          <li>Switches gestionan tablas MAC para conmutación eficiente</li>
+        </ul>
+        
+        <h2>2.5 Capa de transporte</h2>
+        <ul class="custom-list">
+          <li>Protocolos como TCP que garantizan la entrega fiable de datos</li>
+          <li>Administración de conexiones y control de flujo</li>
+          <li>Multiplexación y desmultiplexación</li>
+          <li>Control de congestión</li>
+        </ul>
+      </section>
+      
+      <!-- UNIDAD 3 -->
+      <section id="unidad3" class="content-section">
+        <h1>Unidad 3: Protocolos WAN y tecnologías inalámbricas</h1>
+        
+        <h2>Protocolos WAN</h2>
+        <ul class="custom-list">
+          <li><strong>X.25:</strong> Protocolo antiguo para redes de conmutación de paquetes</li>
+          <li><strong>Frame Relay:</strong> Tecnología de conmutación de paquetes más eficiente</li>
+          <li><strong>ISDN:</strong> Red Digital de Servicios Integrados (RDSI)</li>
+          <li><strong>ATM:</strong> Modo de Transferencia Asíncrona, para voz, video y datos</li>
+        </ul>
+        
+        <h2>Tecnologías inalámbricas</h2>
+        <ul class="custom-list">
+          <li><strong>Wi-Fi:</strong> Para redes locales inalámbricas (IEEE 802.11)</li>
+          <li><strong>Bluetooth:</strong> Conexiones de corto alcance</li>
+          <li><strong>Protocolos de integración:</strong> Permiten interoperabilidad entre diferentes tecnologías</li>
+        </ul>
+      </section>
+      
+      <!-- UNIDAD 4 -->
+      <section id="unidad4" class="content-section">
+        <h1>Unidad 4: Cableado estructurado</h1>
+        
+        <h2>Tipos y categorías de cables</h2>
+        <ul class="custom-list">
+          <li><strong>UTP (Unshielded Twisted Pair):</strong> Par trenzado no blindado</li>
+          <li><strong>STP (Shielded Twisted Pair):</strong> Par trenzado blindado</li>
+          <li><strong>Fibra óptica:</strong> Monomodo y multimodo</li>
+          <li><strong>Categorías:</strong> Cat5e, Cat6, Cat6a, Cat7</li>
+        </ul>
+        
+        <h2>Normas y estándares</h2>
+        <ul class="custom-list">
+          <li>TIA/EIA-568: Estándar para cableado estructurado</li>
+          <li>ISO/IEC 11801: Estándar internacional</li>
+          <li>Normas de instalación y certificación</li>
+        </ul>
+        
+        <h2>Técnicas de armado</h2>
+        <ul class="custom-list">
+          <li>Crimpado de cables RJ45</li>
+          <li>Montaje de patch panels</li>
+          <li>Pruebas de certificación</li>
+          <li>Organización de racks y gabinetes</li>
+        </ul>
+      </section>
+      
+      <!-- UNIDAD 5 -->
+      <section id="unidad5" class="content-section">
+        <h1>Unidad 5: Seguridad en redes</h1>
+        
+        <h2>Políticas de seguridad</h2>
+        <ul class="custom-list">
+          <li>Control de acceso a datos personales, comerciales y profesionales</li>
+          <li>Autenticación, autorización y auditoría</li>
+          <li>Listas de control de acceso (ACL)</li>
+        </ul>
+        
+        <h2>Conceptos fundamentales</h2>
+        <ul class="custom-list">
+          <li><strong>Confidencialidad:</strong> Protección contra accesos no autorizados</li>
+          <li><strong>Integridad:</strong> Garantía de que los datos no son alterados</li>
+          <li><strong>Disponibilidad:</strong> Acceso autorizado cuando se necesita</li>
+        </ul>
+        
+        <h2>Mecanismos de seguridad</h2>
+        <ul class="custom-list">
+          <li>Cifrado de datos (SSL/TLS, IPsec)</li>
+          <li>Firewalls y sistemas IDS/IPS</li>
+          <li>VPNs para acceso remoto seguro</li>
+          <li>Segmentación de redes (VLANs)</li>
+        </ul>
+      </section>
+      
+      <!-- UNIDAD 6 -->
+      <section id="unidad6" class="content-section">
+        <h1>Unidad 6: Sistemas operativos de redes</h1>
+        
+        <h2>Instalación y configuración de servidores</h2>
+        
+        <h3>Windows Server</h3>
+        <ul class="custom-list">
+          <li>Gestión de dominios (Active Directory)</li>
+          <li>Servicios de red (DHCP, DNS, IIS)</li>
+          <li>Administración de usuarios y permisos</li>
+          <li>Políticas de grupo</li>
+        </ul>
+        
+        <h3>GNU/Linux</h3>
+        <ul class="custom-list">
+          <li>Distribuciones para servidores (Ubuntu Server, CentOS)</li>
+          <li>Servicios de red (Apache, BIND, Postfix)</li>
+          <li>Administración mediante terminal</li>
+          <li>Seguridad y firewall (iptables, firewalld)</li>
+        </ul>
+      </section>
+      
+      <!-- UNIDAD 7 -->
+      <section id="unidad7" class="content-section">
+        <h1>Unidad 7: Administración de redes</h1>
+        
+        <h2>Configuración de protocolos y servicios</h2>
+        <ul class="custom-list">
+          <li>Configuración de TCP/IP</li>
+          <li>Implementación de servicios (DHCP, DNS)</li>
+          <li>Administración de recursos compartidos</li>
+        </ul>
+        
+        <h2>Gestión de red</h2>
+        <ul class="custom-list">
+          <li>Monitoreo de tráfico y rendimiento</li>
+          <li>Administración de usuarios y permisos</li>
+          <li>Respaldo y recuperación</li>
+        </ul>
+        
+        <h2>Solución de problemas</h2>
+        <ul class="custom-list">
+          <li>Diagnóstico de fallas en redes locales</li>
+          <li>Manejo de problemas de congestión</li>
+          <li>Optimización del rendimiento</li>
+          <li>Herramientas de diagnóstico (ping, traceroute, netstat)</li>
+        </ul>
+      </section>
+      
+      <!-- UNIDAD 8 -->
+      <section id="unidad8" class="content-section">
+        <h1>Unidad 8: Actividades prácticas y formativas</h1>
+        
+        <h2>8.1 Conexión entre dos computadoras (peer-to-peer)</h2>
+        <ul class="custom-list">
+          <li>Proyectos para conectar y desconectar equipos</li>
+          <li>Transmisión de archivos y compartir recursos</li>
+          <li>Diagnóstico remoto con herramientas como Remote Administrator y TightVNC</li>
+          <li>Uso de utilitarios del sistema operativo</li>
+          <li>Armado de patch-cords crossover</li>
+          <li>Verificación y aplicación de políticas de seguridad</li>
+        </ul>
+        
+        <h2>8.2 Instalación y administración de redes locales</h2>
+        <ul class="custom-list">
+          <li>Instalación de sistemas operativos de red</li>
+          <li>Configuración de servicios (archivos, impresión)</li>
+          <li>Administración y monitoreo de recursos</li>
+          <li>Implementación de políticas de seguridad</li>
+          <li>Resolución de problemas de conectividad</li>
+        </ul>
+      </section>
+      
+      <!-- RECURSOS (se mantienen igual) -->
+      <section id="simuladores" class="resource-section">
+        <h1>Simuladores de Red</h1>
+        
+        <h2>Herramientas Principales</h2>
+        <div class="highlight-box">
+          <p><strong>Cisco Packet Tracer:</strong> Ideal para protocolos básicos y switching</p>
+          <p><strong>GNS3:</strong> Emulación avanzada con imágenes reales</p>
+          <p><strong>EVE-NG:</strong> Entorno profesional multiventana</p>
+          <p><strong>Mininet:</strong> Para SDN y OpenFlow</p>
+        </div>
+        
+        <h2>Laboratorios Virtuales</h2>
+        <ul class="custom-list">
+          <li>Escenarios de routing dinámico</li>
+          <li>Arquitecturas seguras (DMZ, Zonas desmilitarizadas)</li>
+          <li>Migración IPv4 a IPv6</li>
+          <li>Implementación de QoS</li>
+        </ul>
+      </section>
+      
+      <section id="herramientas" class="resource-section">
+        <h1>Herramientas de Análisis</h1>
+        
+        <h2>Diagnóstico de Red</h2>
+        <div class="highlight-box">
+          <p><strong>Wireshark:</strong> Análisis profundo de paquetes</p>
+          <p><strong>Nmap:</strong> Escaneo de puertos y servicios</p>
+          <p><strong>iPerf:</strong> Medición de rendimiento</p>
+          <p><strong>PRTG:</strong> Monitoreo de red</p>
+        </div>
+        
+        <h2>Comandos Esenciales</h2>
+        <ul class="custom-list">
+          <li><strong>Cisco IOS:</strong> show, debug, traceroute</li>
+          <li><strong>Linux:</strong> ip, tcpdump, traceroute6</li>
+          <li><strong>Windows:</strong> netsh, pathping, Test-NetConnection</li>
+        </ul>
+      </section>
+      
+      <section id="referencias" class="resource-section">
+        <h1>Referencias</h1>
+        
+        <h2>Fuentes Principales</h2>
+        <div class="highlight-box">
+          <p>OpenWebinars, "Topología de redes informáticas"</p>
+          <p>AWS, "Diferencias entre LAN y WAN"</p>
+          <p>IONOS, "Tipos de redes informáticas"</p>
+          <p>Axarnet, "Tipos de redes informáticas"</p>
+          <p>CCNA desde Cero, "Topologías de Red LAN y WAN"</p>
+          <p>KeepCoding, "Clases de Redes"</p>
+        </div>
+      </section>
+    </main>
+  </div>
+  
+  <!-- PIE DE PÁGINA -->
+  <footer>
+    <p>© 2025 Redes II</p>
+    <p class="footer-credits">Portal educativo de <strong>M.B.I.</strong></p>
+    <p class="footer-credits">Contenido diseñado según plan de estudios oficial. No nos hacemos responsables por variaciones en los programas de cada institución.</p>
+  </footer>
+  <script src="4° Laboratorio de Redes II.js"></script>
+</body>
+</html>

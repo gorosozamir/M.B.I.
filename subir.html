@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Digital - Subir Material</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="subir.css">
+      <!-- FIX RÁPIDO: asegura que el botón no quede cubierto por la etiqueta del input -->
+    <style>
+      /* Estos estilos son mínimos y sólo corrigen solapamientos comunes.
+         Si ya tenés reglas en subir.css podés ponerlos ahí. */
+      .file-input-container { position: relative; z-index: 1; }
+      .file-input-label { position: relative; z-index: 1; display: block; cursor: pointer; }
+      .submit-btn { position: relative; z-index: 5; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="volver-btn">
+        <i class="fas fa-arrow-left"></i> Volver
+    </a>
+    <div class="biblioteca-container">
+        <h1><i class="fas fa-book-open"></i> M.B.I</h1>
+        <p class="subtitle">Sube, busca y comparte material bibliográfico con la comunidad</p>
+        
+        <div class="tabs">
+            <div class="tab active" data-tab="upload"><i class="fas fa-cloud-upload-alt"></i> Subir Documento</div>
+            <div class="tab" data-tab="browse"><i class="fas fa-search"></i> Buscar Documentos</div>
+        </div>
+        
+        <!-- Pestaña de subida -->
+        <div class="tab-content active" id="upload-tab">
+            <div class="upload-form">
+                <h2><i class="fas fa-cloud-upload-alt"></i> Subir Nuevo Documento</h2>
+                
+                <form id="uploadForm">
+                    <div id="message-container"></div>
+                    
+                    <div class="form-group">
+                        <label for="titulo">Título del documento:</label>
+                        <input type="text" id="titulo" name="titulo" required placeholder="Ej: Introducción a la Programación">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="autor">Autor(es):</label>
+                        <input type="text" id="autor" name="autor" required placeholder="Nombre del autor o autores">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="anio">Año académico:</label>
+                        <select id="anio" name="anio" required>
+                            <option value="">Seleccione el año</option>
+                            <option value="1">Primer Año</option>
+                            <option value="2">Segundo Año</option>
+                            <option value="3">Tercer Año</option>
+                            <option value="4">Cuarto Año</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="materia">Materia relacionada:</label>
+                        <select id="materia" name="materia" required>
+                            <option value="">Seleccione una materia</option>
+                            <optgroup label="Primer Año" id="primer-anio-group">
+                                <option value="matematica">Matemática</option>
+                                <option value="Lengua y Literatura">Lengua y Literatura</option>
+                                <option value="Ingles">Ingles</option>
+                                <option value="Logica y Algebra">Logica y Algebra</option>
+                                <option value="Fisica">Fisica</option>
+                                <option value="Organizacion de Computadoras">Organizacion de Computadoras</option>
+                                <option value="Resolucion de Problemas">Resolucion de Problemas</option>
+                                <option value="Lab.de Hardware I">Lab.de Hardware I</option>
+                                <option value="Lab.de Software">Lab.de Software</option>
+                            </optgroup>
+                            <optgroup label="Segundo Año" id="segundo-anio-group">
+                                <option value="Matematica Aplicada">Matematica Aplicada</option>
+                                <option value="Fisica">Fisica</option>
+                                <option value="Ingles Tecnico">Ingles Tecnico</option>
+                                <option value="Lengua y Literatura">Lengua y Literatura</option>
+                                <option value="Sistemas Digitales">Sistema Digitales 1</option>
+                                <option value="POO">POO</option>
+                                <option value="Org y Sistemas de Informacion">Organizacion y Sistemas de Informacion</option>
+                                <option value="Arguitectura de Computadoras">Arquitectura de Computadoras</option>
+                                <option value="Lab.de hardware II">Lab.de Hardware II</option>
+                                <option value="Lab.de Asistenecia Operativa">Lab.de Asistencia Operativa</option>  
+                            </optgroup>
+                            <optgroup label="Tercer Año" id="tercer-anio-group">
+                                <option value="Estadistica Aplicada">Estadistica Aplicada</option>
+                                <option value="Base de Datos">Bases de Datos</option>
+                                <option value="Seguridad y Auditoria">Seguridad y Auditoria</option>
+                                <option value="Ingles Tecnico">Ingles Tecnico</option>
+                                <option value="Comunicacion Oral y Escrita">Comunicación Oral y Escrita</option>
+                                <option value="Programacion Estructurada">Programación Estructurada</option>
+                                <option value="matematica Aplicada II">Matemática Aplicada</option>
+                                <option value="Sistemas Digitales 2">Sistemas Digitales 2</option>
+                                <option value="Analisis de Sistemas">Analisis de Sistemas</option>
+                                <option value="Lab.de Sistemas Operativos">Lab. de Sistemas Operativos</option>
+                                <option value="Lab.de Redes i">Redes I</option>
+                            </optgroup>
+                            <optgroup label="Cuarto Año" id="cuarto-anio-group">
+                                <option value="Testing y Calidad">Testing y Calidad</option>
+                                <option value="Analisis de Requerimientos">Análisis de Requerimientos</option>
+                                <option value="Ingles Tecnico">Inglés técnico</option>
+                                <option value="Matematica Aplicada III">Matematica Aplicada III</option>
+                                <option value="Diseño web">Diseño Web</option>
+                                <option value="Comunicacion Oral y Escrita">Comunicacion Oral y Escrita</option>
+                                <option value="Lab.de Diagonstico">Diagnostico</option>
+                                <option value="Lab. de Redes II">Redes II</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="descripcion">Descripción:</label>
+                        <textarea id="descripcion" name="descripcion" rows="3" placeholder="Breve descripción del contenido"></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Documento:</label>
+                        <div class="file-input-container">
+                            <label class="file-input-label" for="file-input">
+                                <i class="fas fa-file-upload"></i>
+                                <span>Arrastra tu archivo aquí o haz clic para seleccionar</span>
+                                <small>Formatos aceptados: PDF, DOC, DOCX, PPT, PPTX, TXT, JPG, JPEG, PNG</small>
+                            </label>
+                            <input type="file" id="file-input" name="archivo" accept=".pdf,.doc,.docx,.ppt,.pptx,.txt,.jpg,.jpeg,.png" required>
+                        </div>
+                        <div id="file-preview-container"></div>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">
+    <i class="fas fa-upload"></i> Subir Documento
+</button>
+
+                </form>
+            </div>
+        </div>
+        
+        <!-- Pestaña de búsqueda -->
+        <div class="tab-content" id="browse-tab">
+            <div class="search-container" id="search-container">
+                <i class="fas fa-search search-icon"></i>
+                <input type="text" class="search-input" id="search-input" placeholder="Buscar documentos...">
+                <div class="search-suggestions" id="search-suggestions"></div>
+            </div>
+            
+            <div class="filters-container">
+                <div class="filter-group">
+                    <label for="filter-year">Filtrar por año:</label>
+                    <select id="filter-year">
+                        <option value="">Todos los años</option>
+                        <option value="1">Primer Año</option>
+                        <option value="2">Segundo Año</option>
+                        <option value="3">Tercer Año</option>
+                        <option value="4">Cuarto Año</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="filter-subject">Filtrar por materia:</label>
+                    <select id="filter-subject">
+                        <option value="">Todas las materias</option>
+                        <optgroup label="Primer Año">
+                            <option value="Matematica">Matemática</option>
+                            <option value="comunicacion1">Lengua y Literatura</option>
+                            <option value="Ingles">Ingles</option>
+                            <option value="Logica y ALgebra">Logica y Algebra</option>
+                            <option value="Fisica">Fisica</option>
+                            <option value="Organizacion de Computadoras">Organizacion de Computadoras</option>
+                            <option value="Resolucion de Problemas">Resolucion de Problemas</option>
+                            <option value="Lab.de Hardware I">Lab.de Hardware I</option>
+                            <option value="Lab. de Software">Lab. de Software</option>
+                        </optgroup>
+                        <optgroup label="Segundo Año">
+                            <option value="Matematica Aplicada">Matematica Aplicada</option>
+                            <option value="Fisica">Fisica</option>
+                            <option value="Ingles Tecnico">Ingles Tecnico</option>
+                            <option value="Lengua y Literatura">Lengua y Literatura</option>
+                            <option value="SItemas Digitales">Sistema Digitales 1</option>
+                            <option value="POO">POO</option>
+                            <option value="Org y Sistemas de Informacion">Organizacion y Sistemas de Informacion</option>
+                            <option value="Arquitectura de Computadoras">Arquitectura de Computadoras</option>
+                            <option value="Lab.de Hardware II">Lab.de Hardware II</option>
+                            <option value="Lab.de Asistencia Operativa">Lab.de Asistencia Operativa</option>
+                        </optgroup>
+                        <optgroup label="Tercer Año">
+                            <option value="Estadistica Aplicada">Estadistica Aplicada</option>
+                            <option value="Base de datos">Bases de Datos</option>
+                            <option value="Seguridad y Auditoria">Seguridad y Auditoria</option>
+                            <option value="Ingles Tecnico">Ingles Tecnico</option>
+                            <option value="Comunicacion Oral y Escrita">Comunicación Oral y Escrita</option>
+                            <option value="Programacion Estructurada">Programación Estructurada</option>
+                            <option value="Matematica Aplicada">Matemática Aplicada</option>
+                            <option value="Sistemas digitales 2">Sistemas Digitales 2</option>
+                            <option value="Analisi de Sistemas">Analisis de Sistemas</option>
+                            <option value="Lab.de Sistemas Operativos">Lab. de Sistemas Operativos</option>
+                            <option value="Lab.de Redes II">Redes I</option>
+                        </optgroup>
+                        <optgroup label="Cuarto Año">
+                            <option value="Testing y Calidad">Testing y Calidad</option>
+                            <option value="Analisis de Requerimientos">Análisis de Requerimientos</option>
+                            <option value="Ingles Tecnico">Inglés técnico</option>
+                            <option value="Matematica aplicas III">Matematica Aplicada III</option>
+                            <option value="Diseño web">Diseño Web</option>
+                            <option value="Comunicacion Oral y Escrita">Comunicacion Oral y Escrita</option>
+                            <option value="Lab.de Diagnostico">Diagnostico</option>
+                            <option value="Lab.de Redes II">Redes II</option>
+                        </optgroup>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="filter-type">Filtrar por tipo:</label>
+                    <select id="filter-type">
+                        <option value="">Todos los tipos</option>
+                        <option value="pdf">PDF</option>
+                        <option value="doc">Word</option>
+                        <option value="ppt">PowerPoint</option>
+                        <option value="txt">Texto</option>
+                        <option value="image">Imagen</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div id="documentos-list">
+                <h3><i class="fas fa-list-ul"></i> Documentos Disponibles</h3>
+                <div id="documents-container"></div>
+                
+                <div class="pagination">
+                    <button class="page-btn" id="prev-page"><i class="fas fa-chevron-left"></i></button>
+                    <button class="page-btn active">1</button>
+                    <button class="page-btn">2</button>
+                    <button class="page-btn">3</button>
+                    <button class="page-btn" id="next-page"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para detalles del documento -->
+    <div class="modal" id="document-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3 class="modal-title" id="modal-doc-title"></h3>
+            <div class="modal-body">
+                <div class="doc-meta" id="modal-doc-meta"></div>
+                <div class="doc-description" id="modal-doc-description"></div>
+                
+                <!-- Vista previa del documento -->
+                <div class="preview-container" id="preview-container">
+                    <div class="preview-header">
+                        <h4>Vista Previa</h4>
+                        <div class="preview-actions">
+                            <button class="action-btn" id="fullscreen-preview" title="Pantalla completa">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="preview-content" id="preview-content">
+                        <div class="preview-placeholder">
+                            <i class="fas fa-file"></i>
+                            <p>Selecciona un documento para ver la vista previa</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="modal-btn modal-btn-secondary" id="close-modal-btn">Cerrar</button>
+                <button class="modal-btn modal-btn-primary" id="download-modal-btn"><i class="fas fa-download"></i> Descargar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para vista previa en pantalla completa -->
+    <div class="modal" id="fullscreen-modal">
+        <div class="modal-content fullscreen-modal-content">
+            <span class="close-modal fullscreen-close-modal">&times;</span>
+            <div id="fullscreen-content" class="fullscreen-content"></div>
+        </div>
+    </div>
+
+    <script src="subir.js"></script>
+</body>
+</html>

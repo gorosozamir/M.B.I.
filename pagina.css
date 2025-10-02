@@ -1,0 +1,225 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: linear-gradient(135deg, rgba(142, 45, 226, 0.7), rgba(74, 0, 224, 0.7));
+    font-family: 'Poppins', 'Segoe UI', sans-serif;
+    color: #fff;
+    background-attachment: fixed;
+    background-size: 200% 200%;
+    animation: gradientBG 10s ease infinite;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Contenedor principal */
+.materias-container {
+    max-width: 850px;
+    margin: 50px auto;
+    padding: 40px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+    color: #333;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.materias-container::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    background: linear-gradient(45deg, 
+                  rgba(106, 34, 248, 0.1), 
+                  rgba(142, 45, 226, 0.1), 
+                  rgba(74, 0, 224, 0.1));
+    z-index: -1;
+    border-radius: 25px;
+    animation: borderRotate 20s linear infinite;
+}
+
+@keyframes borderRotate {
+    100% { transform: rotate(360deg); }
+}
+
+/* Títulos */
+h1 {
+    color: #6a22f8;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: relative;
+    display: inline-block;
+}
+
+h1::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 25%;
+    width: 50%;
+    height: 3px;
+    background: linear-gradient(to right, transparent, #6a22f8, transparent);
+    border-radius: 3px;
+}
+
+p {
+    color: #0e0c0c;
+    margin-bottom: 30px;
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+/* Grid de materias - MEJORADO */
+.materias-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 25px;
+    margin-top: 40px;
+    justify-items: center; /* Centra los elementos horizontalmente */
+}
+
+/* Botones de materias */
+.materia-btn {
+    background: white;
+    border: 2px solid #6a22f8;
+    border-radius: 15px;
+    padding: 25px 20px;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #444;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%; /* Asegura que todos los botones tengan el mismo ancho */
+    max-width: 220px; /* Limita el ancho máximo */
+}
+
+.materia-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(106, 34, 248, 0.1), transparent);
+    z-index: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.materia-btn:hover {
+    background: #f8f5ff;
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 8px 24px rgba(106, 34, 248, 0.2);
+    border-color: #8e2de2;
+    color: #5a2d9e;
+}
+
+.materia-btn:hover::before {
+    opacity: 1;
+}
+
+.materia-btn i {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #6a22f8;
+    transition: all 0.3s ease;
+}
+
+.materia-btn:hover i {
+    transform: scale(1.1);
+    color: #8e2de2;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .materias-container {
+        margin: 30px 20px;
+        padding: 30px;
+    }
+    
+    .materias-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .materias-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .materia-btn {
+        padding: 20px 15px;
+        font-size: 1em;
+        max-width: none; /* En móviles, los botones ocupan todo el ancho disponible */
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+}
+
+/* Efecto de partículas decorativas */
+.particle {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+/* Botón Volver */
+.volver-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    color: #6a22f8;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    z-index: 1000;
+    text-decoration: none;
+}
+
+.volver-btn:hover {
+    background: white;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+}
+
+.volver-btn i {
+    font-size: 0.9em;
+}
+
+/* Animación de partículas */
+@keyframes float {
+    0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+    100% { transform: translateY(-100vh) rotate(360deg); opacity: 0; }
+}

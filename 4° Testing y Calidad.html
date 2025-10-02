@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Testing y Calidad</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="4° Testing y Calidad.css">
+</head>
+<body>
+  <!-- CABECERA -->
+  <header>
+    <div class="header-content">
+      <div class="logo">Testing y Calidad</div>
+      <a href="pagina4.html" class="back-button">← Volver</a>
+    </div>
+  </header>
+  
+  <!-- CONTENEDOR PRINCIPAL -->
+  <div class="container">
+    <!-- BARRA LATERAL -->
+    <aside class="sidebar">
+      <h3>Unidades</h3>
+      <ul>
+        <li><a href="#" class="sidebar-link active" data-section="unidad1">Unidad 1: Ciclo de Vida del Desarrollo</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad2">Unidad 2: Metodologías de Desarrollo</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad3">Unidad 3: Técnicas de Construcción</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad4">Unidad 4: Calidad en el Desarrollo</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad5">Unidad 5: Estrategias de Testing</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad6">Unidad 6: Evaluación de Productos</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad7">Unidad 7: Modelos de Calidad</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad8">Unidad 8: Gestión de Configuración</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad9">Unidad 9: Aseguramiento de Calidad</a></li>
+      </ul>
+      
+      <h3>Recursos</h3>
+      <ul>
+        <li><a href="#" class="sidebar-link" data-section="ejercicios">Ejercicios Prácticos</a></li>
+        <li><a href="#" class="sidebar-link" data-section="referencias">Referencias Útiles</a></li>
+      </ul>
+    </aside>
+    
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="main-content">
+      <!-- UNIDAD 1 -->
+      <section id="unidad1" class="content-section active">
+        <h1>Unidad 1: Ciclo de Vida del Desarrollo de Software</h1>
+        
+        <h2>Procesos del ciclo de vida del software</h2>
+        <p>El ciclo de vida del desarrollo de software (SDLC) es un proceso estructurado que abarca desde la concepción hasta el retiro de un sistema. Sus fases típicas incluyen:</p>
+        
+        <ul class="custom-list">
+          <li><strong>Planificación:</strong> Definición de objetivos, alcance, recursos y cronograma.</li>
+          <li><strong>Análisis de requisitos:</strong> Recolección y documentación de necesidades funcionales y no funcionales.</li>
+          <li><strong>Diseño:</strong> Especificación de la arquitectura y los componentes del sistema.</li>
+          <li><strong>Implementación:</strong> Codificación y construcción del software.</li>
+          <li><strong>Pruebas:</strong> Verificación y validación del producto.</li>
+          <li><strong>Despliegue:</strong> Instalación y entrega al usuario final.</li>
+          <li><strong>Mantenimiento:</strong> Corrección de errores, mejoras y adaptaciones.</li>
+        </ul>
+        
+        <h2>Relación con los procesos organizacionales</h2>
+        <p>El SDLC se integra con los procesos organizacionales asegurando que el software cumpla con los objetivos de negocio, la gestión de recursos y la alineación estratégica. Un ciclo de vida bien gestionado permite la colaboración entre áreas técnicas y de negocio, facilitando la toma de decisiones y la adaptación a cambios organizacionales.</p>
+        
+        <h2>Impacto en la planificación del testing y la calidad</h2>
+        <div class="highlight-box">
+          <p>El ciclo de vida determina cuándo y cómo se planifican las pruebas. Modelos secuenciales (como cascada) reservan fases específicas para testing, mientras que modelos iterativos o ágiles promueven pruebas continuas. Una buena integración del testing en el ciclo de vida mejora la detección temprana de errores y, por ende, la calidad final del producto.</p>
+        </div>
+      </section>
+      
+      <!-- UNIDAD 2 -->
+      <section id="unidad2" class="content-section">
+        <h1>Unidad 2: Metodologías de Desarrollo</h1>
+        
+        <h2>Metodologías tradicionales</h2>
+        <ul class="custom-list">
+          <li><strong>Cascada:</strong> Proceso secuencial donde cada fase debe completarse antes de la siguiente. Adecuado para proyectos con requisitos estables y bien definidos. La validación y las pruebas ocurren al final, lo que puede dificultar la detección temprana de errores.</li>
+          <li><strong>Modelo en V:</strong> Paraleliza fases de desarrollo y pruebas, asociando cada etapa de desarrollo con una etapa de validación correspondiente. Favorece la integración temprana de pruebas y la trazabilidad de requisitos.</li>
+        </ul>
+        
+        <h2>Metodologías ágiles</h2>
+        <div class="highlight-box">
+          <ul class="custom-list">
+            <li><strong>Scrum:</strong> Desarrollo iterativo e incremental basado en sprints cortos, reuniones diarias y entregas frecuentes. Promueve la adaptación a cambios y la colaboración constante con el cliente.</li>
+            <li><strong>Extreme Programming (XP):</strong> Enfatiza la entrega continua, la simplicidad, la retroalimentación rápida y la mejora constante. Se apoya en prácticas como programación en pareja y desarrollo guiado por pruebas.</li>
+          </ul>
+        </div>
+        
+        <h2>Implicancias en la planificación y ejecución de pruebas</h2>
+        <ul class="custom-list">
+          <li><strong>Tradicionales:</strong> Pruebas planificadas al final, con menor flexibilidad ante cambios.</li>
+          <li><strong>Ágiles:</strong> Pruebas integradas en cada iteración, permitiendo feedback continuo y adaptación rápida a nuevos requisitos.</li>
+        </ul>
+      </section>
+      
+      <!-- UNIDAD 3 -->
+      <section id="unidad3" class="content-section">
+        <h1>Unidad 3: Técnicas de Construcción Basadas en Especificación de Pruebas</h1>
+        
+        <h2>Construcción guiada por casos de prueba</h2>
+        <ul class="custom-list">
+          <li>El desarrollo se orienta a cumplir los escenarios definidos en los casos de prueba, asegurando la cobertura de requisitos funcionales y no funcionales.</li>
+        </ul>
+        
+        <h2>Desarrollo orientado a pruebas (TDD)</h2>
+        <ul class="custom-list">
+          <li>Consiste en escribir primero los tests automatizados y luego el código necesario para superarlos. Favorece la calidad y el diseño modular.</li>
+        </ul>
+        
+        <h2>BDD (Behavior Driven Development)</h2>
+        <div class="highlight-box">
+          <ul class="custom-list">
+            <li>Variante de TDD que describe el comportamiento esperado del sistema en lenguaje natural, facilitando la colaboración entre técnicos y no técnicos.</li>
+          </ul>
+        </div>
+        
+        <h2>Técnicas basadas en requisitos</h2>
+        <ul class="custom-list">
+          <li>Se diseñan pruebas a partir de especificaciones funcionales (qué debe hacer el sistema) y no funcionales (rendimiento, seguridad, etc.).</li>
+        </ul>
+      </section>
+      
+      <!-- UNIDAD 4 -->
+      <section id="unidad4" class="content-section">
+        <h1>Unidad 4: Calidad en el Desarrollo de Software</h1>
+        
+        <h2>Concepto de calidad</h2>
+        <p>La calidad en software se refiere al grado en que un producto satisface los requisitos especificados y las expectativas de los usuarios. Incluye atributos como funcionalidad, fiabilidad, eficiencia, usabilidad y mantenibilidad.</p>
+        
+        <ul class="custom-list">
+          <li><strong>Asegurar la calidad:</strong> Implementar procesos de control, revisiones, pruebas y métricas desde etapas tempranas.</li>
+          <li><strong>Verificar la calidad:</strong> Medir y comprobar que el software cumple los estándares y requisitos acordados.</li>
+        </ul>
+        
+        <h2>Prevención de errores y problemas de calidad</h2>
+        <ul class="custom-list">
+          <li><strong>Detección temprana:</strong> Identificar defectos en fases iniciales reduce costos y riesgos.</li>
+          <li><strong>Prácticas proactivas:</strong> Revisiones de requisitos, pruebas automatizadas, integración continua y formación del equipo son esenciales para prevenir fallas.</li>
+        </ul>
+        
+        <h2>Inspecciones y revisiones</h2>
+        <div class="highlight-box">
+          <ul class="custom-list">
+            <li><strong>Inspecciones formales:</strong> Evaluación sistemática de artefactos (código, documentos) para identificar errores.</li>
+            <li><strong>Walk-throughs:</strong> Revisión guiada por el autor para explicar y analizar el trabajo con el equipo.</li>
+            <li><strong>Revisiones por pares:</strong> Colaboradores revisan el trabajo de sus colegas para detectar defectos y mejorar la calidad.</li>
+          </ul>
+        </div>
+      </section>
+      
+      <!-- UNIDAD 5 -->
+      <section id="unidad5" class="content-section">
+        <h1>Unidad 5: Estrategias y Técnicas de Testing</h1>
+        
+        <h2>Estrategias de prueba</h2>
+        <ul class="custom-list">
+          <li><strong>Caja negra:</strong> Pruebas basadas en la funcionalidad sin conocer la implementación interna.</li>
+          <li><strong>Caja blanca:</strong> Pruebas basadas en el conocimiento del código fuente.</li>
+          <li><strong>Caja gris:</strong> Combinación de ambas, usando información parcial de la implementación.</li>
+        </ul>
+        
+        <h2>Técnicas de testing</h2>
+        <ul class="custom-list">
+          <li><strong>Partición de equivalencia:</strong> Divide los datos de entrada en clases para reducir el número de pruebas.</li>
+          <li><strong>Análisis de valores límite:</strong> Prueba los límites extremos de las entradas.</li>
+          <li><strong>Pruebas de regresión:</strong> Verifican que nuevas modificaciones no introduzcan errores previos.</li>
+          <li><strong>Pruebas exploratorias:</strong> El tester explora el sistema libremente, buscando defectos inesperados.</li>
+        </ul>
+        
+        <h2>Verificación vs. Validación</h2>
+        <div class="highlight-box">
+          <ul class="custom-list">
+            <li><strong>Verificación:</strong> "¿Estamos construyendo el producto correctamente?" (cumplimiento de especificaciones).</li>
+            <li><strong>Validación:</strong> "¿Estamos construyendo el producto correcto?" (satisfacción de necesidades del usuario).</li>
+          </ul>
+        </div>
+      </section>
+      
+      <!-- UNIDAD 6 -->
+      <section id="unidad6" class="content-section">
+        <h1>Unidad 6: Evaluación de Productos de Software</h1>
+        
+        <h2>Proceso de evaluación</h2>
+        <ul class="custom-list">
+          <li>Consiste en comparar el producto con especificaciones y requisitos, mediante pruebas, revisiones y métricas de calidad.</li>
+        </ul>
+        
+        <h2>Tipos de evaluación</h2>
+        <ul class="custom-list">
+          <li><strong>Evaluación continua:</strong> Se realiza durante todo el desarrollo, permitiendo ajustes tempranos.</li>
+          <li><strong>Evaluación final:</strong> Se lleva a cabo al terminar el desarrollo, antes de la entrega al cliente, para asegurar la conformidad total.</li>
+        </ul>
+      </section>
+      
+      <!-- UNIDAD 7 -->
+      <section id="unidad7" class="content-section">
+        <h1>Unidad 7: Modelos de Calidad y Métricas</h1>
+        
+        <h2>Modelos de calidad</h2>
+        <ul class="custom-list">
+          <li><strong>ISO/IEC 25010:</strong> Define características como funcionalidad, fiabilidad, usabilidad, eficiencia, mantenibilidad y portabilidad.</li>
+          <li><strong>Modelo de McCall y Boehm:</strong> Proponen atributos y factores para medir la calidad del software en distintas dimensiones.</li>
+        </ul>
+        
+        <h2>Métricas de producto software</h2>
+        <div class="highlight-box">
+          <ul class="custom-list">
+            <li><strong>Funcionalidad:</strong> Medida de la capacidad para cumplir funciones requeridas.</li>
+            <li><strong>Fiabilidad:</strong> Probabilidad de funcionamiento correcto durante un periodo.</li>
+            <li><strong>Mantenibilidad:</strong> Facilidad para modificar y corregir el software.</li>
+            <li><strong>Usabilidad:</strong> Facilidad de uso y aprendizaje para el usuario.</li>
+            <li><strong>Eficiencia:</strong> Uso óptimo de recursos y tiempo de respuesta.</li>
+          </ul>
+        </div>
+      </section>
+      
+      <!-- UNIDAD 8 -->
+      <section id="unidad8" class="content-section">
+        <h1>Unidad 8: Gestión de la Configuración</h1>
+        
+        <h2>Control de versiones</h2>
+        <ul class="custom-list">
+          <li>Registro y administración de cambios en el código y otros artefactos, permitiendo revertir y rastrear modificaciones.</li>
+        </ul>
+        
+        <h2>Identificación y seguimiento de ítems</h2>
+        <ul class="custom-list">
+          <li>Catalogar y monitorear los elementos clave del sistema, facilitando la trazabilidad.</li>
+        </ul>
+        
+        <h2>Impacto en la calidad</h2>
+        <div class="highlight-box">
+          <p>Una gestión adecuada previene errores por sobrescritura, pérdida de información y facilita la colaboración.</p>
+        </div>
+      </section>
+      
+      <!-- UNIDAD 9 -->
+      <section id="unidad9" class="content-section">
+        <h1>Unidad 9: Aseguramiento de la Calidad (QA)</h1>
+        
+        <h2>Aseguramiento del producto</h2>
+        <ul class="custom-list">
+          <li>Actividades centradas en verificar que el software final cumple con los requisitos y estándares de calidad esperados, mediante pruebas, revisiones y auditorías.</li>
+        </ul>
+        
+        <h2>Aseguramiento del proceso</h2>
+        <ul class="custom-list">
+          <li>Enfoque en la mejora continua de los procesos de desarrollo, aplicando normas y buenas prácticas para reducir la probabilidad de defectos y aumentar la eficiencia.</li>
+        </ul>
+        
+        <h2>Normas internacionales</h2>
+        <div class="highlight-box">
+          <ul class="custom-list">
+            <li><strong>ISO 9001:</strong> Gestión de calidad aplicable a procesos organizacionales, incluyendo software.</li>
+            <li><strong>ISO/IEC 25000 (SQuaRE):</strong> Estándar específico para calidad de productos software.</li>
+            <li><strong>IEEE 829:</strong> Estandariza la documentación de pruebas.</li>
+            <li><strong>CMMI:</strong> Modelo de madurez para mejorar procesos de desarrollo y gestión de software.</li>
+          </ul>
+        </div>
+      </section>
+      
+      <!-- EJERCICIOS PRÁCTICOS -->
+      <section id="ejercicios" class="content-section">
+        <h1>Ejercicios Prácticos</h1>
+        
+        <h2>Ejercicios sobre metodologías</h2>
+        <div class="highlight-box">
+          <h3>Ejercicio 1: Comparación de metodologías</h3>
+          <p>Completa la siguiente tabla comparando metodologías tradicionales y ágiles:</p>
+          <table style="width:100%">
+            <tr>
+              <th>Característica</th>
+              <th>Metodologías tradicionales</th>
+              <th>Metodologías ágiles</th>
+            </tr>
+            <tr>
+              <td>Planificación de pruebas</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Flexibilidad ante cambios</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Frecuencia de entregas</td>
+              <td></td>
+              <td></td>
+            </tr>
+          </table>
+        </div>
+        
+        <h2>Ejercicios sobre técnicas de testing</h2>
+        <div class="highlight-box">
+          <h3>Ejercicio 2: Identificación de técnicas</h3>
+          <p>Para cada situación, identifica qué técnica de testing sería más apropiada:</p>
+          <ol>
+            <li>Verificar que un campo numérico acepta valores entre 1 y 100.</li>
+            <li>Probar todas las rutas posibles de ejecución de un módulo complejo.</li>
+            <li>Evaluar cómo reacciona el sistema cuando se introducen datos inesperados.</li>
+          </ol>
+        </div>
+        
+        <h2>Ejercicios sobre modelos de calidad</h2>
+        <div class="highlight-box">
+          <h3>Ejercicio 3: Relaciona conceptos</h3>
+          <p>Relaciona cada atributo de calidad con su definición:</p>
+          <ol>
+            <li>Fiabilidad</li>
+            <li>Usabilidad</li>
+            <li>Mantenibilidad</li>
+            <li>Eficiencia</li>
+          </ol>
+          <p>Definiciones:</p>
+          <ul class="custom-list">
+            <li>Facilidad con que los usuarios pueden aprender y usar el software</li>
+            <li>Capacidad del software para funcionar sin fallos durante un periodo</li>
+            <li>Uso óptimo de recursos del sistema</li>
+            <li>Facilidad para modificar y corregir el software</li>
+          </ul>
+        </div>
+      </section>
+      
+      <!-- REFERENCIAS ÚTILES -->
+      <section id="referencias" class="content-section">
+        <h1>Referencias Útiles</h1>
+        
+        <h2>Estándares y normativas</h2>
+        <ul class="custom-list">
+          <li>ISO/IEC 25010 - Modelo de calidad de producto software</li>
+          <li>IEEE 829 - Estándar para documentación de pruebas</li>
+          <li>CMMI - Modelo de mejora de procesos</li>
+        </ul>
+        
+        <h2>Libros recomendados</h2>
+        <div class="highlight-box">
+          <ul class="custom-list">
+            <li>"Testing Computer Software" - Cem Kaner</li>
+            <li>"Agile Testing" - Lisa Crispin</li>
+            <li>"The Art of Software Testing" - Glenford Myers</li>
+          </ul>
+        </div>
+        
+        <h2>Herramientas populares</h2>
+        <ul class="custom-list">
+          <li>Selenium - Automatización de pruebas web</li>
+          <li>JIRA - Gestión de proyectos y seguimiento de bugs</li>
+          <li>Postman - Pruebas de APIs</li>
+          <li>Jenkins - Integración continua</li>
+        </ul>
+        
+        <h2>Plataformas de aprendizaje</h2>
+        <div class="highlight-box">
+          <ul class="custom-list">
+            <li>ISTQB - Certificación en testing de software</li>
+            <li>Udemy - Cursos sobre testing y calidad</li>
+            <li>Coursera - Especializaciones en QA</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+  </div>
+  
+  <!-- PIE DE PÁGINA -->
+  <footer>
+    <p>© 2025 Testing y Calidad</p>
+    <p class="footer-credits">Portal educativo de <strong>M.B.I</strong></p>
+    <p class="footer-credits">Contenido diseñado según plan de estudios oficial. No nos hacemos responsables por variaciones en los programas de cada institución.</p>
+  </footer>
+
+  <script src="4° Testing y Calidad.js"></script>
+</body>
+</html>

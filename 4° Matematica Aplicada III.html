@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matemática Aplicada III</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="4° Matematica Aplicada III.css">
+</head>
+<body>
+  <!-- CABECERA -->
+  <header>
+    <div class="header-content">
+      <div class="logo">Matemática Aplicada III</div>
+      <a href="pagina4.html" class="back-button">← Volver</a>
+    </div>
+  </header>
+
+  <!-- CONTENEDOR PRINCIPAL -->
+  <div class="container">
+    <!-- BARRA LATERAL MODIFICADA -->
+    <aside class="sidebar">
+      <h3>Unidades</h3>
+      <ul>
+        <li><a href="#" class="sidebar-link active" data-section="unidad1">Unidad 1: Derivadas</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad2">Unidad 2: Integrales</a></li>
+        <li><a href="#" class="sidebar-link" data-section="unidad3">Unidad 3: Ecuaciones Diferenciales</a></li>
+      </ul>
+
+      <h3>Recursos</h3>
+      <ul>
+        <li><a href="#" class="sidebar-link" data-section="recursos">Ejercicios Prácticos</a></li>
+      </ul>
+    </aside>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="main-content">
+      <!-- UNIDAD 1: DERIVADAS -->
+      <section id="unidad1" class="content-section active">
+        <h1>Unidad 1: Derivadas</h1>
+        <p>Esta unidad introduce el concepto de derivada, sus reglas de cálculo y sus aplicaciones en la resolución de problemas de optimización y análisis de funciones.</p>
+
+        <div class="highlight-box">
+          <p><strong>💡 Dato clave:</strong> La derivada representa la tasa de cambio instantánea de una función y es fundamental en el cálculo diferencial.</p>
+        </div>
+
+        <h2>1.1 Concepto y fundamentos</h2>
+        <p><strong>Definición:</strong> La derivada de una función mide la razón de cambio instantánea de la función respecto a su variable independiente. Es el límite de la variación media cuando el intervalo tiende a cero.</p>
+        <p><strong>Interpretación geométrica:</strong> La derivada en un punto es la pendiente de la recta tangente a la gráfica de la función en ese punto.</p>
+        <div class="highlight-box">
+          <p><strong>Derivada en un punto:</strong><br>f′(a) = lim<sub>h→0</sub> [f(a+h) - f(a)] / h</p>
+        </div>
+        <p><strong>Cálculo por definición:</strong> Se utiliza el límite anterior para calcular derivadas desde la definición formal.</p>
+
+        <h2>1.2 Reglas y técnicas de derivación</h2>
+        <h3>Reglas básicas:</h3>
+        <ul class="custom-list">
+          <li><strong>Suma:</strong> (f+g)′ = f′ + g′</li>
+          <li><strong>Producto:</strong> (fg)′ = f′g + fg′</li>
+          <li><strong>Cociente:</strong> (f/g)′ = (f′g - fg′) / g²</li>
+          <li><strong>Potencia:</strong> (xⁿ)′ = n xⁿ⁻¹</li>
+        </ul>
+        <h3>Regla de la cadena:</h3>
+        <div class="highlight-box">
+          <p>(f(g(x)))′ = f′(g(x)) · g′(x)</p>
+        </div>
+        <p><strong>Derivadas de orden superior:</strong> Son derivadas de la derivada, es decir, la segunda, tercera, etc., derivadas de una función.</p>
+
+        <h2>1.3 Aplicaciones</h2>
+        <p><strong>Recta tangente:</strong> La ecuación de la tangente en x = a es y = f(a) + f′(a)(x - a).</p>
+        <p><strong>Máximos y mínimos:</strong> Se emplea la derivada primera para encontrar puntos críticos y la segunda para determinar si son máximos, mínimos o puntos de inflexión.</p>
+        <h3>Criterios de la derivada primera y segunda:</h3>
+        <ul class="custom-list">
+          <li>Si f′(x) = 0 y f′′(x) > 0, hay mínimo local.</li>
+          <li>Si f′(x) = 0 y f′′(x) < 0, hay máximo local.</li>
+        </ul>
+
+        <div class="highlight-box">
+          <p><strong>Fuentes:</strong> Wikipedia, Hiru.eus, Khan Academy, StudySmarter, Slideshare, ULA</p>
+        </div>
+      </section>
+
+      <!-- UNIDAD 2: INTEGRALES -->
+      <section id="unidad2" class="content-section">
+        <h1>Unidad 2: Integrales</h1>
+        <p>Esta unidad aborda el concepto de integral, sus técnicas de cálculo y aplicaciones en el cálculo de áreas y volúmenes.</p>
+
+        <h2>2.1 Concepto y propiedades</h2>
+        <p><strong>Definición:</strong> La integral definida representa el área bajo la curva de una función entre dos puntos.</p>
+        <div class="highlight-box">
+          <p>∫<sub>a</sub><sup>b</sup> f(x) dx</p>
+        </div>
+        <p><strong>Interpretación geométrica:</strong> Es la suma de áreas infinitesimales bajo la gráfica de la función.</p>
+        <p><strong>Propiedades básicas:</strong> Linealidad, aditividad respecto al intervalo, y otras reglas fundamentales de integración.</p>
+
+        <h2>2.2 Técnicas de integración</h2>
+        <ul class="custom-list">
+          <li><strong>Integrales inmediatas:</strong> Uso directo de fórmulas conocidas.</li>
+          <li><strong>Método de sustitución:</strong> Cambia la variable para simplificar la integral.</li>
+          <li><strong>Integración por partes:</strong> ∫u dv = uv - ∫v du</li>
+          <li><strong>Descomposición en fracciones simples:</strong> Se aplica a integrales de funciones racionales.</li>
+        </ul>
+
+        <h2>2.3 Aplicaciones de la integral</h2>
+        <p><strong>Cálculo de áreas:</strong> Entre curvas o bajo una curva usando integrales definidas.</p>
+        <p><strong>Sólidos de revolución:</strong> El volumen se obtiene mediante la integral de la función rotada alrededor de un eje (método de discos o anillos).</p>
+        <div class="highlight-box">
+          <p><strong>Volumen de un cuerpo de revolución:</strong><br>V = π ∫<sub>a</sub><sup>b</sup> [f(x)]² dx</p>
+        </div>
+        <p><strong>Problemas de aplicación:</strong> Resolución de problemas prácticos en física, ingeniería y otras ciencias.</p>
+
+        <div class="highlight-box">
+          <p><strong>Fuentes:</strong> Neurochispas, StudySmarter, Superprof, Revista MICA, Slideshare</p>
+        </div>
+      </section>
+
+      <!-- UNIDAD 3: ECUACIONES DIFERENCIALES -->
+      <section id="unidad3" class="content-section">
+        <h1>Unidad 3: Ecuaciones Diferenciales</h1>
+        <p>Esta unidad introduce las ecuaciones diferenciales de primer y segundo orden, sus métodos de resolución y aplicaciones.</p>
+
+        <h2>3.1 Ecuaciones diferenciales de primer orden</h2>
+        <p><strong>Definición:</strong> Son ecuaciones que involucran la derivada de primer orden de una función desconocida.</p>
+        <p><strong>Variables separables:</strong> Se pueden escribir como dy/dx = f(x)g(y) y resolverse separando variables e integrando ambos lados.</p>
+        <p><strong>Ecuaciones diferenciales lineales de primer orden:</strong> Tienen la forma dy/dx + P(x)y = Q(x) y se resuelven mediante el factor integrante.</p>
+
+        <h2>3.2 Ecuaciones diferenciales de segundo orden</h2>
+        <p><strong>Definición:</strong> Involucran derivadas de hasta segundo orden.</p>
+        <div class="highlight-box">
+          <p>d²y/dx² + a₁(x) dy/dx + a₀(x)y = f(x)</p>
+        </div>
+        <p><strong>Ecuaciones sencillas:</strong> Incluyen aquellas con coeficientes constantes o de tipo homogéneo, cuya resolución puede involucrar métodos clásicos como la ecuación característica.</p>
+
+        <div class="highlight-box">
+          <p><strong>Fuentes:</strong> OpenStax, ULL, SGA UNEMI, YouTube</p>
+        </div>
+      </section>
+
+      <!-- RECURSOS: EJERCICIOS -->
+      <section id="recursos" class="content-section">
+        <h1>Ejercicios Prácticos</h1>
+        <p>Ejercicios resueltos y propuestos para practicar los contenidos de cada unidad.</p>
+
+        <h2>Ejercicios de Derivadas</h2>
+        <div class="highlight-box">
+          <h3>Básicos</h3>
+          <ol>
+            <li>Calcular la derivada de f(x) = 3x² - 5x + 2</li>
+            <li>Hallar f'(x) para f(x) = eˣ + ln(x)</li>
+            <li>Derivar f(x) = sin(x) + cos(x)</li>
+          </ol>
+          <h3>Avanzados</h3>
+          <ol>
+            <li>Derivar f(x) = sin(3x²) usando regla de la cadena</li>
+            <li>Calcular la derivada de f(x) = e^(2x+1)</li>
+          </ol>
+        </div>
+
+        <h2>Ejercicios de Integrales</h2>
+        <div class="highlight-box">
+          <h3>Inmediatas</h3>
+          <ol>
+            <li>∫(4x³ - 2x + 5) dx</li>
+            <li>∫eˣ dx</li>
+            <li>∫cos(x) dx</li>
+          </ol>
+          <h3>Por métodos</h3>
+          <ol>
+            <li>∫x·eˣ dx (por partes)</li>
+            <li>∫(3x²)/(x³ + 1) dx (sustitución)</li>
+          </ol>
+        </div>
+
+        <h2>Ejercicios de Ecuaciones Diferenciales</h2>
+        <div class="highlight-box">
+          <h3>Variables separables</h3>
+          <ol>
+            <li>dy/dx = x/y</li>
+            <li>dy/dx = eˣ·y²</li>
+          </ol>
+          <h3>Lineales</h3>
+          <ol>
+            <li>dy/dx + 2y = 4x</li>
+            <li>dy/dx - y = eˣ</li>
+          </ol>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- PIE DE PÁGINA -->
+  <footer>
+    <p>© 2025 Matemática Aplicada III</p>
+    <p class="footer-credits">Portal educativo de <strong>M.B.I</strong></p>
+    <p class="footer-credits">Contenido diseñado según plan de estudios oficial. No nos hacemos responsables por variaciones en los programas de cada institución.</p>
+  </footer>
+
+  <script src="4° Matematica Aplicada III.js"></script>
+</body>
+</html>
